@@ -18,4 +18,9 @@ You can learn how from this *free* series: [How to Contribute to an Open Source 
 6. Lastly, install all packages in the Pipfile with this command: `pipenv install` (or, you can choose to install individual packages with: `pipenv install package-name`)
 
 ### Major packages used at the moment (list will be updated as we progress)
+
 - `django-environ` (tip: pipenv install django-environ)
+
+## Note
+
+**Use your username as the branch name when you want to create a branch for contributions.**
