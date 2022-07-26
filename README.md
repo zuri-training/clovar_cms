@@ -56,7 +56,7 @@ A platform that allows users to spin up a basic website - allow as many customiz
 - [@magnificientStudios](https://www.github.com/magnificientStudios)
 - [@optimistictech](https://www.github.com/optimistictech)
 - [@alvanokey](https://www.github.com/alvanokey)
-- [@musoye](https://www.github.com/muyose)
+- [@musoye](https://www.github.com/musoye)
 - [@yusufadegbite](https://www.github.com/yusufadegbite)
 - [@Noble101](https://www.github.com/Noble101)
 - [@emmyrald](https://www.github.com/emmyrald)
