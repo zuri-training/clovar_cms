@@ -12,6 +12,6 @@ NOTE: Preferred tool for creating and managing virtual environmnents: Pipenv
 4.Run this command to activate the environment: 'pipenv shell'
 5. While in the virtual environment, create your repo branch and switch into it
 6. Lastly, install all packages in the Pipfile with this command: 'pipenv install'
-(or, you can choose to install individual packages with: 'pipenv install <package name>')
+(or, you can choose to install individual packages with: 'pipenv install package-name')
 PS: major packages used at the moment(list will be updated as we progress)
 1. django-environ(tip: pipenv install django-environ)
