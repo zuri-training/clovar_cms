@@ -8,6 +8,9 @@ A platform that allows users to spin up a basic website - allow as many customiz
 
 **See [CONTRIBUTING.md](https://github.com/zuri-training/my_cms-pjt-15/blob/main/CONTRIBUTING.md) if you want to make contributions to this project.**
 
+**Use your username as the branch name when you want to create a branch for your contributions.**
+
+
 ## How to run this project locally
 
 > Preferred tool for creating and managing virtual environmnents: `pipenv` (see installation guide: <https://pypi.org/project/pipenv/>).
@@ -20,6 +23,7 @@ A platform that allows users to spin up a basic website - allow as many customiz
 6. Lastly, install all packages in the `Pipfile` with this command: `pipenv install` (or, you can choose to install individual packages with: `pipenv install package-name`).
 
 ### Major packages used at the moment (list will be updated as we progress)
+
 - `django-environ` (tip: pipenv install django-environ).
 
 ## Features
@@ -28,7 +32,7 @@ A platform that allows users to spin up a basic website - allow as many customiz
   - Visit the platform to view basic information about it.
   - View and Interact with the documentation.
   - Register to set up a new website.
-   - Setup the website by filling out some information.
+  - Setup the website by filling out some information.
   - Browse through available templates.
 
 - **User: Authenticated**
@@ -46,6 +50,7 @@ A platform that allows users to spin up a basic website - allow as many customiz
 **Server:** Python, Django
 
 ## Contributors
+
 - [@jeremiey](https://www.github.com/jeremiey)
 - [@chidiarua](https://www.github.com/chidiarua)
 - [@magnificientStudios](https://www.github.com/magnificientStudios)
@@ -65,3 +70,5 @@ A platform that allows users to spin up a basic website - allow as many customiz
 - [@Anya-ndulue](https://www.github.com/Anya-ndulue)
 - [@Rhoda-k](https://www.github.com/Rhoda-k)
 - [@Temarii](https://www.github.com/Temarii)
+- [@Joshua-Ogunwoolu](https://github.com/Joshua-Ogunwoolu)
+- [@Prideland-okoi](https://github.com/Prideland-okoi)
