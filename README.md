@@ -1,4 +1,11 @@
 # Content Management System Project - Team 15
+![mit-license](https://img.shields.io/badge/license-MIT-blue) ![framework](https://img.shields.io/badge/framework-django-blue)
+
+## Contributing
+
+Contributions are always welcome!
+
+See `CONTRIBUTING.md` for ways to get started.
 
 ## How to run this project locally
 
@@ -13,3 +20,36 @@
 
 ### Major packages used at the moment (list will be updated as we progress)
 - `django-environ` (tip: pipenv install django-environ)
+
+## Project Details
+
+A platform that allows users to spin up a basic website - allow as many customizations as possible.
+
+## Feature Requests
+
+**User: Unauthenticated**
+  
+- Visit the platform to view basic information about it
+- View and Interact with the documentation
+- Register to set up a new website
+- Setup the website by filling out some information
+- Browse through available templates 
+
+**User: Authenticated**
+  
+- Full access to the platform
+- Access to the backend of the created website
+- Ability to create more pages
+- Ability to change the template
+- Unique address
+- Ability to add social media links
+
+## Tech Stack
+
+**Client:** HTML, CSS, JavaScript
+
+**Server:** Python, Django
+
+## Contributors
+- [@jeremiey](https://www.github.com/jeremiey)
+- [@chidiarua](https://www.github.com/chidiarua)
