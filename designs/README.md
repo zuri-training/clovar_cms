@@ -1,3 +1,3 @@
-# Designs
+# Link to Designs
 
-This is where all links to the figma designs will be stored, and also where all information from the product designers will be stored.
+- [Wireframes and Lo-fi](https://www.figma.com/file/Uujc2NV7Sx6qOsWX9JYl0v/Wireframes-%26-loFI's?node-id=0%3A1)
