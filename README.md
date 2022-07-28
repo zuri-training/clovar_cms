@@ -19,9 +19,10 @@ Please adhere to this project's `code of conduct`.
 
 ## Run Locally
 
-> Preferred tool for creating and managing virtual environmnents: `pipenv` (see installation guide: <https://pypi.org/project/pipenv/>).
+> Preferred tool for creating and managing virtual environments: `pipenv` (see installation guide: <https://pypi.org/project/pipenv/>).
 
 Clone the project
+
 ```bash
   git clone https://github.com/zuri-training/my_cms-pjt-15.git
 ```
@@ -39,35 +40,38 @@ Create a virtual environment and install django in it
 ```
 
 Activate the virtual environment
+
 ```bash
 pipenv shell
 ```
 
 Create a branch while in that virtual environment and switch into that branch
+
 ```bash
 git checkout -b your-gihub-username
 ```
 
 Install all packages in the `Pipfile`
+
 ```bash
 pipenv install
 ```
 > You can choose to install individual packages with: `pipenv install package-name`)
 
+### Major packages used at the moment (list will be updated as we progress)
+
+- `django-environ` (tip: pipenv install django-environ). 
+
 
 <!-- ## How to run this project locally
 
-> Preferred tool for creating and managing virtual environmnents: `pipenv` (see installation guide: <https://pypi.org/project/pipenv/>).
+> Preferred tool for creating and managing virtual environments: `pipenv` (see installation guide: <https://pypi.org/project/pipenv/>).
 1. Clone this repo (which create a folder).
 2. Change directory into the repo folder (using the `cd` command).
 3. Run this command: `pipenv install django` (this step will create a virtual environment that will take the repo name and install django in it).
 4. Run this command to activate the environment: `pipenv shell`.
 5. While in the virtual environment, create your repo branch and switch into it.
-6. Lastly, install all packages in the `Pipfile` with this command: `pipenv install` (or, you can choose to install individual packages with: `pipenv install package-name`).
-
-### Major packages used at the moment (list will be updated as we progress)
-
-- `django-environ` (tip: pipenv install django-environ). -->
+6. Lastly, install all packages in the `Pipfile` with this command: `pipenv install` (or, you can choose to install individual packages with: `pipenv install package-name`). -->
 
 ## Features
 
