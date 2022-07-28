@@ -16,7 +16,6 @@ Please adhere to this project's `code of conduct`.
 
 **Use your username as the branch name when you want to create a branch for your contributions.**
 
-
 ## Run Locally
 
 > Preferred tool for creating and managing virtual environments: `pipenv` (see installation guide: <https://pypi.org/project/pipenv/>).
@@ -48,7 +47,7 @@ pipenv shell
 Create a branch while in that virtual environment and switch into that branch
 
 ```bash
-git checkout -b your-gihub-username
+git checkout -b your-github-username
 ```
 
 Install all packages in the `Pipfile`
@@ -56,22 +55,12 @@ Install all packages in the `Pipfile`
 ```bash
 pipenv install
 ```
+
 > You can choose to install individual packages with: `pipenv install package-name`)
 
 ### Major packages used at the moment (list will be updated as we progress)
 
-- `django-environ` (tip: pipenv install django-environ). 
-
-
-<!-- ## How to run this project locally
-
-> Preferred tool for creating and managing virtual environments: `pipenv` (see installation guide: <https://pypi.org/project/pipenv/>).
-1. Clone this repo (which create a folder).
-2. Change directory into the repo folder (using the `cd` command).
-3. Run this command: `pipenv install django` (this step will create a virtual environment that will take the repo name and install django in it).
-4. Run this command to activate the environment: `pipenv shell`.
-5. While in the virtual environment, create your repo branch and switch into it.
-6. Lastly, install all packages in the `Pipfile` with this command: `pipenv install` (or, you can choose to install individual packages with: `pipenv install package-name`). -->
+- `django-environ` (run `pipenv install django-environ` to install).
 
 ## Features
 
@@ -92,9 +81,11 @@ pipenv install
 
 ## Tech Stack
 
-**Client:** HTML, CSS, JavaScript
+**Client**: HTML, CSS, JavaScript
 
-**Server:** Python, Django
+**Server**: Python, Django
+
+**Design**: Figma
 
 ## Contributors
 
@@ -104,11 +95,13 @@ pipenv install
 
 - Product Designers
   - [@Paccid](https://www.github.com/Paccid)
-  - [@Anya-ndulue](https://www.github.com/Anya-ndulue)
   - [@Bisolaawwal](https://www.github.com/Bisolaawwal)
+  - [@Rhoda-k](https://www.github.com/Rhoda-k)
+  - [@Anya-ndulue](https://www.github.com/Anya-ndulue)
+  - [@Temarii](https://www.github.com/Temarii)
+  - [@Dizue](https://www.github.com/Dizue)
 
-
-<!-- - [@magnificientStudios](https://www.github.com/magnificientStudios)
+<!-- [@magnificientStudios](https://www.github.com/magnificientStudios)
 - [@optimistictech](https://www.github.com/optimistictech)
 - [@alvanokey](https://www.github.com/alvanokey)
 - [@musoye](https://www.github.com/musoye)
@@ -120,7 +113,5 @@ pipenv install
 - [@BioMeindinyo](https://www.github.com/BioMeindinyo)
 - [@Usenmfon](https://www.github.com/Usenmfon)
 - [@Emmanuel-Etukudo](https://www.github.com/Emmanuel-Etukudo)
-- [@Rhoda-k](https://www.github.com/Rhoda-k)
-- [@Temarii](https://www.github.com/Temarii)
 - [@Joshua-Ogunwoolu](https://github.com/Joshua-Ogunwoolu)
 - [@Prideland-okoi](https://github.com/Prideland-okoi) -->
