@@ -87,6 +87,8 @@ pipenv install
 
 **Design**: Figma
 
+## Click [here](https://github.com/zuri-training/my_cms-pjt-15/blob/main/designs/README.md) to see the link to designs and other contributions from the product design team.
+
 ## Contributors
 
 - Developers
@@ -100,6 +102,8 @@ pipenv install
   - [@Anya-ndulue](https://www.github.com/Anya-ndulue)
   - [@Temarii](https://www.github.com/Temarii)
   - [@Dizue](https://www.github.com/Dizue)
+  - [@Joshua-Ogunwoolu](https://github.com/Joshua-Ogunwoolu)
+  - [@Emmanuel-Etukudo](https://www.github.com/Emmanuel-Etukudo)
 
 <!-- [@magnificientStudios](https://www.github.com/magnificientStudios)
 - [@optimistictech](https://www.github.com/optimistictech)
@@ -112,6 +116,4 @@ pipenv install
 - [@steph-ayo](https://www.github.com/steph-ayo)
 - [@BioMeindinyo](https://www.github.com/BioMeindinyo)
 - [@Usenmfon](https://www.github.com/Usenmfon)
-- [@Emmanuel-Etukudo](https://www.github.com/Emmanuel-Etukudo)
-- [@Joshua-Ogunwoolu](https://github.com/Joshua-Ogunwoolu)
 - [@Prideland-okoi](https://github.com/Prideland-okoi) -->
