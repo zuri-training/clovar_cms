@@ -105,7 +105,7 @@ pipenv install
   - [@Joshua-Ogunwoolu](https://github.com/Joshua-Ogunwoolu)
   - [@Emmanuel-Etukudo](https://www.github.com/Emmanuel-Etukudo)
 
-<!-- [@magnificientStudios](https://www.github.com/magnificientStudios)
+- [@magnificientStudios](https://www.github.com/magnificientStudios)
 - [@optimistictech](https://www.github.com/optimistictech)
 - [@alvanokey](https://www.github.com/alvanokey)
 - [@musoye](https://www.github.com/musoye)
@@ -116,4 +116,4 @@ pipenv install
 - [@steph-ayo](https://www.github.com/steph-ayo)
 - [@BioMeindinyo](https://www.github.com/BioMeindinyo)
 - [@Usenmfon](https://www.github.com/Usenmfon)
-- [@Prideland-okoi](https://github.com/Prideland-okoi) -->
+- [@Prideland-okoi](https://github.com/Prideland-okoi)
