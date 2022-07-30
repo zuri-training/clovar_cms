@@ -1,10 +1,11 @@
-# Content Management System Project - Team 15
+# Clovar
 
 ## Project Description
 
 ![mit-license](https://img.shields.io/badge/license-MIT-brightgreen) ![python-versions](https://img.shields.io/badge/python-3.7%20%7C%203.8%20%7C%203.9%20%7C%203.10-blue) ![framework](https://img.shields.io/badge/framework-django-blue)
 
-A platform that allows users to spin up a basic website - allow as many customizations as possible.
+Clovar is a Content Management System.
+It is a platform that allows users to spin up a basic website - allow as many customizations as possible.
 
 ## Contributing
 
@@ -23,13 +24,13 @@ Please adhere to this project's `code of conduct`.
 Clone the project
 
 ```bash
-  git clone https://github.com/zuri-training/my_cms-pjt-15.git
+  git clone https://github.com/zuri-training/team-15_my-cms.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd my_cms-pjt-15
+  cd team-15_my-cms
 ```
 
 Create a virtual environment and install django in it
@@ -94,6 +95,18 @@ pipenv install
 - Developers
   - [@jeremiey](https://www.github.com/jeremiey)
   - [@chidiarua](https://www.github.com/chidiarua)
+  - [@magnificientStudios](https://www.github.com/magnificientStudios)
+  - [@optimistictech](https://www.github.com/optimistictech)
+  - [@alvanokey](https://www.github.com/alvanokey)
+  - [@musoye](https://www.github.com/musoye)
+  - [@Prideland-okoi](https://github.com/Prideland-okoi)
+  - [@yusufadegbite](https://www.github.com/yusufadegbite)
+  - [@Noble101](https://www.github.com/Noble101)
+  - [@emmyrald](https://www.github.com/emmyrald)
+  - [@jonathanwambua](https://www.github.com/jonathanwambua)
+  - [@steph-ayo](https://www.github.com/steph-ayo)
+  - [@BioMeindinyo](https://www.github.com/BioMeindinyo)
+  - [@Usenmfon](https://www.github.com/Usenmfon)
 
 - Product Designers
   - [@Paccid](https://www.github.com/Paccid)
@@ -104,16 +117,3 @@ pipenv install
   - [@Dizue](https://www.github.com/Dizue)
   - [@Joshua-Ogunwoolu](https://github.com/Joshua-Ogunwoolu)
   - [@Emmanuel-Etukudo](https://www.github.com/Emmanuel-Etukudo)
-
-- [@magnificientStudios](https://www.github.com/magnificientStudios)
-- [@optimistictech](https://www.github.com/optimistictech)
-- [@alvanokey](https://www.github.com/alvanokey)
-- [@musoye](https://www.github.com/musoye)
-- [@yusufadegbite](https://www.github.com/yusufadegbite)
-- [@Noble101](https://www.github.com/Noble101)
-- [@emmyrald](https://www.github.com/emmyrald)
-- [@jonathanwambua](https://www.github.com/jonathanwambua)
-- [@steph-ayo](https://www.github.com/steph-ayo)
-- [@BioMeindinyo](https://www.github.com/BioMeindinyo)
-- [@Usenmfon](https://www.github.com/Usenmfon)
-- [@Prideland-okoi](https://github.com/Prideland-okoi)
