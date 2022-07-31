@@ -109,6 +109,7 @@ pipenv install
   - [@Usenmfon](https://www.github.com/Usenmfon)
   - [@Chelsofia](https://www.github.com/Chelsofia)
   - [@Ismat27](https://www.github.com/Ismat27)
+  - [@Asterisk-z Olang Daniel](https://github.com/Asterisk-z)
 
 - Product Designers
   - [@Paccid](https://www.github.com/Paccid)
