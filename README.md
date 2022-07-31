@@ -1,11 +1,9 @@
 # Clovar
 
-## Project Description
-
 ![mit-license](https://img.shields.io/badge/license-MIT-brightgreen) ![python-versions](https://img.shields.io/badge/python-3.7%20%7C%203.8%20%7C%203.9%20%7C%203.10-blue) ![framework](https://img.shields.io/badge/framework-django-blue)
 
 Clovar is a Content Management System.
-It is a platform that allows users to spin up a basic website - allow as many customizations as possible.
+It is a platform that allows users to spin up a basic website and allows as many customizations as possible.
 
 ## Contributing
 
