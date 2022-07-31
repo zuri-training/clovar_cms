@@ -61,6 +61,8 @@ pipenv install
 
 - `django-environ` (run `pipenv install django-environ` to install).
 
+**[Database Schema](https://drawsql.app/optimistic/diagrams/team-15-my-cms)**.
+
 ## Features
 
 - **User: Unauthenticated**
