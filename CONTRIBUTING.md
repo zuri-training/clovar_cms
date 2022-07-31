@@ -26,6 +26,8 @@ Commit and push your changes.
 
 Create a pull request on the [GitHub Repository](https://github.com/zuri-training/team-15_my-cms). [Learn How](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
 
+---
+
 **To update your branch when there's a change in the main branch, run the following commands:**
 
 ```bash
