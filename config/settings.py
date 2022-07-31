@@ -31,7 +31,7 @@ SECRET_KEY = env("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["7e4e-197-210-85-131.eu.ngrok.io"]
 
 
 # Application definition
@@ -146,7 +146,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 AUTH_USER_MODEL = "accounts.CustomUser"
 LOGIN_REDIRECT_URL = "home"
 ACCOUNT_LOGOUT_REDIRECT_URL = "home"
-
+CSRF_TRUSTED_ORIGINS = []
 # allauth configuration
 SITE_ID = 1
 AUTHENTICATION_BACKENDS = [
