@@ -1,59 +1,35 @@
 # How to Contribute to this Project
 
-Learn how to use git with multiple people working on a project - [How to use git with multiple people working on the same project](https://medium.com/@sriteja95/how-to-use-git-with-multiple-people-working-on-the-same-project-8fb411bad6b9).
-
-**Working on your first Pull Request?**
-
-You can learn how from this *free* series: [How to Contribute to an Open Source Projects on GitHub](https://kcd.im/pull-request).
-
-## Run Locally
-
-> Preferred tool for creating and managing virtual environmnents: `pipenv` (see installation guide: <https://pypi.org/project/pipenv/>).
-
-Clone the project
+Clone the repository
 ```bash
-  git clone https://github.com/zuri-training/my_cms-pjt-15.git
+  git clone https://github.com/zuri-training/team-15_my-cms.git
 ```
 
-Go to the project directory
-
+Get the latest code on to your main branch
 ```bash
-  cd my_cms-pjt-15
+  git pull
 ```
 
-Create a virtual environment and install django in it
-
+Create a branch and do your work on that branch. **Use your username as the branch name.**
 ```bash
-  pipenv install django
+  git checkout -b <your-branch-name>
 ```
 
-Activate the virtual environment
+Use ```git checkout branch-name``` to switch between branches
+
+Commit and push your changes.
 ```bash
-pipenv shell
+  git add . || git add --all || git add -A
+  git commit -m <commit-message>
+  git push
 ```
 
-Create a branch while in that virtual environment and switch into that branch
-```bash
-git checkout -b your-gihub-username
-```
+Create a pull request on the [GitHub Repository](https://github.com/zuri-training/team-15_my-cms). [Learn How](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
 
-Install all packages in the `Pipfile`
-```bash
-pipenv install
-```
-> You can choose to install individual packages with: `pipenv install package-name`)
-### Major packages used at the moment (list will be updated as we progress)
-
-- `django-environ` (tip: pipenv install django-environ)
-
-## Note
-
-**Use your username as the branch name when you want to create a branch for contributions.**
-
-To update your branch when there's a change in the main branch,run:
+**To update your branch when there's a change in the main branch, run the following commands:**
 
 ```bash
-git checkout your-branch
+git checkout <your-branch-name>
 
 git pull origin main
 ```
