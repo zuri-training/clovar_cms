@@ -93,7 +93,6 @@ pipenv install
 ## Contributors
 
 - Developers
-  - [@jeremiey](https://www.github.com/jeremiey)
   - [@chidiarua](https://www.github.com/chidiarua)
   - [@magnificientStudios](https://www.github.com/magnificientStudios)
   - [@optimistictech](https://www.github.com/optimistictech)
