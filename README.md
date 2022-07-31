@@ -107,6 +107,8 @@ pipenv install
   - [@steph-ayo](https://www.github.com/steph-ayo)
   - [@BioMeindinyo](https://www.github.com/BioMeindinyo)
   - [@Usenmfon](https://www.github.com/Usenmfon)
+  - [@Chelsofia](https://www.github.com/Chelsofia)
+  - [@Ismat27](https://www.github.com/Ismat27)
 
 - Product Designers
   - [@Paccid](https://www.github.com/Paccid)
