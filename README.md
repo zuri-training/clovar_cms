@@ -5,6 +5,8 @@
 Clovar is a Content Management System.
 It is a platform that allows users to spin up a basic website and allows as many customizations as possible.
 
+**[Database Schema](https://drawsql.app/optimistic/diagrams/team-15-my-cms)**.
+
 ## Contributing
 
 Contributions are always welcome!
@@ -17,51 +19,7 @@ Please adhere to this project's `code of conduct`.
 
 ## Run Locally
 
-> Preferred tool for creating and managing virtual environments: `pipenv` (see installation guide: <https://pypi.org/project/pipenv/>).
-
-Clone the project
-
-```bash
-  git clone https://github.com/zuri-training/team-15_my-cms.git
-```
-
-Go to the project directory
-
-```bash
-  cd team-15_my-cms
-```
-
-Create a virtual environment and install django in it
-
-```bash
-  pipenv install django
-```
-
-Activate the virtual environment
-
-```bash
-pipenv shell
-```
-
-Create a branch while in that virtual environment and switch into that branch
-
-```bash
-git checkout -b your-github-username
-```
-
-Install all packages in the `Pipfile`
-
-```bash
-pipenv install
-```
-
-> You can choose to install individual packages with: `pipenv install package-name`)
-
-### Major packages used at the moment (list will be updated as we progress)
-
-- `django-environ` (run `pipenv install django-environ` to install).
-
-**[Database Schema](https://drawsql.app/optimistic/diagrams/team-15-my-cms)**.
+See [CONTRIBUTING.md](https://github.com/zuri-training/my_cms-pjt-15/blob/main/CONTRIBUTING.md).
 
 ## Features
 
@@ -88,7 +46,7 @@ pipenv install
 
 **Design**: Figma
 
-## Click [here](https://github.com/zuri-training/my_cms-pjt-15/blob/main/designs/README.md) to see the link to designs and other contributions from the product design team.
+## Click [here](https://github.com/zuri-training/my_cms-pjt-15/blob/main/designs/README.md) to see the link to designs and other contributions from the product design team
 
 ## Contributors
 
