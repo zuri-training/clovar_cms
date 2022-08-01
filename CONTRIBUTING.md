@@ -30,7 +30,7 @@ Activate the virtual environment
 pipenv shell
 ```
 
-> If ```django-environ``` isn't installed, you can install it with:
+If `django-environ` isn't installed, you can install it with:
 
 ```bash
 pipenv install django-environ
@@ -54,13 +54,13 @@ SECRET_KEY=<your-secret-key>
 Create a branch to make your changes to.
 
 ```bash
-git branch <your-github-username:feature-you're working on>
+git branch <your-github-username:feature>
 ```
 
 Switch into your branch
 
 ```bash
-git checkout <your-github-username:feature-you're working on>
+git checkout <your-github-username:feature>
 ```
 
 Commit and push your changes to your branch.
@@ -71,9 +71,11 @@ Commit and push your changes to your branch.
   git push
 ```
 
-Create a pull request on the [GitHub Repository](https://github.com/zuri-training/team-15_my-cms). [Learn How](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
+> You can also just *fork* the repository and make your changes to that fork.
 
-Request a review from [@jeremiey](https://www.github.com/jeremiey) and [@chidiarua](https://www.github.com/chidiarua).
+**Create a pull request** on the [GitHub Repository](https://github.com/zuri-training/team-15_my-cms). [Learn How](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
+
+**Request a review for your pull request** from [@jeremiey](https://www.github.com/jeremiey) and [@chidiarua](https://www.github.com/chidiarua).
 
 Your changes will be merged into the `main` branch when they are approved by the reviewers.
 
