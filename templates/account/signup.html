@@ -7,7 +7,7 @@
       <meta charset="utf-8" />
       <title>
         {% block title %}
-          signup
+          Sign Up | Clovar
         {% endblock %}
       </title>
     </head>
@@ -16,22 +16,23 @@
         <div class="row justify-content-center">
           <div class="col-md-5">
             <div class="card py-3">
-              <h2 class="card-title text-center">Signup</h2>
+              <h2 class="card-title text-center">Sign up on Clovar</h2>
               <div class="card-body py-md-4">
                 <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
                   {% csrf_token %}
                   <div class="form-group mb-3">
-                    <input type="text" class="form-control py-2" id="login" placeholder="Username" name='username'/>
+                    <input type="text" class="form-control py-2" id="login" placeholder="Username*" name='username' required />
                   </div>
                   <div class="form-group mb-3">
-                    <input type="email" class="form-control py-2" id="email" placeholder="Email" name='email'/>
+                    <input type="email" class="form-control py-2" id="email" placeholder="Email Address" name='email' />
                   </div>
 
                   <div class="form-group mb-3">
-                    <input type="password" class="form-control py-2" id="password" placeholder="Password" name='password1'/>
+                    <input type="password" class="form-control py-2" id="password" placeholder="Password*" name='password1' required/>
                   </div>
                   <div class="form-group mb-3">
-                    <input type="password" class="form-control py-2" id="confirm-password" placeholder="Confirm password" name='password2'/>
+                    <input type="password" class="form-control py-2" id="confirm-password" placeholder="Confirm password*" name='password2' required/>
+                    <small style="color: red;">*Required fields</small>
                   </div>
                   <div class="col-md-6">
                     {% if redirect_field_value %}
@@ -42,7 +43,7 @@
                     <p>
                       Already registered? <a href="{% url 'account_login' %}">Login</a>
                     </p>
-                    <button class="btn btn-primary py-2" type='submit'>Signup</button>
+                    <button class="btn btn-primary py-2" type='submit'>Sign up</button>
                   </div>
                 </form>
               </div>
