@@ -15,13 +15,13 @@ It is a platform that allows users to spin up a basic website and allows as many
 
 Contributions are always welcome!
 
-**See [CONTRIBUTING.md](https://github.com/zuri-training/my_cms-pjt-15/blob/main/CONTRIBUTING.md) if you want to make contributions to this project.**
+See [`CONTRIBUTING.md`](https://github.com/zuri-training/my_cms-pjt-15/blob/main/CONTRIBUTING.md) if you want to make contributions to this project.
 
-Please adhere to this project's `code of conduct`.
+Please ensure you follow the steps in the [`CONTRIBUTING.md`](https://github.com/zuri-training/my_cms-pjt-15/blob/main/CONTRIBUTING.md). If you don't, your contribution will be rejected.
 
 ## Run Locally
 
-See [CONTRIBUTING.md](https://github.com/zuri-training/my_cms-pjt-15/blob/main/CONTRIBUTING.md).
+See [`CONTRIBUTING.md`](https://github.com/zuri-training/my_cms-pjt-15/blob/main/CONTRIBUTING.md).
 
 ## Features
 
