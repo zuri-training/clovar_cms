@@ -54,13 +54,13 @@ SECRET_KEY=<your-secret-key>
 Create a branch to make your changes to.
 
 ```bash
-git branch <your-github-username:feature>
+git branch <your-github-username_feature>
 ```
 
 Switch into your branch
 
 ```bash
-git checkout <your-github-username:feature>
+git checkout <your-github-username_feature>
 ```
 
 Commit and push your changes to your branch.
