@@ -62,6 +62,11 @@ Switch into your branch
 ```bash
 git checkout <your-github-username_feature>
 ```
+  
+Set Upstream branch
+```bash
+git push --set-upstream origin <your-github-username_feature>
+```
 
 Commit and push your changes to your branch.
 
