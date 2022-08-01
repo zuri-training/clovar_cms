@@ -30,12 +30,6 @@ Activate the virtual environment
 pipenv shell
 ```
 
-If `django-environ` isn't installed, you can install it with:
-
-```bash
-pipenv install django-environ
-```
-
 Create a `.env` file in the same directory as the `settings.py` (`config` folder) with the following contents:
 > **Don't enclose the secret key in any quotation mark.**
 
