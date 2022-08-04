@@ -41,7 +41,7 @@ SECRET_KEY=<your-secret-key>
 
 </details>
 
-*If you'll just be working on the front-end, the *running locally* section is optional. All your `HTML`, `CSS`, and `JavaScript` files should go into the [`templates`](https://github.com/zuri-training/team-15_my-cms/tree/main/templates) directory.*
+*If you'll just be working on the front-end, the *running locally* section is optional. All your `HTML`, `CSS`, and `JavaScript` files should go into the [`frontend`](https://github.com/zuri-training/team-15_my-cms/tree/main/frontend) directory.*
 
 ---
 
