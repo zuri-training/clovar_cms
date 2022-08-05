@@ -30,7 +30,12 @@ body {
   color: var(--accent-purple);
 }
 
-hr {
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+main .boundary-hr {
   width: 85%;
   border-top: 1.5px solid var(--accent-gold) !important;
   margin-left: auto !important;
@@ -40,7 +45,7 @@ hr {
 
 /* buttons */
 button {
-  width: 250px !important;
+  width: 230px !important;
   padding: 0.6rem 1rem;
   border-radius: var(--border-radius) !important;
   font-weight: 500 !important;
@@ -248,12 +253,58 @@ button:hover {
   height: auto;
 }
 
+/* FAQ Section */
+.faq-section {
+  background-color: var(--milk);
+  padding-top: 6rem;
+}
+
+.faq-section .faq-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.faq-section .faq-container h5 {
+  font-weight: 500;
+}
+
+.faq-section .faq-container .faq p {
+  margin: 0 !important;
+  position: relative;
+  font-weight: 600;
+}
+
+.faq-section .faq-container .faq hr {
+  border-top: 1.5px solid var(--accent-gold) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-block: 0 !important;
+}
+
+.faq-section .faq-container .faq p .plus-icon {
+  color: var(--accent-gold) !important;
+  position: absolute;
+  right: 16px;
+}
+
 /* Footer */
 footer {
+  padding-top: 5rem;
   background-color: var(--milk);
 }
 
-footer .footer-items .icons img {
+footer .footer-logo {
+  width: 100px;
+  height: auto;
+}
+
+footer .nav-link .facebook-icon {
+  width: 40px;
+  height: auto;
+}
+
+footer .nav-link .instagram-icon {
   width: 35px;
   height: auto;
+  padding-top: 3px;
 }
