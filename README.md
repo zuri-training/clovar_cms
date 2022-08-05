@@ -1,11 +1,12 @@
-# Clovar - CMS
-
-<p>
-  <img src="https://img.shields.io/badge/license-MIT-brightgreen" alt="contributors" href="https://github.com/zuri-training/team-15_my-cms/blob/main/LICENSE">
-  <img src="https://img.shields.io/pypi/pyversions/django" alt="python-versions" href="https://www.python.org/downloads/">
-  <img src="https://img.shields.io/pypi/v/pipenv" alt="pypi" href="https://python.org/pypi/pipenv">
-  <img src="https://img.shields.io/badge/code%20style-black%20%7C%20prettier-blueviolet" alt="code style" href="#badge">
-  <img src="https://img.shields.io/github/contributors/zuri-training/team-15_my-cms" alt="contributors" href="https://github.com/zuri-training/team-15_my-cms/graphs/contributors">
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/87664239/183072505-f90dfcf1-8347-4fba-bb0a-e022f0fdee33.png">
+  <br>
+  <br>
+   <img src="https://img.shields.io/badge/license-MIT-brightgreen" alt="contributors" href="https://github.com/zuri-training/team-15_my-cms/blob/main/LICENSE">
+   <img src="https://img.shields.io/pypi/pyversions/django" alt="python-versions" href="https://www.python.org/downloads/">
+   <img src="https://img.shields.io/pypi/v/pipenv" alt="pypi" href="https://python.org/pypi/pipenv">
+   <img src="https://img.shields.io/badge/code%20style-black%20%7C%20prettier-blueviolet" alt="code style" href="#badge">
+   <img src="https://img.shields.io/github/contributors/zuri-training/team-15_my-cms" alt="contributors" href="https://github.com/zuri-training/team-15_my-cms/graphs/contributors">
 </p>
 
 Clovar is a Content Management System.
