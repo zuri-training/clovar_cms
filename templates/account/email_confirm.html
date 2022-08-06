@@ -1,0 +1,35 @@
+{% load static %}
+{% load i18n %}
+{% load account %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clovar | very email</title>
+    <link href="{% static 'assets/images/image_360(1).png' %}" rel="icon" sizes="16x16 32x32" type="image/png">
+    <link rel="stylesheet" href="{% static 'assets/css/email_confirm.css' %}">
+</head>
+<body>
+    <header>
+        <img src="{% static 'assets/images/image_360.png' %}" alt="clovar logo" class="clovar-logo">
+    </header>
+    <main>
+        <div class="container">
+            <h2>Verify your email <br> address</h2>
+            {% if confirmation %}
+            {% user_display confirmation.email_address.user as user_display %}
+            <p>{% blocktrans with confirmation.email_address.email as email %}Click the button below to confirm that <br> {{ email }} belongs to you{% endblocktrans %}</p>
+            <form method="post" action="{% url 'account_confirm_email' confirmation.key %}">
+                {% csrf_token %}
+                <button type="submit">Verify</button>
+            </form>
+            <p class="contact">Have an issue?. <a href="">Contact us</a></p>
+            {% else %}
+            {% url 'account_email' as email_url %}
+            <p class="contact">This confirmation link has expired. <a href="{{ email_url }}">Request a new one</a></p>
+            {% endif %}
+        </div>
+    </main>
+</body>
+</html>

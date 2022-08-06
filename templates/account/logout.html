@@ -1,0 +1,40 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <!--Mobile metas-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clovar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/logout.css' %}" type="text/css" media="all" />
+
+   
+</head>
+<body>
+    <br />
+
+    <img id="logo" src="https://i.ibb.co/vdBWPRw/logo.png" alt="" />
+
+    <div class="container">
+        <label for=""><i class="fa fa-exclamation-triangle"></i></label>
+
+        <h4 id="">Are you leaving?</h4>
+        <p>
+            {{user.username}},are you sure you want to sign out?
+        </p>
+        <br />
+
+        <button id="cancel" type="submit"><a href="{% url 'home' %}">Cancel</a></button>
+        <form method="post" action="{% url 'account_logout' %}">
+            {% csrf_token %}
+            {% if redirect_field_value %}
+            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+            {% endif %}
+        <button id="yes" type="submit">Yes</button>
+        </form>
+
+    </div>
+</body>
+</html>

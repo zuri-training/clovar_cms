@@ -1,0 +1,291 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    background: #FFFBF5;
+    height: 100%;
+}
+
+
+#logo {
+    display: block;
+    margin: 12px;
+    width: 45%;
+    margin-left: 15px;
+    margin-top: 4px;
+}
+
+h4 {
+    margin-left: 35px;
+}
+
+.container {
+    width: 100%;
+    margin:0;
+    overflow: hidden;
+    border-radius:0;
+    border: 0;
+    margin-bottom: 30px;
+    border:0;
+    height: auto;
+}
+
+
+
+#intro {
+    align-content: center;
+    color: black;
+    display: block;
+    background: url("https://i.ibb.co/dp0FXCp/mXABOkd.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: auto;
+    position: relative;
+
+}
+
+
+#intro h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 30px;
+    padding: 20px;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+#span {
+    color: #50409A;
+}
+
+#sign-up {
+    width: auto;
+    height: auto;
+    background: #fff;
+    color: black;
+    align-items: center;
+    border: 0px;
+    padding: 25px;
+    padding-top:0;
+    line-height: 30px;
+    background: #FFFBF5;
+
+
+}
+
+#cancel {
+    display: none;
+}
+
+#sign-up h1 {
+    text-align: left;
+    font-size: 28px;
+    font-weight: 850;
+    color: #50409A;
+    padding-top: 25px;
+}
+
+#sign-up h2 {
+    text-align: left;
+    font-size: 16px;
+    line-height: 38px;
+    font-weight:0;
+    padding-left: 2.5px;
+}
+
+.input-container i {
+    position: absolute;
+    top:0;
+}
+
+form label {
+    display: flex;
+    padding-top: 20px;
+    font-size: 16px;
+}
+
+form input {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid black;
+    border-radius: 6px;
+    outline: 0;
+
+}
+
+form input:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    border: 1px solid #50409A;
+    transition: all 0.7s ease;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container i {
+    right: 13px;
+    top: 57px;
+}
+
+#sign-up-btn {
+    margin-top: 20px;
+    background: #50409A;
+    color: white;
+    width: 100%;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#sign-up-btn:hover {
+    cursor: pointer;
+    background: white;
+    transform: scale(1.02);
+    color: #5600FF;
+    transition: all 0.6s ease-in;
+    border: 1px solid #50409A;
+}
+
+#google-btn {
+    margin-top: 8px;
+    background: #A45BE9;
+    width: 100%;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+
+}
+
+
+
+i.fa-googoe {
+    font-size: 18px;
+    color: darkblue;
+    padding-top: 3px;
+}
+
+#google-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.login {
+    padding: 7px;
+    font-size: 13px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.login a {
+    text-decoration: none;
+    color: #50409A;
+}
+
+
+
+@media screen and (min-width: 900px) {
+    .container {
+        flex-direction: row;
+        display: flex;
+        overflow: hidden;
+        width: auto;
+        margin:0;
+        height: auto;
+        border:0;
+        margin-top: 100px;
+        
+
+    }
+
+  
+
+    #sign-up {
+        width: 100%;
+        font-size: 35px;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        height: auto;
+
+    }
+
+
+    #intro {
+        width: 50%;
+        text-align: center;
+        align-content: center;
+        padding-top: 50px;
+        font-size: 40px;
+        position: relative;
+        font-weight: 600;
+        background: url("https://i.ibb.co/dp0FXCp/mXABOkd.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        height: auto;
+
+    }
+
+    
+
+    #logo {
+        width: 50%;
+        margin-left: 65px;
+        margin-top: 20px;
+    }
+
+    .input-container i {
+        position: absolute;
+        font-size: 20px;
+    }
+
+    #cancel {
+        display: block;
+        float: right;
+        margin-top: 10px;
+        margin-right: 15px;
+        padding: 5px;
+        border: 0;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-size: 28px;
+        color: white;
+        background: #FFBF74;
+    }
+
+    #sign-up h1 {
+        padding-top: 10px;
+        font-size: 30px;
+        font-weight: 1000;
+    }
+
+    #sign-up h2 {
+        font-size: 20px;
+        font-weight:0;
+    }
+
+    form label {
+        font-size: 20px;
+        font-weight: 450;
+    }
+
+    form input {
+        height: 2.2rem;
+    }
+}
