@@ -1,56 +1,69 @@
-{% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-{% block content %}
-  <html>
-    <head>
-      <meta charset="utf-8" />
-      <title>
-        {% block title %}
-          Sign Up | Clovar
-        {% endblock %}
-      </title>
-    </head>
-    <body>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-5">
-            <div class="card py-3">
-              <h2 class="card-title text-center">Sign up on Clovar</h2>
-              <div class="card-body py-md-4">
-                <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
-                  {% csrf_token %}
-                  <div class="form-group mb-3">
-                    <input type="text" class="form-control py-2" id="login" placeholder="Username*" name='username' required />
-                  </div>
-                  <div class="form-group mb-3">
-                    <input type="email" class="form-control py-2" id="email" placeholder="Email Address" name='email' />
-                  </div>
 
-                  <div class="form-group mb-3">
-                    <input type="password" class="form-control py-2" id="password" placeholder="Password*" name='password1' required/>
-                  </div>
-                  <div class="form-group mb-3">
-                    <input type="password" class="form-control py-2" id="confirm-password" placeholder="Confirm password*" name='password2' required/>
-                    <small style="color: red;">*Required fields</small>
-                  </div>
-                  <div class="col-md-6">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <!--Mobile metas-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clovar</title>
+    <!--Site CSS-->
+    <link rel="stylesheet" href="{% static 'assets/css/sign-up.css' %}" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    
+
+    <!--Main-->
+    <div class="container">
+        <div id="intro">
+            <br />
+            <img id="logo" src="https://i.ibb.co/vdBWPRw/logo.png" alt="" />
+            <h1>Build your <span id="span"><b>Blogsites</b></span> from scratch <span id="span"><b>CODEFREE!</b></span></h1>
+        </div>
+
+
+        <div id="sign-up">
+            <button id="cancel" type="submit"><a href="{% url 'home' %}">X</a></button>
+            <br />
+            <h1>Create Account</h1>
+            <h2>Welcome! Let's get you started.</h2>
+            <form action="{% url 'account_signup' %}" method="post" accept-charset="utf-8">
+                {% csrf_token %}
+                <label>Username *</label>
+                <input type="text" name="username" id="" value="" placeholder="jeremy" required />
+                                <label>Email Address *</label>
+                <input type="email" name="email" id="" value="" placeholder="zuri@gmail.com" required />
+               
+                <div class="input-container">
+
+                    <label>Password *</label>
+                    <input type="password" name="password1" id="password" value="" placeholder="must be at least 9 characters, alphetbets and numbers" required />  <i class="fa fa-eye-slash"></i>
+                </div>
+                <div class="input-container">
+
+                    <label>Confirm Password *</label>
+                    <input type="password" name="password2" id="password" value="" placeholder="must be at least 9 characters, alphetbets and numbers" required /><i class="fa fa-eye-slash"></i>
+                </div>
+                <div>
                     {% if redirect_field_value %}
                         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                     {% endif %}
                 </div>
-                  <div class="d-flex flex-row align-items-center justify-content-between">
-                    <p>
-                      Already registered? <a href="{% url 'account_login' %}">Login</a>
-                    </p>
-                    <button class="btn btn-primary py-2" type='submit'>Sign up</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
+                <button id="sign-up-btn" type="submit">Create Account</button>
+                <button id="google-btn" type="submit"><a href=""><i class="fa fa-google"></i>&nbsp;Sign up with Google</a></button>
+                <p class="login">
+                    Already have an account? <a href="{% url 'account_login' %}"><b>Log In</b></a>
+                </p>
+            </form>
         </div>
-      </div>
-    </body>
-  </html>
-{% endblock %}
+
+    </div>
+</body>
+</html>

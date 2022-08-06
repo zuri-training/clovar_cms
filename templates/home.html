@@ -1,19 +1,139 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block content %}
+<header>
+    <!-- Top Navbar -->
+    <nav class="top-navbar">
+      <div class="navbar_left_half">
+        <div class="div_left">
+          <img src="{% static 'assets/images/logo.png' %}" alt="Clovar logo" />
+        </div>
+        <div class="div_right pt-2">
+          <a href="#!" class="resources"
+            >Resources <i class="fa-2xs fa-solid fa-chevron-down"></i
+          ></a>
+          <a href="#!" class="Templates">Templates</a>
+        </div>
+      </div>
+      <div class="navbar_right_half">
+          {% if user.is_authenticated %}
+          <div class="div_right">
+              <button class="login">Hello, {{user.username}}</button>
+              <button class="get-started"><a href="{% url 'account_logout' %}">Logout</a></button>
+            </div>
+          {% else %}
+        <div class="div_right">
+          <button class="login"><a href="{% url 'account_login' %}">Login</a></button>
+          <button class="get-started"><a href="{% url 'account_signup' %}">Get Started</a></button>
+        </div>
+        {% endif %}
+      </div>
+    </nav>
+    <!-- /.Top Navbar -->
+</header>
+<main>
+    <!-- Hero Section -->
+    <section class="hero-section mt-5 pt-5 pb-5">
+      <div class="hero-title mb-3">
+        <h1 class="title1">
+          Bring your <span class="purple-text">contents</span> to life
+        </h1>
+        <h2 class="title2">Share and build your world.</h2>
+      </div>
+      <div class="hero-description mb-5">
+        <p>
+          Launch your Blog Websites in minutes
+          <span class="purple-text">FOR FREE</span> Without knowing
+          <span class="purple-text">HOW TO CODE</span>
+        </p>
+      </div>
+      <form action="">
+        <input name="" type="email" placeholder="Enter your email..." />
+        <button type="submit">Start your blog</button>
+      </form>
+    </section>
+    <!-- /.Hero Section -->
+    <!-- Checkmarks section -->
+    <section class="checkmarks-section">
+      <div class="left-side">
+        <p><i class="fa-solid fa-check px-2"></i> Get found on Google</p>
+        <p><i class="fa-solid fa-check px-2"></i> Publish blog posts on the go</p>
+        <p>
+          <i class="fa-solid fa-check px-2"></i> Add existing blog posts easily
+        </p>
+      </div>
+      <div class="right-side">
+        <p>
+          <i class="fa-solid fa-check px-2"></i> Check your website's stat in
+          realtime
+        </p>
+        <p>
+          <i class="fa-solid fa-check px-2"></i> Stay Updated with your blog user's
+          engagement
+        </p>
+        <p><i class="fa-solid fa-check px-2"></i> Run multiple blog accounts</p>
+      </div>
+    </section>
+    <!-- /.Checkmarks section -->
+    <!-- Blog Tips Section -->
+    <section class="blog-tips py-5">
+      <div class="blog-tip">
+        <h5 class="title px-5 mb-4">SEO Tactics</h5>
+        <p>
+          We can give you tips and opportunities to rank in search engines and
+          make your site stand strong.
 
-{% block title %}Home{% endblock title %}
+          <p class="purple-text"><a href="#!">View more <i class="fa-solid fa-up-right-from-square px-1"></i></a></p>
+        </p>
+      </div>
+      <div class="blog-tip px-5">
+        <h5 class="title px-5 mb-4">Productivity</h5>
+        <p>
+          Scheduling your post, building relationships, making your blog more
+          productive.
 
-<body>
-    {% block content %}
-    <h1>Homepage Page</h1>
-    <!--img class="bookcover" src="{% static 'images/dfp.png' %}"-->
-    {% if user.is_authenticated %}
-    <p>Hi, {{ user.username}}</p>
-    <p><a href="{% url 'account_logout' %}">Logout</a></p>
-    {% else %}
-    <p>You're not logged in</p>
-    <a href="{% url 'account_login' %}">Login</a>
-    <a href="{% url 'account_signup' %}">SignUp</a>
-    {% endif %}
-    {% endblock content %}
-</body>
+          <p class="purple-text"><a href="#!">View more <i class="fa-solid fa-up-right-from-square px-1"></i></a></p>
+        </p>
+      </div>
+      <div class="blog-tip">
+        <h5 class="title px-5 mb-4">Traffic Analysis</h5>
+        <p>
+          Writing more, Promoting with Social media, Writing better titles and
+          other tips.
+
+          <p class="purple-text"><a href="#!">View more <i class="fa-solid fa-up-right-from-square px-1"></i></a></p>
+        </p>
+      </div>
+    </section>
+    <!-- /.Blog Tips Section -->
+    <hr class="boundary-hr">
+    <!-- Company Images Section -->
+    <section class="company-images py-5 my-4">
+      <img src="{% static 'assets/images/fliqpay.png' %}" alt="boom logo">
+      <img src="{% static 'assets/images/flutterwave.png' %}" alt="boom logo">
+      <img src="{% static 'assets/images/boom.png' %}" alt="boom logo">
+      <img src="{% static 'assets/images/amazon.png' %}" alt="boom logo">
+    </section>
+    <!-- /.Company Images Section -->
+    <hr class="boundary-hr">
+    <!-- FAQ Section -->
+    <section class="faq-section pb-5">
+      <div class="faq-container">
+        <h4 class="text-center mb-5">FAQs</h4>
+        <div class="faq1 faq mb-4">
+          <p class="px-3">Do I need to be a designer or developer to use Clovar? <a href="#!" class="plus-icon"><i class="fa-solid fa-plus"></i></a></p>
+          <hr>
+        </div>
+        <div class="faq2 faq mb-4">
+          <p class="px-3">How do I change the design of my blog? <a href="#!" class="plus-icon"><i class="fa-solid fa-plus"></i></a></p>
+          <hr>
+        </div>
+        <div class="faq3 faq mb-4">
+          <p class="px-3">How can I advertise on my blog? <a href="#!" class="plus-icon"><i class="fa-solid fa-plus"></i></a></p>
+          <hr>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ Section -->
+  </main>
+  {% endblock content %}
