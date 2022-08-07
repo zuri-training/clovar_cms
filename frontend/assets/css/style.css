@@ -3,7 +3,8 @@
 :root {
   --accent-gold: #cc8d33;
   --accent-purple: #50409a;
-  --hover-purple: #6a55cc;
+  --button-hover: #6a55cc;
+  --button-active: #352A66;
   --black-text: #222222;
   --light-black: #545454;
   --background: #fff;
@@ -24,6 +25,10 @@ body {
   background-color: var(--background) !important;
   font-family: var(--montserrat) !important;
   scroll-behavior: smooth;
+}
+
+header {
+  background: linear-gradient(to right, #fbf2e4, #fff) !important;
 }
 
 .purple-text {
@@ -54,7 +59,12 @@ button:not(.navbar-toggler) {
 }
 
 button:not(.navbar-toggler):hover {
-  background-color: var(--hover-purple) !important;
+  background-color: var(--button-hover) !important;
+  color: var(--milk) !important;
+}
+
+button:not(.navbar-toggler):active {
+  background-color: var(--button-active) !important;
   color: var(--milk) !important;
 }
 
