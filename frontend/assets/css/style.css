@@ -73,9 +73,9 @@ button:not(.navbar-toggler):hover {
   margin-left: 1rem;  
 }
 
-.navbar-link {
+.nav-link {
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 0.88rem !important;
 }
 
 .navbar-toggler {
@@ -111,7 +111,7 @@ button:not(.navbar-toggler):hover {
 }
 
 .hero-title .title2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 .hero-description {
@@ -128,10 +128,12 @@ button:not(.navbar-toggler):hover {
 }
 
 .hero-section form {
-  width: 100%;
+  width: 65%;
+  margin: 0 auto;
 }
 
 .hero-section form input {
+  width: 50%;
   font-weight: 400;
   font-size: 1rem;
   transition: all 0.2s ease-in-out;
@@ -139,8 +141,10 @@ button:not(.navbar-toggler):hover {
   margin-right: -10px;
   /* padding */
   padding-inline: 1.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.55rem;
+  padding-bottom: 0.45rem;
+  padding-top: 0.4rem;
+  /* padding-top: 0.45rem;
+  padding-bottom: 0.55rem; */
   /* border */
   border: 2px solid var(--light-black);
   border-top-left-radius: var(--border-radius);
@@ -154,6 +158,7 @@ button:not(.navbar-toggler):hover {
 }
 
 .hero-section form button {
+  width: 50%;
   color: var(--milk);
   background-color: var(--accent-purple);
   border: 1px solid var(--accent-purple);
