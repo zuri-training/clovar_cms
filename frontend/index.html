@@ -40,27 +40,44 @@
   </head>
   <body>
     <header>
-      <!-- Top Navbar -->
-      <nav class="top-navbar">
-        <div class="navbar_left_half">
-          <div class="div_left">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg mx-sm-5">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
             <img src="./assets/images/logo.png" alt="Clovar logo" />
-          </div>
-          <div class="div_right pt-2">
-            <a href="#!" class="resources"
-              >Resources <i class="fa-2xs fa-solid fa-chevron-down"></i
-            ></a>
-            <a href="#!" class="Templates">Templates</a>
-          </div>
-        </div>
-        <div class="navbar_right_half">
-          <div class="div_right">
-            <button class="login">Login</button>
-            <button class="get-started">Get Started</button>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active ms-2" aria-current="page" href="#">Resources <i class="fa-2xs fa-solid fa-chevron-down"></i
+                  ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2" href="#">Templates</a>
+              </li>
+            </ul>
+            <div class="d-flex navbar-buttons d-none d-lg-block">
+              <button class="login me-3" type="button">Login</button>
+              <button class="get-started ms-3" type="button">
+                Get Started
+              </button>
+            </div>
           </div>
         </div>
       </nav>
-      <!-- /.Top Navbar -->
+      <!-- /.Navbar -->
     </header>
     <main>
       <!-- Hero Section -->
@@ -88,9 +105,12 @@
       <section class="checkmarks-section">
         <div class="left-side">
           <p><i class="fa-solid fa-check px-2"></i> Get found on Google</p>
-          <p><i class="fa-solid fa-check px-2"></i> Publish blog posts on the go</p>
           <p>
-            <i class="fa-solid fa-check px-2"></i> Add existing blog posts easily
+            <i class="fa-solid fa-check px-2"></i> Publish blog posts on the go
+          </p>
+          <p>
+            <i class="fa-solid fa-check px-2"></i> Add existing blog posts
+            easily
           </p>
         </div>
         <div class="right-side">
@@ -99,10 +119,12 @@
             realtime
           </p>
           <p>
-            <i class="fa-solid fa-check px-2"></i> Stay Updated with your blog user's
-            engagement
+            <i class="fa-solid fa-check px-2"></i> Stay Updated with your blog
+            user's engagement
           </p>
-          <p><i class="fa-solid fa-check px-2"></i> Run multiple blog accounts</p>
+          <p>
+            <i class="fa-solid fa-check px-2"></i> Run multiple blog accounts
+          </p>
         </div>
       </section>
       <!-- /.Checkmarks section -->
@@ -113,8 +135,12 @@
           <p>
             We can give you tips and opportunities to rank in search engines and
             make your site stand strong.
+          </p>
 
-            <p class="purple-text"><a href="#!">View more <i class="fa-solid fa-up-right-from-square px-1"></i></a></p>
+          <p class="purple-text">
+            <a href="#!"
+              >View more <i class="fa-solid fa-up-right-from-square px-1"></i
+            ></a>
           </p>
         </div>
         <div class="blog-tip px-5">
@@ -122,8 +148,12 @@
           <p>
             Scheduling your post, building relationships, making your blog more
             productive.
+          </p>
 
-            <p class="purple-text"><a href="#!">View more <i class="fa-solid fa-up-right-from-square px-1"></i></a></p>
+          <p class="purple-text">
+            <a href="#!"
+              >View more <i class="fa-solid fa-up-right-from-square px-1"></i
+            ></a>
           </p>
         </div>
         <div class="blog-tip">
@@ -131,53 +161,97 @@
           <p>
             Writing more, Promoting with Social media, Writing better titles and
             other tips.
+          </p>
 
-            <p class="purple-text"><a href="#!">View more <i class="fa-solid fa-up-right-from-square px-1"></i></a></p>
+          <p class="purple-text">
+            <a href="#!"
+              >View more <i class="fa-solid fa-up-right-from-square px-1"></i
+            ></a>
           </p>
         </div>
       </section>
       <!-- /.Blog Tips Section -->
-      <hr class="boundary-hr">
+      <hr class="boundary-hr" />
       <!-- Company Images Section -->
       <section class="company-images py-5 my-4">
-        <img src="./assets/images/fliqpay.png" alt="boom logo">
-        <img src="./assets/images/flutterwave.png" alt="boom logo">
-        <img src="./assets/images/boom.png" alt="boom logo">
-        <img src="./assets/images/amazon.png" alt="boom logo">
+        <img src="./assets/images/fliqpay.png" alt="boom logo" />
+        <img src="./assets/images/flutterwave.png" alt="boom logo" />
+        <img src="./assets/images/boom.png" alt="boom logo" />
+        <img src="./assets/images/amazon.png" alt="boom logo" />
       </section>
       <!-- /.Company Images Section -->
-      <hr class="boundary-hr">
+      <hr class="boundary-hr" />
       <!-- FAQ Section -->
       <section class="faq-section pb-5">
         <div class="faq-container">
           <h4 class="text-center mb-5">FAQs</h4>
           <div class="faq1 faq mb-4">
-            <p class="px-3">Do I need to be a designer or developer to use Clovar? <a href="#!" class="plus-icon"><i class="fa-solid fa-plus"></i></a></p>
-            <hr>
+            <p class="px-3">
+              Do I need to be a designer or developer to use Clovar?
+              <a href="#!" class="plus-icon"
+                ><i class="fa-solid fa-plus"></i
+              ></a>
+            </p>
+            <hr />
           </div>
           <div class="faq2 faq mb-4">
-            <p class="px-3">How do I change the design of my blog? <a href="#!" class="plus-icon"><i class="fa-solid fa-plus"></i></a></p>
-            <hr>
+            <p class="px-3">
+              How do I change the design of my blog?
+              <a href="#!" class="plus-icon"
+                ><i class="fa-solid fa-plus"></i
+              ></a>
+            </p>
+            <hr />
           </div>
           <div class="faq3 faq mb-4">
-            <p class="px-3">How can I advertise on my blog? <a href="#!" class="plus-icon"><i class="fa-solid fa-plus"></i></a></p>
-            <hr>
+            <p class="px-3">
+              How can I advertise on my blog?
+              <a href="#!" class="plus-icon"
+                ><i class="fa-solid fa-plus"></i
+              ></a>
+            </p>
+            <hr />
           </div>
         </div>
       </section>
       <!-- FAQ Section -->
     </main>
-      <!-- Footer -->
-    <footer class="d-flex flex-wrap justify-content-between align-items-center pb-3 px-5">
-      <p class="col-md-4 mb-0 text-muted"><img src="./assets/images/logo.png" alt="clovar logo" class="footer-logo"></p>
-  
-      <a href="#!" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+    <!-- Footer -->
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center pb-3 px-5"
+    >
+      <p class="col-md-4 mb-0 text-muted">
+        <img
+          src="./assets/images/logo.png"
+          alt="clovar logo"
+          class="footer-logo"
+        />
+      </p>
+
+      <a
+        href="#!"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+      >
         Terms&Conditions
       </a>
-  
+
       <ul class="nav col-md-4 justify-content-end">
-        <li class="nav-item"><a href="https://facebook.com" class="nav-link px-2 text-muted"><img src="./assets/images/facebook-icon.png" alt="Facebook Icon" class="me-1 facebook-icon"></a></li>
-        <li class="nav-item"><a href="https://instagram.com" class="nav-link px-2 text-muted"><img src="./assets/images/instagram-icon.png" alt="Instagram icon" class="instagram-icon"></a></li>
+        <li class="nav-item">
+          <a href="https://facebook.com" class="nav-link px-2 text-muted"
+            ><img
+              src="./assets/images/facebook-icon.png"
+              alt="Facebook Icon"
+              class="me-1 facebook-icon"
+          /></a>
+        </li>
+        <li class="nav-item">
+          <a href="https://instagram.com" class="nav-link px-2 text-muted"
+            ><img
+              src="./assets/images/instagram-icon.png"
+              alt="Instagram icon"
+              class="instagram-icon"
+          /></a>
+        </li>
       </ul>
     </footer>
     <!-- /.Footer -->

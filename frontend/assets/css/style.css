@@ -44,90 +44,55 @@ main .boundary-hr {
 }
 
 /* buttons */
-button {
-  width: 230px !important;
-  padding: 0.6rem 1rem;
+button:not(.navbar-toggler) {
+  width: 200px !important;
+  padding: 0.5rem 1rem;
   border-radius: var(--border-radius) !important;
   font-weight: 500 !important;
   font-size: 1rem !important;
   transition: all 0.2s ease-in-out;
 }
 
-button:hover {
+button:not(.navbar-toggler):hover {
   background-color: var(--hover-purple) !important;
   color: var(--milk) !important;
 }
 
 /* top navbar */
-
-.top-navbar {
-  width: 100%;
-  overflow: hidden;
-  background-color: var(--background);
-  padding: 1.5rem 3.5rem;
-}
-
-.top-navbar a {
-  color: var(--black-text);
-  text-decoration: none;
-}
-
-/* login and get-started buttons */
-.navbar_right_half {
-  width: 50%;
-  float: right;
-}
-
-.navbar_right_half .div_right button {
-  width: 200px !important;
-  font-weight: 500;
-  font-size: 0.8rem;
-}
-
-.navbar_right_half .div_right .login {
+.navbar-buttons .login {
   background-color: transparent;
   color: var(--black-text);
   border: 1px solid var(--accent-purple);
   margin-right: 1rem;
 }
 
-.navbar_right_half .div_right .get-started {
+.navbar-buttons .get-started {
   background-color: var(--accent-purple);
   color: var(--milk);
   border: 1px solid var(--accent-purple);
-  margin-left: 1rem;
+  margin-left: 1rem;  
 }
 
-/* logo, resources, and templates */
-.top-navbar .navbar_left_half .div_left img {
-  width: 150px;
-  height: auto;
-}
-
-.navbar_left_half {
-  width: 50%;
-  float: left;
-}
-
-.div_left {
-  float: left;
-}
-
-.div_right {
-  float: right;
-  text-align: right;
+.navbar-link {
   font-weight: 400;
   font-size: 0.8rem;
-  text-transform: uppercase;
-  display: flex;
 }
 
-.top-navbar .navbar_left_half .div_right .resources {
-  margin-right: 3rem;
+.navbar-toggler {
+  border: 1px solid var(--accent-gold) !important;
 }
 
-.top-navbar .navbar_left_half .div_right .templates {
-  margin-left: 3rem;
+.navbar-brand img {
+  width: 150px;
+}
+
+@media (max-width: 768px) {
+  .navbar-toggler {
+    transform: scale(0.8);
+  }
+  .navbar-brand img {
+    width: 100px;
+  }
 }
 
 /* Hero Section */
