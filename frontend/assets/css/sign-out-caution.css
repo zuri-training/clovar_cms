@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  font-family: Georgia;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  background: #fffbf5;
+  height: 100%;
+}
+.container {
+  width: 90vw;
+  height: 35vh;
+  margin: 20px;
+  place-items: center;
+  align-self: center;
+  background: white;
+  justify-self: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: 100px;
+}
+#logo {
+  display: block;
+  margin-top: 50px;
+  width: 200px;
+  margin-left: 20px;
+  margin-top: 4px;
+}
+
+@media screen and (max-width: 600px) {
+  #logo {
+    width: 100px;
+  }
+}
+
+h4 {
+  text-align: center;
+  padding-top: 5px;
+}
+p {
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 350;
+}
+
+#cancel {
+  padding: 8px;
+  padding-left: 28px;
+  padding-right: 28px;
+  background: white;
+  font-size: 15px;
+  border: 0.73px solid black;
+  align-self: center;
+  margin: 7px;
+  border-radius: 5px;
+  margin-left: 50px;
+}
+#yes {
+  padding: 9.5px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background: #ffcb26;
+  font-size: 15px;
+  align-self: center;
+  margin: 7px;
+  border: 0;
+  border-radius: 5px;
+}
+.fa-exclamation-triangle {
+  width: 100%;
+  margin-top: 20px;
+  align-self: center;
+  font-size: 25px;
+  margin-top: 40px;
+  text-align: center;
+  color: #ffcb26;
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    width: 90vw;
+    height: 20vh;
+    margin: auto;
+  }
+  h4 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 25px;
+  }
+  .fa-exclamation-triangle {
+    margin-top: 100px;
+    font-size: 40px;
+  }
+  #cancel {
+    font-size: 20px;
+  }
+  #yes {
+    font-size: 20px;
+  }
+}
