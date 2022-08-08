@@ -4,12 +4,12 @@
   --accent-gold: #cc8d33;
   --accent-purple: #50409a;
   --button-hover: #6a55cc;
-  --button-active: #352A66;
+  --button-active: #352a66;
   --black-text: #222222;
   --light-black: #545454;
   --background: #fff;
   --milk: #fffbf5;
-  --montserrat: "Montserrat", sans-serif;
+  --montserrat: 'Montserrat', sans-serif;
   --rubik-glitch: 'Rubik Glitch', cursive;
   --border-radius: 8px;
 }
@@ -27,7 +27,7 @@ body {
   scroll-behavior: smooth;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   body {
     font-size: 14px;
   }
@@ -56,7 +56,7 @@ main .boundary-hr {
 
 /* buttons */
 button:not(.navbar-toggler),
-input[type="submit"] {
+input[type='submit'] {
   width: 200px !important;
   padding: 0.5rem 1rem;
   border-radius: var(--border-radius) !important;
@@ -66,13 +66,13 @@ input[type="submit"] {
 }
 
 button:not(.navbar-toggler):hover,
-input[type="submit"]:hover {
+input[type='submit']:hover {
   background-color: var(--button-hover) !important;
   color: var(--milk) !important;
 }
 
 button:not(.navbar-toggler):active,
-input[type="submit"]:active {
+input[type='submit']:active {
   background-color: var(--button-active) !important;
   color: var(--milk) !important;
 }
@@ -89,7 +89,7 @@ input[type="submit"]:active {
   background-color: var(--accent-purple);
   color: var(--milk);
   border: 1px solid var(--accent-purple);
-  margin-left: 1rem;  
+  margin-left: 1rem;
 }
 
 .nav-link {
@@ -137,7 +137,7 @@ input[type="submit"]:active {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .hero-section {
     text-align: left;
     padding-inline: 1.5rem;
@@ -171,11 +171,30 @@ input[type="submit"]:active {
   max-width: 740px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
+  .hero-section .title1 {
+    font-size: 3.5rem;
+  }
+
   .hero-section .title2 {
     font-size: 2.5rem;
   }
-  
+
+  .hero-description p {
+    font-size: 1.25rem;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero-description {
+    display: block;
+  }
+
+  .hero-section .title2 {
+    font-size: 2.5rem;
+  }
+
   .hero-description p {
     font-size: 1rem;
     line-height: 19.5px;
@@ -183,21 +202,34 @@ input[type="submit"]:active {
 }
 
 .hero-section form {
-  width: 65%;
+  width: 60%;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 992px) {
+  .hero-section form {
+    width: 80%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section form {
+    width: 100%;
+  }
 }
 
 .hero-section form input {
   width: 50%;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.75rem;
   transition: all 0.2s ease-in-out;
   background-color: transparent;
   margin-right: -10px;
   /* padding */
   padding-inline: 1.5rem;
-  padding-bottom: 0.45rem;
-  padding-top: 0.4rem;
+  padding-bottom: 0.6rem;
+  padding-top: 0.65rem;
   /* border */
   border: 2px solid var(--light-black);
   border-top-left-radius: var(--border-radius);
@@ -217,6 +249,28 @@ input[type="submit"]:active {
   border: 1px solid var(--accent-purple);
 }
 
+@media screen and (max-width: 992px) {
+  .hero-section form input {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section form input {
+    width: 60%;
+    margin-right: -15px;
+    padding-inline: 1rem;
+    padding-bottom: 0.8rem;
+    padding-top: 0.8rem;
+  }
+  
+  .hero-section form button {
+    font-size: 0.9rem !important;
+    padding: 0.75rem 0.5rem !important;
+    width: 140px !important;
+  }
+}
+
 /* Checkmarks section */
 .checkmarks-section {
   display: flex;
@@ -227,12 +281,21 @@ input[type="submit"]:active {
 }
 
 .checkmarks-section p {
+  display: flex;
   font-weight: 400;
-  font-size: 1rem
+  font-size: 1rem;
 }
 
-.checkmarks-section .left-side {
-  padding-right: 5rem;
+.checkmarks-section p i {
+  padding-top: 0.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .checkmarks-section {
+    display: block;
+    padding-block: 5rem !important;
+    padding-inline: 2rem;
+  }
 }
 
 /* Blog Tips Section */
@@ -271,7 +334,7 @@ input[type="submit"]:active {
   padding-inline: 10rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .company-images {
     display: none;
   }
