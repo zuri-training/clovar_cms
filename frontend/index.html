@@ -78,12 +78,17 @@
         </div>
       </nav>
       <!-- Hero Section -->
-      <section class="hero-section mt-5 pt-5 pb-5">
-        <div class="hero-title mb-3">
+      <section class="hero-section mt-md-5 pt-5 pb-5">
+        <div class="hero-title-desktop mb-3">
           <h1 class="title1">
-            Bring <span class="me-3">your</span> <span class="auto-type purple-text" contenteditable></span> <span class="ms-3">to</span> life
+            Bring <span class="me-3">your</span> <span class="auto-type purple-text"></span> <span class="ms-3">to</span> life
           </h1>
           <h2 class="title2">Share and build your world.</h2>
+        </div>
+        <div class="hero-title-mobile">
+          <h2 class="title2">
+            Share Your <br> <span class="auto-type1 purple-text"></span> <br>Build Your World
+          </h2>
         </div>
         <div class="hero-description mb-5">
           <p>
@@ -257,6 +262,13 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
         var typed = new Typed('.auto-type', {
+            strings: ["Contents", "Concepts", "Passion"], typeSpeed: 125,
+            backSpeed: 150,
+            loop: true,
+            cursorChar: ''
+        })
+
+        var typed1 = new Typed('.auto-type1', {
             strings: ["Contents", "Concepts", "Passion"], typeSpeed: 125,
             backSpeed: 150,
             loop: true,

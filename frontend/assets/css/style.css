@@ -27,6 +27,12 @@ body {
   scroll-behavior: smooth;
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
 header {
   background: linear-gradient(to right, #fbf2e4, #fff) !important;
 }
@@ -49,7 +55,8 @@ main .boundary-hr {
 }
 
 /* buttons */
-button:not(.navbar-toggler) {
+button:not(.navbar-toggler),
+input[type="submit"] {
   width: 200px !important;
   padding: 0.5rem 1rem;
   border-radius: var(--border-radius) !important;
@@ -58,12 +65,14 @@ button:not(.navbar-toggler) {
   transition: all 0.2s ease-in-out;
 }
 
-button:not(.navbar-toggler):hover {
+button:not(.navbar-toggler):hover,
+input[type="submit"]:hover {
   background-color: var(--button-hover) !important;
   color: var(--milk) !important;
 }
 
-button:not(.navbar-toggler):active {
+button:not(.navbar-toggler):active,
+input[type="submit"]:active {
   background-color: var(--button-active) !important;
   color: var(--milk) !important;
 }
@@ -117,17 +126,35 @@ button:not(.navbar-toggler):active {
   text-align: center;
 }
 
-.hero-section .hero-title {
+.hero-section .hero-title-desktop,
+.hero-section .hero-title-mobile {
   color: var(--black-text);
   text-transform: uppercase;
   font-family: var(--rubik-glitch);
 }
 
-.hero-title .title1 {
+.hero-title-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    text-align: left;
+    padding-inline: 1.5rem;
+  }
+  .hero-title-desktop {
+    display: none;
+  }
+  .hero-title-mobile {
+    display: block;
+  }
+}
+
+.hero-section .title1 {
   font-size: 4rem;
 }
 
-.hero-title .title2 {
+.hero-section .title2 {
   font-size: 3rem;
 }
 
@@ -142,6 +169,17 @@ button:not(.navbar-toggler):active {
   line-height: 38.73px;
   color: var(--black-text);
   max-width: 740px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section .title2 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-description p {
+    font-size: 1rem;
+    line-height: 19.5px;
+  }
 }
 
 .hero-section form {
@@ -160,8 +198,6 @@ button:not(.navbar-toggler):active {
   padding-inline: 1.5rem;
   padding-bottom: 0.45rem;
   padding-top: 0.4rem;
-  /* padding-top: 0.45rem;
-  padding-bottom: 0.55rem; */
   /* border */
   border: 2px solid var(--light-black);
   border-top-left-radius: var(--border-radius);
