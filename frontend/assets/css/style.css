@@ -89,14 +89,21 @@ button:not(.navbar-toggler):active {
 }
 
 .navbar-toggler {
-  border: 1px solid var(--accent-gold) !important;
+  border: none !important;
 }
 
 .navbar-brand img {
   width: 150px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 992px) {
+  .navbar-nav {
+    padding-top: 2rem;
+    padding-left: 40% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .navbar-toggler {
     transform: scale(0.8);
   }
