@@ -235,6 +235,12 @@ button:not(.navbar-toggler):active {
   padding-inline: 10rem;
 }
 
+@media screen and (max-width: 768px) {
+  .company-images {
+    display: none;
+  }
+}
+
 .company-images img {
   width: 150px;
   height: auto;
