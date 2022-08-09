@@ -74,6 +74,7 @@ form{
 }
 label{
     margin-left: 15px;
+    font-weight: bold;
 }
 form > input{
     background: transparent;
