@@ -89,6 +89,7 @@ form > input{
 ::-webkit-input-placeholder{
     color: var(--accent-gold);
     float: right;
+    font-size: 1rem;
 }
 h2{
     padding-top: 30px;
