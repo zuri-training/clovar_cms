@@ -10,8 +10,8 @@
 
 - Dashboards comments page Hi-fi and Lo-fi - <https://github.com/zuri-training/team-15_my-cms/issues/68>
 
-- Dashboards Tools page Lo-fi <https://github.com/zuri-training/team-15_my-cms/issues/101>
+- Dashboards Tools page Lo-fi - <https://github.com/zuri-training/team-15_my-cms/issues/101>
 
-- Contributed to dashboard panel design <https://github.com/zuri-training/team-15_my-cms/issues/102>
+- Contributed to dashboard panel design - <https://github.com/zuri-training/team-15_my-cms/issues/102>
 
 - Style guide (input fields) - <https://github.com/zuri-training/team-15_my-cms/issues/103>
