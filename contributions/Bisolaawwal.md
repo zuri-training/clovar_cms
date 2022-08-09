@@ -6,11 +6,11 @@
 
 - Contributed in brainstorming session - <https://github.com/zuri-training/team-15_my-cms/issues/97>
 
-- Pick a Niche - Lo fi and Hi fi <https://github.com/zuri-training/team-15_my-cms/issues/79> <https://github.com/zuri-training/team-15_my-cms/issues/86>
+- Pick a Niche - Lo fi and Hi fi - <https://github.com/zuri-training/team-15_my-cms/issues/79> <https://github.com/zuri-training/team-15_my-cms/issues/86>
 
-- Choose a Url - Lo fi and Hi fi <https://github.com/zuri-training/team-15_my-cms/issues/104> <https://github.com/zuri-training/team-15_my-cms/issues/105>
+- Choose a Url - Lo fi and Hi fi - <https://github.com/zuri-training/team-15_my-cms/issues/104> <https://github.com/zuri-training/team-15_my-cms/issues/105>
 
-- Description of New user- Lo fi and Hi fi <https://github.com/zuri-training/team-15_my-cms/issues/106> <https://github.com/zuri-training/team-15_my-cms/issues/107>
+- Description of New user- Lo fi and Hi fi - <https://github.com/zuri-training/team-15_my-cms/issues/106> <https://github.com/zuri-training/team-15_my-cms/issues/107>
 
 - Dashboard All Media(Hi Fi) - <https://github.com/zuri-training/team-15_my-cms/issues/109>
 
