@@ -16,13 +16,8 @@ body {
   height: 100%;
 }
 .container {
-  width: 90vw;
-  height: 35vh;
-  margin: 20px;
-  place-items: center;
-  align-self: center;
-  background: white;
-  justify-self: center;
+  width: 300px; 
+  margin: 5px auto 0 auto;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   margin-top: 100px;
 }
@@ -82,22 +77,24 @@ p {
   margin-top: 40px;
   text-align: center;
   color: #ffcb26;
+
 }
+/* The Desktop View. */
 
 @media screen and (min-width: 900px) {
   .container {
-    width: 90vw;
-    height: 20vh;
-    margin: auto;
+      width: 350px;
+      margin: 0px auto 0 auto;
   }
   h4 {
     font-size: 30px;
   }
   p {
     font-size: 25px;
+    padding: 2px;
   }
   .fa-exclamation-triangle {
-    margin-top: 100px;
+    margin-top: 20px;
     font-size: 40px;
   }
   #cancel {
