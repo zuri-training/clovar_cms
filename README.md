@@ -72,10 +72,8 @@ See [`CONTRIBUTING.md`](https://github.com/zuri-training/my_cms-pjt-15/blob/main
 - [@jonathanwambua](https://www.github.com/jonathanwambua)
 - [@steph-ayo](https://www.github.com/steph-ayo)
 - [@BioMeindinyo](https://www.github.com/BioMeindinyo)
-- [@Usenmfon](https://www.github.com/Usenmfon)
 - [@Chelsofia](https://www.github.com/Chelsofia)
 - [@Ismat27](https://www.github.com/Ismat27)
-- [@Asterisk-z Olang Daniel](https://github.com/Asterisk-z)
 
 </details>
 
