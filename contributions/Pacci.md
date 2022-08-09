@@ -8,4 +8,10 @@
 
 - Made Presentation Video with [@jeremiey](https://github.com/jeremiey) - <https://github.com/zuri-training/team-15_my-cms/issues/42>
 
+- Style guide - <https://github.com/zuri-training/team-15_my-cms/issues/103#issuecomment-1209036770>
+
 - Admin/User dashboard lo-fi design - <https://github.com/zuri-training/team-15_my-cms/issues/30>
+
+- Art blog template design - <https://github.com/zuri-training/team-15_my-cms/issues/116>
+
+- Landing page design - <https://github.com/zuri-training/team-15_my-cms/issues/117>
