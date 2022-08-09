@@ -108,7 +108,7 @@ input[type='submit']:active {
 @media screen and (max-width: 992px) {
   .navbar-nav {
     padding-top: 2rem;
-    padding-left: 40% !important;
+    text-align: center;
   }
 }
 
