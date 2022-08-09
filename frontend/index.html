@@ -37,11 +37,15 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Rubik+Glitch&display=swap"
       rel="stylesheet"
     />
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+    <!-- JavaScript -->
+    <script src="./assets/js/script.js" defer></script>
   </head>
   <body>
     <header>
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg mx-sm-5 pt-sm-4">
+      <nav class="navbar navbar-expand-lg mx-xl-3 pt-sm-4">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="./assets/images/logo.png" alt="Clovar logo" />
@@ -61,8 +65,12 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active text-uppercase me-md-4" aria-current="page" href="#">Documentation <i class="fa-2xs fa-solid fa-chevron-down"></i
-                  ></a>
+                <a
+                  class="nav-link active text-uppercase me-lg-4"
+                  aria-current="page"
+                  href="#"
+                  >Documentation <i class="fa-2xs fa-solid fa-chevron-down"></i
+                ></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-uppercase" href="#">Templates</a>
@@ -78,16 +86,19 @@
         </div>
       </nav>
       <!-- Hero Section -->
-      <section class="hero-section mt-md-5 pt-5 pb-5">
+      <section class="hero-section mt-lg-5 pt-5 pb-5">
         <div class="hero-title-desktop mb-3">
           <h1 class="title1">
-            Bring <span class="me-3">your</span> <span class="auto-type purple-text"></span> <span class="ms-3">to</span> life
+            Bring <span class="me-3">your</span>
+            <span class="auto-type purple-text"></span>
+            <span class="ms-3">to</span> life
           </h1>
           <h2 class="title2">Share and build your world.</h2>
         </div>
         <div class="hero-title-mobile">
           <h2 class="title2">
-            Share Your <br> <span class="auto-type1 purple-text"></span> <br>Build Your World
+            Share Your <br />
+            <span class="auto-type1 purple-text"></span> <br />Build Your World
           </h2>
         </div>
         <div class="hero-description mb-5">
@@ -104,36 +115,41 @@
       </section>
     </header>
     <main>
-      <!-- Checkmarks section -->
-      <section class="checkmarks-section">
-        <div class="left-side pe-md-5">
-          <p><i class="fa-solid fa-check px-2"></i> <span>Get found on Google</span></p>
-          <p>
-            <i class="fa-solid fa-check px-2"></i> <span>Publish blog posts on the go</span>
-          </p>
-          <p>
-            <i class="fa-solid fa-check px-2"></i> <span>
-              Add existing blog posts
-              easily
-            </span>
-          </p>
+      <!-- Checkmarks section | Mobile Login and Get Started -->
+      <section class="features-section">
+        <div class="checkmarks-section">
+          <div class="left-side pe-md-3">
+            <p>
+              <i class="fa-solid fa-check px-2"></i>
+              <span>Get found on Google</span>
+            </p>
+            <p>
+              <i class="fa-solid fa-check px-2"></i>
+              <span>Publish blog posts on the go</span>
+            </p>
+            <p>
+              <i class="fa-solid fa-check px-2"></i>
+              <span> Add existing blog posts easily </span>
+            </p>
+          </div>
+          <div class="right-side ps-md-3">
+            <p>
+              <i class="fa-solid fa-check px-2"></i>
+              <span> Check your website's stat in realtime </span>
+            </p>
+            <p>
+              <i class="fa-solid fa-check px-2"></i>
+              <span> Stay Updated with your blog user's engagement </span>
+            </p>
+            <p>
+              <i class="fa-solid fa-check px-2"></i>
+              <span>Run multiple blog accounts</span>
+            </p>
+          </div>
         </div>
-        <div class="right-side">
-          <p>
-            <i class="fa-solid fa-check px-2"></i> <span>
-              Check your website's stat in
-              realtime
-            </span>
-          </p>
-          <p>
-            <i class="fa-solid fa-check px-2"></i> <span>
-              Stay Updated with your blog
-              user's engagement
-            </span>
-          </p>
-          <p>
-            <i class="fa-solid fa-check px-2"></i> <span>Run multiple blog accounts</span>
-          </p>
+        <div class="auth-buttons pt-4 px-5">
+          <button class="login pb-2" type="button">Login</button>
+          <button class="get-started" type="button">Get Started</button>
         </div>
       </section>
 
@@ -152,7 +168,7 @@
             ></a>
           </p>
         </div>
-        <div class="blog-tip px-5">
+        <div class="blog-tip">
           <h5 class="title mb-4">Productivity</h5>
           <p>
             Scheduling your post, building relationships, making your blog more
@@ -179,7 +195,89 @@
           </p>
         </div>
       </section>
-      <hr class="boundary-hr" />
+
+      <!-- Blog Tips Mobile -->
+      <div class="blog-tips-mobile py-5">
+        <div
+          id="carouselExampleDark"
+          class="carousel carousel-dark slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <div class="blog-tip">
+                <h5 class="title mb-4">SEO Tactics</h5>
+                <p>
+                  We can give you tips and opportunities to rank in search
+                  engines and make your site stand strong.
+                </p>
+
+                <p class="purple-text">
+                  <a href="#!"
+                    >View more
+                    <i class="fa-solid fa-up-right-from-square px-1"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3500">
+              <div class="blog-tip">
+                <h5 class="title mb-4">Productivity</h5>
+                <p>
+                  Scheduling your post, building relationships, making your blog
+                  more productive.
+                </p>
+
+                <p class="purple-text">
+                  <a href="#!"
+                    >View more
+                    <i class="fa-solid fa-up-right-from-square px-1"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3500">
+              <div class="blog-tip">
+                <h5 class="title mb-4">Traffic Analysis</h5>
+                <p>
+                  Writing more, Promoting with Social media, Writing better
+                  titles and other tips.
+                </p>
+
+                <p class="purple-text">
+                  <a href="#!"
+                    >View more
+                    <i class="fa-solid fa-up-right-from-square px-1"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+        </div>
+      </div>
+      <hr class="boundary-hr hr1" />
 
       <!-- Company Images Section -->
       <section class="company-images py-5 my-4">
@@ -195,31 +293,55 @@
         <div class="faq-container">
           <h4 class="text-center mb-5">FAQs</h4>
           <div class="faq1 faq mb-4">
-            <p class="px-3">
+            <!-- question -->
+            <p class="px-3 faq-question">
               Do I need to be a designer or developer to use Clovar?
               <a href="#!" class="plus-icon"
                 ><i class="fa-solid fa-plus"></i
               ></a>
+              <hr />
             </p>
-            <hr />
+            <!-- answer -->
+            <div class="faq-answer pt-2 pb-5">
+              <p class="px-3">
+                No, you don't need to be a designer or developer to use Clovar.
+                You can use Clovar as a freelancer or as a full-time employee.
+              </p>
+              <hr />
           </div>
           <div class="faq2 faq mb-4">
-            <p class="px-3">
+            <!-- question -->
+            <p class="px-3 faq-question">
               How do I change the design of my blog?
               <a href="#!" class="plus-icon"
                 ><i class="fa-solid fa-plus"></i
               ></a>
+              <hr />
             </p>
-            <hr />
+            <!-- answer -->
+            <div class="faq-answer pt-2 pb-5">
+              <p class="px-3">
+                You can change the design of your blog by editing the theme.
+                You can find the theme in the theme folder.
+              </p>
+              <hr />
           </div>
           <div class="faq3 faq mb-4">
-            <p class="px-3">
+            <!-- question -->
+            <p class="px-3 faq-question">
               How can I advertise on my blog?
               <a href="#!" class="plus-icon"
                 ><i class="fa-solid fa-plus"></i
               ></a>
+              <hr />
             </p>
-            <hr />
+            <!-- answer -->
+            <div class="faq-answer pt-2 pb-5">
+              <p class="px-3">
+                You can advertise on your blog by using our advertising platform.
+                You can find the platform in the platform folder.
+              </p>
+              <hr />
           </div>
         </div>
       </section>
@@ -263,23 +385,5 @@
         </li>
       </ul>
     </footer>
-
-    <!-- Typing Animation -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        var typed = new Typed('.auto-type', {
-            strings: ["Contents", "Concepts", "Passion"], typeSpeed: 125,
-            backSpeed: 150,
-            loop: true,
-            cursorChar: ''
-        })
-
-        var typed1 = new Typed('.auto-type1', {
-            strings: ["Contents", "Concepts", "Passion"], typeSpeed: 125,
-            backSpeed: 150,
-            loop: true,
-            cursorChar: ''
-        })
-    </script>
   </body>
 </html>
