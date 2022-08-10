@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+body {
+    padding-bottom: 73px;
+    background-color: #FFFBF5;
+}
+#burger-icon {
+    color: transparent;
+}
+
+/* Styling of header */
+header {
+    width: 100%;
+}
+.container-fluid {
+    width: 85%;
+    margin: auto;
+    margin-top: 73px;
+}
+.clovar-logo {
+    width: 213.98px;
+    height: 58.03px;
+    margin-right: 78%;
+}
+/* Styling of sidenav bar */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.collapsed-niche-container #options-btn {
+    color: white;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: white;
+}
+/* Styling of main container */
+.main-container {
+    width: 85%;
+    margin: auto;
+    margin-top: 85px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styling of aside*/
+aside {
+    width: 25%;
+}
+aside p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+/* Styling of niche container */
+.niche-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#options-btn {
+    padding: 17px 21px;
+    font-size: 16px;
+    line-height: 15px;
+    width: max-content;
+    border: 1px solid #E69C2E;
+    border-radius: 8px;
+    background-color: transparent;
+    cursor: pointer;
+}
+#options-btn:active {
+    border: 1px solid #50409A;
+}
+#options-btn:hover {
+    border: 1px solid #50409A;
+}
+
+/* Styling of main */
+main {
+    width: 70%;
+    text-align: center;
+}
+main h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 78px;
+    text-align: center;
+    color: #50409A;
+}
+main p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #545454;
+}
+/* Styling of container for all templates containers */
+.container {
+    width: 100%;
+    margin-top: 50px;
+    row-gap: 30px;
+}
+.row {
+    width: 100%;
+    margin: auto;
+    gap: 30px;
+    margin-bottom: 30px;
+    display: flex;
+}
+/* Styling of templates */
+.col {  
+    background-color: rgba(204, 141, 51, 0.65);
+    width: 50%;
+    height: 416px;
+}
+#col1 {
+    background-image: url(/frontend/assets/images/template1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 416px;
+}
+#col2 {
+    background-image: url(/frontend/assets/images/template2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 416px;
+}
+#col3 {
+    background-image: url(/frontend/assets/images/template3.png);
+    background-repeat: no-repeat;
+    background-size: 100% 416px;
+}
+#col4 {
+    background-image: url(/frontend/assets/images/template4.png);
+    background-repeat: no-repeat;
+    background-size: 100% 416px;
+}
+.mydivouter{
+    position:relative;
+    width: 100%;
+    height: 416px;
+    display: flex;
+    flex-direction: column;
+}
+.mydivoverlap{
+    position: relative;
+    z-index: 1;
+}
+.mybuttonoverlap{
+    position: absolute;
+    z-index: 2;
+    display: none;
+    margin-top: 9rem;
+}
+.mydivouter:hover .mybuttonoverlap{ 
+    display:block;
+}
+#view-btn {
+    padding: 16px 56px;
+    width: 195px;
+    border: 2px solid #50409A;
+    background-color: transparent;
+    border-radius: 8px; 
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;  
+    color: #FFFBF5;
+    margin-bottom: 15px;
+}
+#customize-btn {
+    padding: 16px 56px;
+    gap: 10px;
+    width: 195px;
+    border: none;
+    background-color: #50409A;
+    border-radius: 8px; 
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;  
+    color: #FFFBF5;
+}
+
+/* Styling of load more button */
+#load-btn {
+    width: max-content;
+    margin: auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFBF5;
+    padding: 16px 56px;
+    margin-top: 50px;
+    background-color: #50409A;
+    border: none;
+    border-radius: 8px;
+}
+#load-btn:hover {
+    padding: 17px 57px;
+    background-color: #6A55CC;
+}
+#load-btn:active {
+    padding: 17px 57px;
+    background-color: #352A66
+}
+
+
+@media screen and (max-width:768px) {
+    * {
+        background-color: none;
+    }
+    body {
+        padding-bottom: 40px;
+    } 
+    #burger-icon {
+        color: #50409A;
+    }
+
+    /* Styling of header */
+    .container-fluid {
+        width: 85%;
+        height: 58.03px;
+        margin-top: 50px;
+    }
+    .clovar-logo {
+        width: 180px;
+        height: 58.03px;
+        margin-right: 65%;
+    }
+    /* Styling of side navbar */
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    } 
+    .collapsed-niche-container #options-btn {
+        color: white;
+    }
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        color: white;
+    }
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    
+    #options-btn {
+        padding: 17px 21px;
+        font-size: 16px;
+    }
+
+    /* Styling of aside*/
+    aside {
+        display: none;
+    }
+    /* Styling of main */
+    main {
+        width: 100%;
+        text-align: center;
+    }
+    main h3 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+    main p {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    /* Styling of container for all templates containers */
+    .container {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .row {
+        width: 100%;
+    }
+    .col {  
+        width: 100%;
+        height: 416px;
+    }
+    
+    /* Styling of load more button */
+    #load-btn {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    body {
+        padding-bottom: 40px;;
+    }
+    #burger-icon {
+        color: #50409A;
+    }
+
+    /* Styling of header */
+    .container-fluid {
+        width: 85%;
+        height: 45px;
+        margin-top: 30px;
+    }
+    .clovar-logo {
+        width: 140px;
+        height: 40px;
+        margin-right: 42.9%;
+    }
+    #options-btn {
+        padding: 12px 18px;
+        font-size: 14px;
+    }
+    .main-container {
+        width: 85%;
+        margin: auto;
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+    }   
+    /* Styling of aside*/
+    aside {
+        display: none;
+    }
+
+    /* Styling of main */
+    main {
+        width: 100%;
+        text-align: center;
+    }
+    main h3 {
+        font-size: 30px;
+        line-height: 55px;
+    }
+    main p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .container {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .col {  
+        width: 100%;
+        height: 416px;
+    }
+    /* Styling of load more button */
+    #load-btn {
+        font-size: 16px;
+        padding: 16px 56px;
+        margin-top: 20px;
+    }
+}
