@@ -16,11 +16,11 @@ body {
 
 
 #logo {
-    display: block;
-    margin: 12px;
-    width: 45%;
-    margin-left: 15px;
-    margin-top: 4px;
+    position: absolute;
+    width: 110px;
+    top: 7px;
+    left: 7px;
+
 }
 
 h4 {
@@ -44,12 +44,12 @@ h4 {
     align-content: center;
     color: black;
     display: block;
-    background: url("https://i.ibb.co/dp0FXCp/mXABOkd.png");
+    background: url("../images/back.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: white;
-    height: auto;
+    height: 350px;
     position: relative;
 
 }
@@ -57,12 +57,10 @@ h4 {
 
 #intro h1 {
     text-align: center;
-    font-size: 30px;
-    font-weight: 500;
-    padding-top: 30px;
-    padding: 20px;
+    font-size: 32px;
+    font-weight: 550px;
+    padding: 80px 20px 0 20px;
     margin: 0;
-    padding-bottom: 30px;
 }
 
 #span {
@@ -172,8 +170,6 @@ form input:hover {
 
 }
 
-
-
 i.fa-googoe {
     font-size: 18px;
     color: darkblue;
@@ -195,8 +191,7 @@ i.fa-googoe {
 .login a {
     text-decoration: none;
     color: #50409A;
-}
-
+}   
 
 
 @media screen and (min-width: 900px) {
@@ -209,8 +204,6 @@ i.fa-googoe {
         height: auto;
         border:0;
         margin-top: 100px;
-        
-
     }
 
   
@@ -218,9 +211,9 @@ i.fa-googoe {
     #sign-up {
         width: 100%;
         font-size: 35px;
-        border-top-left-radius: 25px;
-        border-bottom-left-radius: 25px;
         height: auto;
+        border: 2px solid rgb(175, 159, 159);
+        border-radius: 20px 0px 20px 0px;
 
     }
 
@@ -228,12 +221,10 @@ i.fa-googoe {
     #intro {
         width: 50%;
         text-align: center;
-        align-content: center;
-        padding-top: 50px;
         font-size: 40px;
         position: relative;
         font-weight: 600;
-        background: url("https://i.ibb.co/dp0FXCp/mXABOkd.png");
+        background: url("../images/back.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -241,13 +232,14 @@ i.fa-googoe {
         height: auto;
 
     }
+    #intro h1 {
+        margin-top: 150px;
 
-    
-
+    }
     #logo {
-        width: 50%;
-        margin-left: 65px;
-        margin-top: 20px;
+        width: 40%;
+        margin-left: 50px;
+        margin-top: 7px;
     }
 
     .input-container i {
