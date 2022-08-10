@@ -12,6 +12,6 @@
 
 - Lo-fi and wireframes - <https://github.com/zuri-training/team-15_my-cms/issues/35>
 
-- Dashboard Tools (hi-fi) - <https://github.com/zuri-training/team-15_my-cms/issues/118>
+- Dashboard Tools (hi-fi) - <https://github.com/zuri-training/team-15_my-cms/issues/118#issuecomment-1210305969>
 
 - Dashboard Media (lo-fi) - <https://github.com/zuri-training/team-15_my-cms/issues/109>
