@@ -2,6 +2,16 @@
 
 ## Team: Frontend
 
-**[Figma board Link](https://www.figma.com/file/Uujc2NV7Sx6qOsWX9JYl0v/Team-15_My-cms?node-id=0%3A1)**
+##### Stack: Fullstack
 
-- Contributed in brainstorming session - <https://github.com/zuri-training/team-15_my-cms/issues/97>
+## Contributions 
+
+- Update the confirm-sign-out.html - <https://github.com/zuri-training/team-15_my-cms/issues/96>
+
+- Update the Sign up page - <https://github.com/zuri-training/team-15_my-cms/issues/90>
+
+- Update the Login page - <https://github.com/zuri-training/team-15_my-cms/issues/90>
+
+- Added all members/contributors to README.md - <https://github.com/zuri-training/team-15_my-cms/issues/49>
+
+

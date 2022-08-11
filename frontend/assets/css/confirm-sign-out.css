@@ -12,14 +12,16 @@ body {
   font-size: 16px;
   padding: 0;
   margin: 0;
-  background: #fffbf5;
+  background: #e4e0d7;
   height: 100%;
 }
 .container {
-  width: 300px; 
-  margin: 5px auto 0 auto;
+  width: 300px;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  margin-top: 100px;
+  background-color: #eeeeee;
 }
 #logo {
   display: block;
@@ -38,12 +40,13 @@ body {
 h4 {
   text-align: center;
   padding-top: 5px;
+  font-size: 18px;
 }
 p {
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
-  font-weight: 350;
+  font-size: 15px;
 }
 
 #cancel {
@@ -84,13 +87,14 @@ p {
 @media screen and (min-width: 900px) {
   .container {
       width: 350px;
-      margin: 0px auto 0 auto;
+      margin: 100px auto 0 auto;
+      padding: 15px;
   }
   h4 {
-    font-size: 30px;
+    font-size: 24px;
   }
   p {
-    font-size: 25px;
+    font-size: 18.2px;
     padding: 2px;
   }
   .fa-exclamation-triangle {

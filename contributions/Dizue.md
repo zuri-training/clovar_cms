@@ -12,8 +12,6 @@
 
 - Created logo - <https://github.com/zuri-training/team-15_my-cms/issues/114>
 
-- Url hifi edited
-
 - Crypto blog template - <https://github.com/zuri-training/team-15_my-cms/issues/113>
 
 - Sign-up screen edited hifi - <https://github.com/zuri-training/team-15_my-cms/issues/115>

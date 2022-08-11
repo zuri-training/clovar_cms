@@ -15,3 +15,5 @@
 - Art blog template design - <https://github.com/zuri-training/team-15_my-cms/issues/116>
 
 - Landing page design - <https://github.com/zuri-training/team-15_my-cms/issues/117>
+
+- Coming soon page - <https://github.com/zuri-training/team-15_my-cms/issues/126>
