@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+:root {
+  --accent-gold: #e59c2e;
+  --accent-purple: #50409a;
+  --button-hover: #6a55cc;
+  --button-active: #352a66;
+  --light-black: #545454;
+  --pure-white: #fff;
+  --milk: #fffbf5;
+  --montserrat: 'Montserrat', sans-serif;
+  --border-radius: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--montserrat);
+  background-color: var(--milk);
+  height: 100vh;
+}
+
+nav {
+  padding-inline: 5rem;
+  padding-block: 2rem;
+  position: fixed;
+}
+
+nav img {
+  width: 150px;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 4rem;
+  height: 400px;
+  max-width: 550px;
+  color: var(--light-black);
+  background-color: var(--pure-white);
+  text-align: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.content img {
+  width: 100px;
+  height: auto;
+  padding-bottom: 1rem;
+}
+
+.content h1 {
+  font-weight: 700;
+  font-size: 1.75rem;
+  padding-bottom: 0.5rem;
+}
+
+.content p {
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding-bottom: 3rem;
+}

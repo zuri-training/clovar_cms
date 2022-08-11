@@ -14,6 +14,7 @@
 - Update `confirm-sign-out` - <https://github.com/zuri-training/team-15_my-cms/issues/141#issuecomment-1212161843>
 - Update `sign-up` page - <https://github.com/zuri-training/team-15_my-cms/issues/145#issuecomment-1212281807>
 - Update `login` page - <https://github.com/zuri-training/team-15_my-cms/issues/143#issuecomment-1212249892>
+- Coming soon and 404 page - <https://github.com/zuri-training/team-15_my-cms/issues/148>
 - Review | Merge Pull Requests - <https://github.com/zuri-training/team-15_my-cms/commits?author=jeremiey&since=2022-08-10&until=2022-08-11>
 
 - Setup everything needed on GitHub for the Project
