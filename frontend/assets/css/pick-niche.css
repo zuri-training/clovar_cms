@@ -1,139 +1,244 @@
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    max-width: 100%;
-    box-sizing: border-box;
-    background-color: #FFFBF5;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  max-width: 100%;
+  box-sizing: border-box;
+  background-color: #fffbf5;
 }
 body {
-    max-width: 100%;
-    box-sizing: border-box;
-    padding-bottom: 3rem;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding-bottom: 3rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header {
-    width: 100%;
-    height: 20vh;
+  width: 100%;
+  height: 20vh;
 }
 .clovar-logo {
-    position: absolute;
-    width: 213.98px;
-    height: 58.03px;
-    left: 100px;
-    top: 69px;
+  position: absolute;
+  width: 150px;
+  height: auto;
+  left: 100px;
+  top: 3rem;
 }
 
 /* Styling of eclipse-container*/
 .eclipse-container {
-    position: absolute;
-    width: 618px;
-    height: 41px;
-    left: 411px;
-    top: 116px; 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
+  position: absolute;
+  width: 618px;
+  height: 41px;
+  left: 411px;
+  top: 116px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
 }
 .eclipse {
-    width: 42px;
-    height: 41px;
-    border-radius: 50%;
-    border: 2px solid #50409A;
+  width: 42px;
+  height: 41px;
+  border-radius: 50%;
+  border: 2px solid #50409a;
 }
 #second {
-    background-color: #50409A;
+  background-color: #50409a;
 }
 .line {
-    width: 150px;
-    height: 2px;
-    background-color:  #50409A;
-    margin-top: 4px;
+  width: 150px;
+  height: 2px;
+  background-color: #50409a;
+  margin-top: 4px;
 }
 
 .text {
-    width: 730px;
-    height: 71px;
-    margin-left: 118px;
-    margin-top: 80px;
+  width: 730px;
+  height: 71px;
+  margin-left: 118px;
+  margin-top: 80px;
 }
 .text h2 {
-    font-family: 'Montserrat';
-    font-style: normal;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 33px;
+  line-height: 44px;
+  color: #222222;
+}
+.text p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 27px;
+  color: #545454;
+}
+/* Styling of options */
+.options {
+  margin-top: 40px;
+  width: 1000px;
+  margin-left: 118px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.options button {
+  padding: 15px 25px;
+  width: max-content;
+  border: 1px solid #e69c2e;
+  border-radius: 8px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.options button:active {
+  border: 1px solid #50409a;
+}
+.options button:hover {
+  border: 1px solid #50409a;
+}
+
+form {
+  margin-left: 118px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+form p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #545454;
+}
+form input {
+  box-sizing: border-box;
+  width: 678px;
+  height: 60px;
+  border: 2px solid #e0e0e0;
+  margin-top: 10px;
+}
+
+::placeholder {
+  color: #545454;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  position: absolute;
+  left: 21px;
+  top: 23px;
+}
+
+.lower-btns {
+  margin-left: 900px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  width: max-content;
+  height: 44px;
+}
+
+#back-btn {
+  padding: 12px 56px;
+  width: 150px;
+  border: 1px solid #50409a;
+  border-radius: 8px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#next-btn {
+  padding: 12px 56px;
+  width: 150px;
+  height: 44px;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fffbf5;
+  background-color: #50409a;
+  cursor: pointer;
+}
+#next-btn:hover {
+  width: 151px;
+  height: 45px;
+  background-color: #6a55cc;
+}
+#next-btn:active {
+  width: 151px;
+  height: 45px;
+  background-color: #352a66;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    max-width: 100%;
+    padding-top: 1rem;
+  }
+  .clovar-logo {
+    position: absolute;
+    width: 213.98px;
+    height: 58.03px;
+    left: 70px;
+    top: 69px;
+  }
+  .eclipse-container {
+    width: 320px;
+    height: 41px;
+    left: 320px;
+    top: 116px;
+  }
+  .eclipse {
+    width: 85px;
+    height: 41px;
+  }
+  .line {
+    margin-top: 4px;
+  }
+
+  .text {
+    width: 730px;
+    height: 71px;
+    margin-left: 75px;
+    margin-top: 50px;
+  }
+  .text h2 {
     font-weight: 800;
     font-size: 33px;
     line-height: 44px;
-    color: #222222;
-}
-.text p {
-    font-family: 'Inter';
-    font-style: normal;
+  }
+  .text p {
     font-weight: 500;
     font-size: 19px;
     line-height: 27px;
     color: #545454;
-}
-/* Styling of options */
-.options {
+  }
+
+  .options {
     margin-top: 40px;
-    width: 1000px;
-    margin-left: 118px;
-    display: flex;
-    flex-wrap: wrap;
+    width: 640px;
+    margin-left: 75px;
     gap: 10px;
-}
-.options button {
+  }
+  .options button {
     padding: 15px 25px;
-    width: max-content;
-    border: 1px solid #E69C2E;
-    border-radius: 8px;
-    background-color: transparent;
-    cursor: pointer;
-}
-.options button:active {
-    border: 1px solid #50409A;
-}
-.options button:hover {
-    border: 1px solid #50409A;
-}
+  }
 
-form {
-    margin-left: 118px;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-}
-form p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    color: #545454;
-}
-form input {
-    box-sizing: border-box;
-    width: 678px;
-    height: 60px;
-    border: 2px solid #E0E0E0;
-    margin-top: 10px;
-}
-
-::placeholder {
-    color: #545454; 
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-    position: absolute;
-    left: 21px;
-    top: 23px;
-}
-
-.lower-btns {
-    margin-left: 900px;
+  .lower-btns {
+    margin-left: 400px;
     margin-top: 50px;
     display: flex;
     flex-direction: row;
@@ -141,303 +246,195 @@ form input {
     gap: 10px;
     width: max-content;
     height: 44px;
+  }
+
+  #back-btn {
+    padding: 10px 40px;
+  }
+  #next-btn {
+    padding: 8px 40px;
+  }
 }
 
-#back-btn {
-    padding: 12px 56px;
-    width: 150px;
-    border: 1px solid #50409A;
-    border-radius: 8px;
-    font-family: 'Montserrat';
-    font-style: normal;
+@media screen and (max-width: 414px) {
+  body {
+    max-width: 100%;
+  }
+  .clovar-logo {
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    left: 20px;
+    top: 40px;
+  }
+  .eclipse-container {
+    width: 180px;
+    height: 41px;
+    left: 170px;
+    top: 70px;
+  }
+  .eclipse {
+    width: 90px;
+    height: 30px;
+  }
+  .line {
+    margin-top: 3px;
+  }
+
+  .text {
+    width: 330px;
+    height: 71px;
+    margin-left: 25px;
+    margin-top: 5px;
+  }
+  .text h2 {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .text p {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: #222222;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-#next-btn {
-    padding: 12px 56px;
-    width: 150px;
+    font-size: 13px;
+    line-height: 27px;
+    color: #545454;
+  }
+  .options {
+    margin-top: 30px;
+    width: 350px;
+    margin-left: 30px;
+    gap: 7px;
+  }
+  .options button {
+    padding: 10px 20px;
+  }
+  form {
+    margin-left: 30px;
+    margin-top: 50px;
+    width: 315px;
+  }
+  form input {
+    box-sizing: border-box;
+    height: 55px;
+    margin-top: 10px;
+  }
+  ::placeholder {
+    font-size: 14px;
+    top: 20px;
+  }
+  .lower-btns {
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    width: max-content;
     height: 44px;
-    border: none;
-    border-radius: 8px;
-    font-family: 'Montserrat';
-    font-style: normal;
+  }
+
+  #back-btn {
+    padding: 10px 40px;
+  }
+  #next-btn {
+    padding: 8px 40px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    max-width: 100%;
+  }
+  .clovar-logo {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    left: 20px;
+    top: 40px;
+  }
+  .eclipse-container {
+    width: 161px;
+    height: 41px;
+    left: 150px;
+    top: 70px;
+  }
+  .eclipse {
+    width: 62px;
+    height: 21px;
+  }
+  .line {
+    margin-top: 3px;
+  }
+
+  .text {
+    width: 330px;
+    height: 71px;
+    margin-left: 22px;
+    margin-top: 10px;
+  }
+  .text h2 {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .text p {
     font-weight: 500;
-    font-size: 16px;
-    color: #FFFBF5;
-    background-color: #50409A;
-    cursor: pointer;
-}
-#next-btn:hover {
-    width: 151px;
-    height: 45px;
-    background-color: #6A55CC;
-}
-#next-btn:active {
-    width: 151px;
-    height: 45px;
-    background-color: #352A66
-}
+    font-size: 13px;
+    line-height: 27px;
+    color: #545454;
+  }
+  .options {
+    margin-top: 30px;
+    width: 315px;
+    margin-left: 30px;
+    gap: 7px;
+  }
+  .options button {
+    padding: 10px 20px;
+  }
+  form {
+    margin-left: 30px;
+    margin-top: 50px;
+    width: 315px;
+  }
+  form input {
+    box-sizing: border-box;
+    height: 55px;
+    margin-top: 10px;
+  }
+  ::placeholder {
+    font-size: 14px;
+    top: 20px;
+  }
+  .lower-btns {
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    width: max-content;
+    height: 44px;
+  }
 
-@media screen and (max-width:768px) {
-    body {
-        max-width: 100%;
-        padding-top: 1rem;
-    }
-    .clovar-logo {
-        position: absolute;
-        width: 213.98px;
-        height: 58.03px;
-        left: 70px;
-        top: 69px;
-    }
-    .eclipse-container {
-        width: 320px;
-        height: 41px;
-        left: 320px;
-        top: 116px; 
-    }
-    .eclipse {
-        width: 85px;
-        height: 41px;
-    }
-    .line {
-        margin-top: 4px;
-    }
-
-    .text {
-        width: 730px;
-        height: 71px;
-        margin-left: 75px;
-        margin-top: 50px;
-    }
-    .text h2 {
-        font-weight: 800;
-        font-size: 33px;
-        line-height: 44px;
-    }
-    .text p {
-        font-weight: 500;
-        font-size: 19px;
-        line-height: 27px;
-        color: #545454;
-    }
-
-    .options {
-        margin-top: 40px;
-        width: 640px;
-        margin-left: 75px;
-        gap: 10px;
-    }
-    .options button {
-        padding: 15px 25px;
-    }
-
-    form {
-        margin-left: 75px;
-        margin-top: 50px;
-        width: 315px;
-    }
-    form input {
-        box-sizing: border-box;
-        height: 60px;
-    }
-    ::placeholder {
-        font-size: 14px;
-        top: 20px;
-    }    
-
-    .lower-btns {
-        margin-left: 400px;
-        margin-top: 50px;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 10px;
-        width: max-content;
-        height: 44px;
-    }
-    
-    #back-btn {
-        padding: 10px 40px;
-    }
-    #next-btn {
-        padding: 8px 40px;
-    }
+  #back-btn {
+    padding: 10px 40px;
+  }
+  #next-btn {
+    padding: 8px 40px;
+  }
 }
 
-@media screen and (max-width:414px) {
-    body {
-        max-width: 100%;
-    }
-    .clovar-logo {
-        position: absolute;
-        width: 120px;
-        height: 40px;
-        left: 20px;
-        top: 40px;
-    } 
-    .eclipse-container {
-        width: 180px;
-        height: 41px;
-        left: 170px;
-        top: 70px; 
-    }
-    .eclipse {
-        width: 90px;
-        height: 30px;
-    }
-    .line {
-        margin-top: 3px;
-    }
-
-    .text {
-        width: 330px;
-        height: 71px;
-        margin-left: 25px;
-        margin-top: 5px;
-    }
-    .text h2 {
-        font-weight: 800;
-        font-size: 20px;
-        line-height: 40px;
-    }
-    .text p {
-        font-weight: 500;
-        font-size: 13px;
-        line-height: 27px;
-        color: #545454;
-    }
-    .options {
-        margin-top: 30px;
-        width: 350px;
-        margin-left: 30px;
-        gap: 7px;
-    }
-    .options button {
-        padding: 10px 20px;
-    }
-    form {
-        margin-left: 30px;
-        margin-top: 50px;
-        width: 315px;
-    }
-    form input {
-        box-sizing: border-box;
-        height: 55px;
-        margin-top: 10px;
-    }
-    ::placeholder {
-        font-size: 14px;
-        top: 20px;
-    }    
-    .lower-btns {
-        margin: auto;
-        margin-top: 50px;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 10px;
-        width: max-content;
-        height: 44px;
-    }
-    
-    #back-btn {
-        padding: 10px 40px;
-    }
-    #next-btn {
-        padding: 8px 40px;
-    }
+button {
+  transition: all 0.2s ease-in-out;
+  font-family: 'Montserrat', sans-serif;
 }
 
+button:hover {
+  background-color: #6a55cc !important;
+  color: #fff !important;
+}
 
-
-
-
-@media screen and (max-width:375px) {
-    body {
-        max-width: 100%;
-    }
-    .clovar-logo {
-        position: absolute;
-        width: 100px;
-        height: 40px;
-        left: 20px;
-        top: 40px;
-    } 
-    .eclipse-container {
-        width: 161px;
-        height: 41px;
-        left: 150px;
-        top: 70px; 
-    }
-    .eclipse {
-        width: 62px;
-        height: 21px;
-    }
-    .line {
-        margin-top: 3px;
-    }
-
-    .text {
-        width: 330px;
-        height: 71px;
-        margin-left: 22px;
-        margin-top: 10px;
-    }
-    .text h2 {
-        font-weight: 800;
-        font-size: 20px;
-        line-height: 40px;
-    }
-    .text p {
-        font-weight: 500;
-        font-size: 13px;
-        line-height: 27px;
-        color: #545454;
-    }
-    .options {
-        margin-top: 30px;
-        width: 315px;
-        margin-left: 30px;
-        gap: 7px;
-    }
-    .options button {
-        padding: 10px 20px;
-    }
-    form {
-        margin-left: 30px;
-        margin-top: 50px;
-        width: 315px;
-    }
-    form input {
-        box-sizing: border-box;
-        height: 55px;
-        margin-top: 10px;
-    }
-    ::placeholder {
-        font-size: 14px;
-        top: 20px;
-    }    
-    .lower-btns {
-        margin: auto;
-        margin-top: 50px;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 10px;
-        width: max-content;
-        height: 44px;
-    }
-    
-    #back-btn {
-        padding: 10px 40px;
-    }
-    #next-btn {
-        padding: 8px 40px;
-    }
+button:active {
+  background-color: #352a66 !important;
+  color: #fff !important;
 }

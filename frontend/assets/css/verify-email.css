@@ -1,77 +1,100 @@
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    max-width: 100%;
-    box-sizing: border-box;
-    background-color: #FFFBF5;
+@charset "UTF-8";
+
+:root {
+  --accent-gold: #e59c2e;
+  --accent-purple: #50409a;
+  --button-hover: #6a55cc;
+  --button-active: #352a66;
+  --light-black: #545454;
+  --pure-white: #fff;
+  --milk: #fffbf5;
+  --montserrat: 'Montserrat', sans-serif;
+  --border-radius: 8px;
 }
-.clovar-logo {
-    position: absolute;
-    width: 213.98px;
-    height: 58.03px;
-    left: 100px;
-    top: 69px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--montserrat);
+  background-color: var(--milk);
+  height: 100vh;
+}
+
+nav {
+  padding-inline: 3.5rem;
+  padding-block: 1rem;
+  position: fixed;
+}
+
+nav img {
+  width: 150px;
 }
 
 .container {
-    margin-left: 400px;
-    margin-top: 10rem;
-    width: 552px;
-    height: 610px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    text-align: center;
-    position: absolute;
-}
-.container h2 {
-    margin-top: 121px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 36px;
-    line-height: 44px;
-    text-align: center;
-    color: #545454;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 550px;
+  max-width: 550px;
+  color: var(--light-black);
+  background-color: var(--pure-white);
+  text-align: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.container p {
-    margin-top: 50px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    color: #222222;
+.content {
+  /* put in the center of the container */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 4rem;
 }
 
-.container button {
-    width: 158px;
-    height: 44px;
-    margin-top: 80px;
-    padding: 12px, 56px, 12px, 56px;
-    background: #50409A;
-    border-radius: 8px;
-    border: none;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    color: #FFFBF5;
-}
-.container button:hover {
-    width: 159px;
-    height: 45px;
-    background-color: #6A55CC;;
+.content h1 {
+  font-weight: 800;
+  font-size: 2rem;
+  padding-bottom: 1rem;
 }
 
-.contact {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: #222222;
-    margin-top: 100px;
+.description {
+  font-weight: 500;
+  font-size: 1rem;
+  padding-bottom: 3.5rem;
+}
+
+button {
+  padding: 0.7rem 1rem;
+  width: 9rem;
+  font-family: var(--montserrat);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--milk);
+  border-radius: var(--border-radius);
+  background-color: var(--accent-purple);
+  border: 1px solid var(--accent-purple);
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+}
+
+button:active {
+  background-color: var(--button-active);
+}
+
+.issue {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 3.5rem;
+  background-color: var(--milk);
+  padding: 3rem;
 }
