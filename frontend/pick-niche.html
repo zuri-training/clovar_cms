@@ -1,128 +1,147 @@
+{% load static %}
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pick niche</title>
-    <link href="./assets/images/image_360(1).png" rel="icon" sizes="16x16 32x32" type="image/png">
-    <link rel="stylesheet" href="./assets/css/pick-niche.css">
-</head>
-<body>
+    <link
+      href="{% static './assets/images/image_360(1).png' %}"
+      rel="icon"
+      sizes="16x16 32x32"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="{% static './assets/css/pick-niche.css' %}" />
+  </head>
+  <body>
     <header>
-        <img src="./assets/images/image_360.png" alt="clovar logo" class="clovar-logo">
+      <img
+        src="{% static './assets/images/image_360.png' %}"
+        alt="clovar logo"
+        class="clovar-logo"
+      />
 
-        <div class="eclipse-container">
-            <span class="eclipse" id="first"></span>
-            <span class="line"></span>
-            <span class="eclipse" id="second"></span>
-            <span class="line"></span>
-            <span class="eclipse" id="third"></span>
-            <span class="line"></span>
-            <span class="eclipse" id="fourth"></span>
-        </div>
+      <div class="eclipse-container">
+        <span class="eclipse" id="first"></span>
+        <span class="line"></span>
+        <span class="eclipse" id="second"></span>
+        <span class="line"></span>
+        <span class="eclipse" id="third"></span>
+        <span class="line"></span>
+        <span class="eclipse" id="fourth"></span>
+      </div>
     </header>
 
     <main>
-        <!-- Text section-->
-        <section class="text">
-            <h2>What should your blog be known for?</h2>
-            <p>This will help us find you some starting ideas and examples</p>
-        </section>
+      <!-- Text section-->
+      <section class="text">
+        <h2>What should your blog be known for?</h2>
+        <p>This will help us find you some starting ideas and examples</p>
+      </section>
 
-        <!-- Options section -->
-        <section class="options">
-            <a href="#">
-                <button type="submit" id="options-btn">Arts & Designs</button>
-            </a>
-            <a href="#">
-                <button type="submit" id="options-btn">Marketing</button>
-            </a>
-            <a href="#">
-                <button type="submit" id="options-btn">Photography</button>
-            </a>
-            <a href="#">
-                <button type="submit" id="options-btn">Entertainment</button>
-            </a>
-            <a href="#">
-                <button type="submit" id="options-btn">Tech</button>
-            </a>
-            <a href="#">
-                <button type="submit" id="options-btn">Education</button>
-            </a>
-            <a href="#">
-                <button type="submit" id="options-btn">Travel</button>
-            </a>
-            <a href="#">
-                <button type="submit" id="options-btn">Fashion</button>
-            </a>
-            <a href="#">
-                <button type="submit" id="options-btn">Real Estate and Properties</button>
-            </a>
-            <a href="#">
-                <button type="submit" id="options-btn">Home & Decor</button>
-            </a>
-            <a href="#">
-                <button type="submit" id="options-btn">Weddings</button>
-            </a>
-            <a href="#">
-                <button type="submit" id="options-btn">Nature & Animals</button>
-            </a>
-            <a href="#">
-                <button type="submit" id="options-btn">Health & Beauty</button>
-            </a>
-            <a href="#">
-                <button type="submit" id="options-btn">Community and Non-profit</button>
-            </a>
-            <a href="#">
-                <button type="submit" id="options-btn">Personal & CV</button>
-            </a>
-            <a href="#">
-                <button type="submit" id="options-btn">Gaming</button>
-            </a>
-            <a href="#">
-                <button type="submit" id="options-btn">Politics</button>
-            </a>
-            <a href="#">
-                <button type="submit" id="options-btn">Fitness</button>
-            </a>
-            <a href="#">
-                <button type="submit" id="options-btn">Jewelry</button>
-            </a>
-            <a href="#">
-                <button type="submit" id="options-btn">Event</button>
-            </a>
-            <a href="#">
-                <button type="submit" id="options-btn">Consulting</button>
-            </a>
-            <a href="#">
-                <button type="submit" id="options-btn">Restaurant</button>
-            </a>
-            <a href="#">
-                <button type="submit" id="options-btn">Magazine</button>
-            </a>
-            <a href="#">
-                <button type="submit" id="options-btn">Music</button>
-            </a>
-            <a href="#">
-                <button type="submit" id="options-btn">Media and Podcast</button>
-            </a>
-        </section>
+      <!-- Options section -->
+      <section class="options">
+        <a href="#">
+          <button type="submit" id="options-btn">Arts & Designs</button>
+        </a>
+        <a href="#">
+          <button type="submit" id="options-btn">Marketing</button>
+        </a>
+        <a href="#">
+          <button type="submit" id="options-btn">Photography</button>
+        </a>
+        <a href="#">
+          <button type="submit" id="options-btn">Entertainment</button>
+        </a>
+        <a href="#">
+          <button type="submit" id="options-btn">Tech</button>
+        </a>
+        <a href="#">
+          <button type="submit" id="options-btn">Education</button>
+        </a>
+        <a href="#">
+          <button type="submit" id="options-btn">Travel</button>
+        </a>
+        <a href="#">
+          <button type="submit" id="options-btn">Fashion</button>
+        </a>
+        <a href="#">
+          <button type="submit" id="options-btn">
+            Real Estate and Properties
+          </button>
+        </a>
+        <a href="#">
+          <button type="submit" id="options-btn">Home & Decor</button>
+        </a>
+        <a href="#">
+          <button type="submit" id="options-btn">Weddings</button>
+        </a>
+        <a href="#">
+          <button type="submit" id="options-btn">Nature & Animals</button>
+        </a>
+        <a href="#">
+          <button type="submit" id="options-btn">Health & Beauty</button>
+        </a>
+        <a href="#">
+          <button type="submit" id="options-btn">
+            Community and Non-profit
+          </button>
+        </a>
+        <a href="#">
+          <button type="submit" id="options-btn">Personal & CV</button>
+        </a>
+        <a href="#">
+          <button type="submit" id="options-btn">Gaming</button>
+        </a>
+        <a href="#">
+          <button type="submit" id="options-btn">Politics</button>
+        </a>
+        <a href="#">
+          <button type="submit" id="options-btn">Fitness</button>
+        </a>
+        <a href="#">
+          <button type="submit" id="options-btn">Jewelry</button>
+        </a>
+        <a href="#">
+          <button type="submit" id="options-btn">Event</button>
+        </a>
+        <a href="#">
+          <button type="submit" id="options-btn">Consulting</button>
+        </a>
+        <a href="#">
+          <button type="submit" id="options-btn">Restaurant</button>
+        </a>
+        <a href="#">
+          <button type="submit" id="options-btn">Magazine</button>
+        </a>
+        <a href="#">
+          <button type="submit" id="options-btn">Music</button>
+        </a>
+        <a href="#">
+          <button type="submit" id="options-btn">Media and Podcast</button>
+        </a>
+      </section>
 
-        <!-- Form section -->
-        <form action="...">
-            <p>Have something else in mind?</p>
-            <input id="form-input" type="text" id="others" placeholder="Describe your niche...">
-        </form>
+      <!-- Form section -->
+      <form action="...">
+        <p>Have something else in mind?</p>
+        <input
+          id="form-input"
+          type="text"
+          id="others"
+          placeholder="Describe your niche..."
+        />
+      </form>
 
-        <!-- Lower buttons section -->
-        <section class="lower-btns">
-            <a href="#">
-                <button type="submit" id="back-btn">Back</button>
-            </a>
-            <a href="#">
-                <button type="submit" id="next-btn">Next</button>
-            </a>
-        </section>
+      <!-- Lower buttons section -->
+      <section class="lower-btns">
+        <a href="#">
+          <button type="submit" id="back-btn">Back</button>
+        </a>
+        <a href="#">
+          <button type="submit" id="next-btn">Next</button>
+        </a>
+      </section>
     </main>
-</body>
+  </body>
 </html>

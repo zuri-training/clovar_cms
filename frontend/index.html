@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,11 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
-      href="./assets/images/favicon.ico"
+      href="{% static './assets/images/favicon.ico' %}"
       type="image/x-icon"
     />
     <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="{% static './assets/css/style.css' %}" />
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/d778668bce.js"
@@ -44,7 +45,10 @@
       <nav class="navbar navbar-expand-lg mx-sm-5 pt-sm-4">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="./assets/images/logo.png" alt="Clovar logo" />
+            <img
+              src="{% static './assets/images/logo.png' %}"
+              alt="Clovar logo"
+            />
           </a>
 
           <button
@@ -61,8 +65,12 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active text-uppercase me-md-4" aria-current="page" href="#">Documentation <i class="fa-2xs fa-solid fa-chevron-down"></i
-                  ></a>
+                <a
+                  class="nav-link active text-uppercase me-md-4"
+                  aria-current="page"
+                  href="#"
+                  >Documentation <i class="fa-2xs fa-solid fa-chevron-down"></i
+                ></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-uppercase" href="#">Templates</a>
@@ -81,13 +89,16 @@
       <section class="hero-section mt-md-5 pt-5 pb-5">
         <div class="hero-title-desktop mb-3">
           <h1 class="title1">
-            Bring <span class="me-3">your</span> <span class="auto-type purple-text"></span> <span class="ms-3">to</span> life
+            Bring <span class="me-3">your</span>
+            <span class="auto-type purple-text"></span>
+            <span class="ms-3">to</span> life
           </h1>
           <h2 class="title2">Share and build your world.</h2>
         </div>
         <div class="hero-title-mobile">
           <h2 class="title2">
-            Share Your <br> <span class="auto-type1 purple-text"></span> <br>Build Your World
+            Share Your <br />
+            <span class="auto-type1 purple-text"></span> <br />Build Your World
           </h2>
         </div>
         <div class="hero-description mb-5">
@@ -107,32 +118,31 @@
       <!-- Checkmarks section -->
       <section class="checkmarks-section">
         <div class="left-side pe-md-5">
-          <p><i class="fa-solid fa-check px-2"></i> <span>Get found on Google</span></p>
           <p>
-            <i class="fa-solid fa-check px-2"></i> <span>Publish blog posts on the go</span>
+            <i class="fa-solid fa-check px-2"></i>
+            <span>Get found on Google</span>
           </p>
           <p>
-            <i class="fa-solid fa-check px-2"></i> <span>
-              Add existing blog posts
-              easily
-            </span>
+            <i class="fa-solid fa-check px-2"></i>
+            <span>Publish blog posts on the go</span>
+          </p>
+          <p>
+            <i class="fa-solid fa-check px-2"></i>
+            <span> Add existing blog posts easily </span>
           </p>
         </div>
         <div class="right-side">
           <p>
-            <i class="fa-solid fa-check px-2"></i> <span>
-              Check your website's stat in
-              realtime
-            </span>
+            <i class="fa-solid fa-check px-2"></i>
+            <span> Check your website's stat in realtime </span>
           </p>
           <p>
-            <i class="fa-solid fa-check px-2"></i> <span>
-              Stay Updated with your blog
-              user's engagement
-            </span>
+            <i class="fa-solid fa-check px-2"></i>
+            <span> Stay Updated with your blog user's engagement </span>
           </p>
           <p>
-            <i class="fa-solid fa-check px-2"></i> <span>Run multiple blog accounts</span>
+            <i class="fa-solid fa-check px-2"></i>
+            <span>Run multiple blog accounts</span>
           </p>
         </div>
       </section>
@@ -183,10 +193,13 @@
 
       <!-- Company Images Section -->
       <section class="company-images py-5 my-4">
-        <img src="./assets/images/fliqpay.png" alt="boom logo" />
-        <img src="./assets/images/flutterwave.png" alt="boom logo" />
-        <img src="./assets/images/boom.png" alt="boom logo" />
-        <img src="./assets/images/amazon.png" alt="boom logo" />
+        <img src="{% static './assets/images/fliqpay.png' %}" alt="boom logo" />
+        <img
+          src="{% static './assets/images/flutterwave.png' %}"
+          alt="boom logo"
+        />
+        <img src="{% static './assets/images/boom.png' %}" alt="boom logo" />
+        <img src="{% static './assets/images/amazon.png' %}" alt="boom logo" />
       </section>
       <hr class="boundary-hr" />
 
@@ -231,7 +244,7 @@
     >
       <p class="col-md-4 mb-0 text-muted">
         <img
-          src="./assets/images/logo.png"
+          src="{% static './assets/images/logo.png' %}"
           alt="clovar logo"
           class="footer-logo"
         />
@@ -248,7 +261,7 @@
         <li class="nav-item">
           <a href="https://facebook.com" class="nav-link px-2 text-muted"
             ><img
-              src="./assets/images/facebook-icon.png"
+              src="{% static './assets/images/facebook-icon.png' %}"
               alt="Facebook Icon"
               class="me-1 facebook-icon"
           /></a>
@@ -256,7 +269,7 @@
         <li class="nav-item">
           <a href="https://instagram.com" class="nav-link px-2 text-muted"
             ><img
-              src="./assets/images/instagram-icon.png"
+              src="{% static './assets/images/instagram-icon.png' %}"
               alt="Instagram icon"
               class="instagram-icon"
           /></a>
@@ -267,19 +280,21 @@
     <!-- Typing Animation -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
-        var typed = new Typed('.auto-type', {
-            strings: ["Contents", "Concepts", "Passion"], typeSpeed: 125,
-            backSpeed: 150,
-            loop: true,
-            cursorChar: ''
-        })
+      var typed = new Typed(".auto-type", {
+        strings: ["Contents", "Concepts", "Passion"],
+        typeSpeed: 125,
+        backSpeed: 150,
+        loop: true,
+        cursorChar: "",
+      });
 
-        var typed1 = new Typed('.auto-type1', {
-            strings: ["Contents", "Concepts", "Passion"], typeSpeed: 125,
-            backSpeed: 150,
-            loop: true,
-            cursorChar: ''
-        })
+      var typed1 = new Typed(".auto-type1", {
+        strings: ["Contents", "Concepts", "Passion"],
+        typeSpeed: 125,
+        backSpeed: 150,
+        loop: true,
+        cursorChar: "",
+      });
     </script>
   </body>
 </html>
