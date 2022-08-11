@@ -108,6 +108,12 @@ input[type='submit']:active {
   font-size: 0.88rem !important;
 }
 
+@media screen and (max-width: 1200px) {
+  .nav-link {
+    font-size: 0.8rem !important;
+  }
+}
+
 .navbar-toggler {
   border: none !important;
 }
@@ -349,7 +355,7 @@ input[type='submit']:active {
   padding-top: 0.25rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .features-section {
     padding-block: 3rem;
     text-align: left;
@@ -404,8 +410,19 @@ input[type='submit']:active {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  padding-inline: 1rem;
   max-width: 100%;
+}
+
+.blog-tips {
+  padding-inline: 5rem;
+}
+
+.blog-tips .blog-tip .first {
+  width: 50%;
+}
+
+.blog-tips-mobile {
+  padding-inline: 1rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -539,11 +556,9 @@ input[type='submit']:active {
   font-weight: 400;
 }
 
-.faq-container .faq hr {
+.faq-container hr {
   border-top: 1.5px solid var(--accent-gold) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  margin-block: 0 !important;
+  margin: 0 auto !important;
 }
 
 .faq-container .faq p .plus-icon {
@@ -552,65 +567,15 @@ input[type='submit']:active {
   right: 16px;
 }
 
+.faq-question {
+  padding-bottom: 0.75rem;
+}
+
 @media screen and (max-width: 600px) {
   .faq-container .faq p {
     font-size: 0.8rem;
   }
 }
-
-.faq-container{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  }
-  .hr-line{
-    width: 60%;
-    margin: auto;
-    
-  }
-  /* Style the buttons that are used to open and close the faq-page body */
-  .faq-page {
-      /* background-color: #eee; */
-      color: #444;
-      cursor: pointer;
-      padding: 30px 20px;
-      width: 60%;
-      border: none;
-      outline: none;
-      transition: 0.4s;
-      margin: auto;
-  }
-  .faq-body{
-      margin: auto;
-      /* text-align: center; */
-     width: 50%; 
-     padding: auto;
-     
-  }
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active,
-  .faq-page:hover {
-      background-color: #F9F9F9;
-  }
-  /* Style the faq-page panel. Note: hidden by default */
-  .faq-body {
-      padding: 0 18px;
-      background-color: white;
-      display: none;
-      overflow: hidden;
-  }
-  .faq-page:after {
-      content: '\02795';
-      /* Unicode character for "plus" sign (+) */
-      font-size: 13px;
-      color: #777;
-      float: right;
-      margin-left: 5px;
-  }
-  .active:after {
-      content: "\2796";
-      /* Unicode character for "minus" sign (-) */
-  }
 
 /* Footer */
 footer {
