@@ -50,7 +50,7 @@ nav img {
 }
 
 .content img {
-  width: 35px;
+  width: 50px;
   height: auto;
   padding-bottom: 1rem;
 }
@@ -77,27 +77,33 @@ button {
   transition: all 0.2s ease-in-out;
 }
 
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .buttons .cancel {
   background-color: var(--pure-white);
-  border: 1px solid var(--light-black);
-  margin-right: 1rem;
+  border: 1px solid var(--accent-gold);
+  color: var(--accent-gold);
 }
 
 .buttons .sign-out {
   background-color: var(--accent-gold);
   border: 1px solid var(--accent-gold);
-  color: var(--pure-white);
+  color: var(--milk);
   margin-left: 1rem;
 }
 
 button:hover {
   background-color: #e7a644 !important;
-  color: var(--pure-white);
+  color: var(--milk) !important;
   border-color: #e7a644 !important;
 }
 
 button:active {
   background-color: #cc8d33 !important;
-  color: var(--pure-white);
+  color: var(--milk);
   border-color: #e7a644 !important;
 }
