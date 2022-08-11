@@ -1,110 +1,104 @@
-*,
-*::before,
-*::after {
-  padding: 0;
+@charset "UTF-8";
+
+:root {
+  --accent-gold: #e59c2e;
+  --accent-purple: #50409a;
+  --button-hover: #6a55cc;
+  --button-active: #352a66;
+  --light-black: #545454;
+  --pure-white: #fff;
+  --milk: #fffbf5;
+  --montserrat: 'Montserrat', sans-serif;
+  --border-radius: 8px;
+}
+
+* {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  outline: 0;
 }
 
 body {
-  font-family: Georgia;
-  font-size: 16px;
-  padding: 0;
-  margin: 0;
-  background: #e4e0d7;
-  height: 100%;
+  font-family: var(--montserrat);
+  background-color: var(--milk);
+  height: 100vh;
 }
+
+nav {
+  padding-inline: 5rem;
+  padding-block: 2rem;
+  position: fixed;
+}
+
+nav img {
+  width: 150px;
+}
+
 .container {
-  width: 300px;
-  margin-top: 150px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  background-color: #eeeeee;
-}
-#logo {
-  display: block;
-  margin-top: 50px;
-  width: 200px;
-  margin-left: 20px;
-  margin-top: 4px;
-}
-
-@media screen and (max-width: 600px) {
-  #logo {
-    width: 100px;
-  }
-}
-
-h4 {
-  text-align: center;
-  padding-top: 5px;
-  font-size: 18px;
-}
-p {
-  text-align: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 15px;
-}
-
-#cancel {
-  padding: 8px;
-  padding-left: 28px;
-  padding-right: 28px;
-  background: white;
-  font-size: 15px;
-  border: 0.73px solid black;
-  align-self: center;
-  margin: 7px;
-  border-radius: 5px;
-  margin-left: 50px;
-}
-#yes {
-  padding: 9.5px;
-  padding-left: 40px;
-  padding-right: 40px;
-  background: #ffcb26;
-  font-size: 15px;
-  align-self: center;
-  margin: 7px;
-  border: 0;
-  border-radius: 5px;
-}
-.fa-exclamation-triangle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
-  margin-top: 20px;
-  align-self: center;
-  font-size: 25px;
-  margin-top: 40px;
+  max-width: 500px;
+  padding: 4rem;
+  height: 350px;
+  max-width: 550px;
+  color: var(--light-black);
+  background-color: var(--pure-white);
   text-align: center;
-  color: #ffcb26;
-
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-/* The Desktop View. */
 
-@media screen and (min-width: 900px) {
-  .container {
-      width: 350px;
-      margin: 100px auto 0 auto;
-      padding: 15px;
-  }
-  h4 {
-    font-size: 24px;
-  }
-  p {
-    font-size: 18.2px;
-    padding: 2px;
-  }
-  .fa-exclamation-triangle {
-    margin-top: 20px;
-    font-size: 40px;
-  }
-  #cancel {
-    font-size: 20px;
-  }
-  #yes {
-    font-size: 20px;
-  }
+.content img {
+  width: 35px;
+  height: auto;
+  padding-bottom: 1rem;
+}
+
+.content h1 {
+  font-weight: 700;
+  font-size: 1.75rem;
+  padding-bottom: 0.5rem;
+}
+
+.content p {
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding-bottom: 3rem;
+}
+
+button {
+  padding: 0.7rem 1rem;
+  width: 8.75rem;
+  font-family: var(--montserrat);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: var(--border-radius);
+  transition: all 0.2s ease-in-out;
+}
+
+.buttons .cancel {
+  background-color: var(--pure-white);
+  border: 1px solid var(--light-black);
+  margin-right: 1rem;
+}
+
+.buttons .sign-out {
+  background-color: var(--accent-gold);
+  border: 1px solid var(--accent-gold);
+  color: var(--pure-white);
+  margin-left: 1rem;
+}
+
+button:hover {
+  background-color: #e7a644 !important;
+  color: var(--pure-white);
+  border-color: #e7a644 !important;
+}
+
+button:active {
+  background-color: #cc8d33 !important;
+  color: var(--pure-white);
+  border-color: #e7a644 !important;
 }
