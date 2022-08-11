@@ -1,37 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <!--Mobile metas-->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Clovar</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    <title>Confirm Sign Out | Clovar</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:image"
+      content="https://avatars.githubusercontent.com/t/6383931?s=280&v=4"
     />
+    <!-- Favicon -->
     <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/confirm-sign-out.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
-      href="./assets/css/confirm-sign-out.css"
-      type="text/css"
-      media="all"
     />
   </head>
   <body>
-    <br />
-
-    <img id="logo" src="./assets/images/logo.png" alt="Clovar Logo" />
-
-    <div class="container">
-      <label for=""><i class="fa fa-exclamation-triangle"></i></label>
-
-      <h4 id="">Are you leaving?</h4>
-      <p><i>Chidi</i>, are you sure you want to sign out.</p>
-      <br />
-
-      <div>
-        <button id="cancel" type="submit">Cancel</button>
-        <button id="yes" type="submit">Yes</button>
+    <header>
+      <nav>
+        <img src="./assets/images/logo.png" alt="Clovar Logo">
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="content">
+          <img src="./assets/images/caution.png" alt="Caution icon">
+          <h1>Are you leaving?</h1>
+          <p>Chidi, are you sure you want to sign out?</p>
+          <div class="buttons">
+            <button class="cancel">Cancel</button>
+            <button class="sign-out">Sign Out</button>
+          </div>
+        </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
