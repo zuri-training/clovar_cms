@@ -98,3 +98,7 @@ button:active {
   background-color: var(--milk);
   padding: 3rem;
 }
+
+a {
+  color: var(--accent-purple);
+}
