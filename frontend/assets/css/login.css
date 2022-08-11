@@ -57,17 +57,7 @@ small a {
 }
 
 #intro {
-  align-content: center;
-  color: black;
-  display: block;
-  height: 530px;
-  background: black,
-    url("../images/back.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  color: white;
-  height: 660px;
+  display: none;
 }
 
 #intro h1 {
@@ -231,8 +221,7 @@ form input:hover {
     flex: 30%;
     align-content: center;
     display: block;
-    background: linear-gradient(#86797e9c, #86797e9c),
-    url("../images/back.png");
+    background: linear-gradient(#86797e9c, #86797e9c), url('../images/back.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
