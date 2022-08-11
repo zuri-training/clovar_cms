@@ -13,22 +13,19 @@ body {
     height: 100%;
 }
 #logo {
-    display: block;
-    margin: 12px;
-    width: 45%;
-    margin-left: 15px;
-    margin-top: 4px;
+    width: 120px;
+    position: absolute;
+    top: 0;
+    left: 7px;
 }
 h4 {
-    margin-left: 35px;
+    margin-left: 20px;
 }
 .container {
     width: 100%;
     margin:0;
-    overflow: hidden;
     border-radius:0;
     border: 0;
-    margin-bottom: 30px;
     border:0;
     height: auto;
 }
@@ -36,22 +33,23 @@ h4 {
     align-content: center;
     color: black;
     display: block;
-    background: url("https://i.ibb.co/dp0FXCp/mXABOkd.png");
+    height: 530px;
+    background-image: url('../images/back.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: white;
-    height: auto;
-    position: relative;
+    height: 250px;
 }
-#intro h1 {
+#intro h1{
+    padding-top: 100px;
+    padding-bottom: 10px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    font-size: 30px;
-    font-weight: 500;
-    padding-top: 30px;
-    padding: 20px;
-    margin: 0;
-    padding-bottom: 30px;
+    font-size: 32px;
+    font-weight: bolder;
 }
 #span {
     color: #50409A;
@@ -66,7 +64,7 @@ h4 {
     padding: 25px;
     padding-top:0;
     line-height: 30px;
-    background: #FFFBF5;
+    background-color: #FFFBF5;
 }
 #cancel {
     display: none;
@@ -170,34 +168,42 @@ i.fa-googoe {
         margin:0;
         height: auto;
         border:0;
-        margin-top: 100px;
+        margin-top: 90px;
     }
     #sign-up {
-        width: 100%;
+        flex: 70%;
         font-size: 35px;
-        border-top-left-radius: 25px;
-        border-bottom-left-radius: 25px;
         height: auto;
+        border: 2px solid rgb(175, 159, 159);
+        border-radius: 20px 0px 20px 0px;
     }
     #intro {
-        width: 50%;
+        flex: 30%;
         text-align: center;
         align-content: center;
-        padding-top: 50px;
-        font-size: 40px;
-        position: relative;
-        font-weight: 600;
-        background: url("https://i.ibb.co/dp0FXCp/mXABOkd.png");
+        display: block;
+        background-image: url('../images/back.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         color: white;
-        height: auto;
+        height: 600px;
+
+    }
+    #intro h1{
+        margin-top: 105px;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bolder;
     }
     #logo {
-        width: 50%;
-        margin-left: 65px;
-        margin-top: 20px;
+        width: 130px;
+        margin-top: 122px;
+        margin-left: 90px;
+  
     }
     .input-container i {
         position: absolute;
@@ -221,6 +227,10 @@ i.fa-googoe {
         font-size: 35px;
         font-weight: 1000;
     }
+    #sign-up-btn {
+        margin-top: 150px;
+    }
+
     #sign-up h3 {
         font-size: 25px;
         font-weight:0;

@@ -22,7 +22,46 @@ Please ensure you follow the steps in the [`CONTRIBUTING.md`](https://github.com
 
 ## Run Locally
 
-See [`CONTRIBUTING.md`](https://github.com/zuri-training/my_cms-pjt-15/blob/main/CONTRIBUTING.md).
+> Preferred tool for creating and managing virtual environments: `pipenv` (see installation guide: <https://pypi.org/project/pipenv/>).
+
+Clone the project
+
+```bash
+git clone https://github.com/zuri-training/team-15_my-cms.git
+```
+
+Go to the project directory
+
+```bash
+cd team-15_my-cms
+```
+
+Create a virtual environment and install needed dependencies in it
+
+```bash
+pipenv install
+```
+
+Activate the virtual environment
+
+```bash
+pipenv shell
+```
+
+Create a `.env` file in the same directory as the `settings.py` (`config` folder) with the following contents:
+
+> **Don't enclose the secret key in any quotation mark.**
+
+```python
+SECRET_KEY=<your-secret-key>
+```
+
+*Generate a secret key from <https://djecrety.ir/>.*
+
+Runserver
+```python
+python manage.py runserver
+```
 
 ## Features
 
@@ -65,17 +104,15 @@ See [`CONTRIBUTING.md`](https://github.com/zuri-training/my_cms-pjt-15/blob/main
 - [@optimistictech](https://www.github.com/optimistictech)
 - [@alvanokey](https://www.github.com/alvanokey)
 - [@musoye](https://www.github.com/musoye)
-- [@Prideland-okoi](https://github.com/Prideland-okoi)
 - [@yusufadegbite](https://www.github.com/yusufadegbite)
 - [@Noble101](https://www.github.com/Noble101)
-- [@emmyrald](https://www.github.com/emmyrald)
 - [@jonathanwambua](https://www.github.com/jonathanwambua)
 - [@steph-ayo](https://www.github.com/steph-ayo)
 - [@BioMeindinyo](https://www.github.com/BioMeindinyo)
-- [@Usenmfon](https://www.github.com/Usenmfon)
 - [@Chelsofia](https://www.github.com/Chelsofia)
 - [@Ismat27](https://www.github.com/Ismat27)
-- [@Asterisk-z Olang Daniel](https://github.com/Asterisk-z)
+- [@emmyrald](https://www.github.com/emmyrald)
+- [@Prideland-okoi](https://github.com/Prideland-okoi)
 
 </details>
 

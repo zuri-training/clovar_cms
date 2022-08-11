@@ -1,0 +1,280 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clovar | Select template on hover</title>
+    <link href="./assets/images/image_360(1).png" rel="icon" sizes="16x16 32x32" type="image/png">
+    <!-- Link to css styling -->
+    <link rel="stylesheet" href="./assets/css/select-template-onhover.css">
+
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <span style="font-size:30px;cursor:pointer">
+                <img src="./assets/images/image_360.png" alt="clovar logo" class="clovar-logo">
+                <span onclick="openNav()" id="burger-icon">&#9776;</span>
+            </span>
+            
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                
+                <div class="collapsed-niche-container">
+                    <a href="#">
+                        <button type="submit" id="options-btn">All Niches</button>
+                    </a>
+                    <a href="#">
+                        <button type="submit" id="options-btn">Arts & Designs</button>
+                    </a>
+                    <a href="#">
+                        <button type="submit" id="options-btn">Marketing</button>
+                    </a>
+                    <a href="#">
+                        <button type="submit" id="options-btn">Photography</button>
+                    </a>
+                    <a href="#">
+                        <button type="submit" id="options-btn">Entertainment</button>
+                    </a>
+                    <a href="#">
+                        <button type="submit" id="options-btn">Tech</button>
+                    </a>
+                    <a href="#">
+                        <button type="submit" id="options-btn">Education</button>
+                    </a>
+                    <a href="#">
+                        <button type="submit" id="options-btn">Travel</button>
+                    </a>
+                    <a href="#">
+                        <button type="submit" id="options-btn">Fashion</button>
+                    </a>
+                    <a href="#">
+                        <button type="submit" id="options-btn">Real Estate and Properties</button>
+                    </a>
+                    <a href="#">
+                        <button type="submit" id="options-btn">Home & Decor</button>
+                    </a>
+                    <a href="#">
+                        <button type="submit" id="options-btn">Weddings</button>
+                    </a>
+                    <a href="#">
+                        <button type="submit" id="options-btn">Nature & Animals</button>
+                    </a>
+                    <a href="#">
+                        <button type="submit" id="options-btn">Health & Beauty</button>
+                    </a>
+                    <a href="#">
+                        <button type="submit" id="options-btn">Community and Non-profit</button>
+                    </a>
+                    <a href="#">
+                        <button type="submit" id="options-btn">Personal & CV</button>
+                    </a>
+                    <a href="#">
+                        <button type="submit" id="options-btn">Gaming</button>
+                    </a>
+                    <a href="#">
+                        <button type="submit" id="options-btn">Politics</button>
+                    </a>
+                    <a href="#">
+                        <button type="submit" id="options-btn">Fitness</button>
+                    </a>
+                    <a href="#">
+                        <button type="submit" id="options-btn">Jewelry</button>
+                    </a>
+                    <a href="#">
+                        <button type="submit" id="options-btn">Event</button>
+                    </a>
+                    <a href="#">
+                        <button type="submit" id="options-btn">Consulting</button>
+                    </a>
+                    <a href="#">
+                        <button type="submit" id="options-btn">Restaurant</button>
+                    </a>
+                    <a href="#">
+                        <button type="submit" id="options-btn">Magazine</button>
+                    </a>
+                    <a href="#">
+                        <button type="submit" id="options-btn">Music</button>
+                    </a>
+                    <a href="#">
+                        <button type="submit" id="options-btn">Media and Podcast</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main container for aside and main section -->
+    <div class="main-container">
+        <!-- Aside section for all niches -->
+        <aside>
+            <p>Select niche</p>
+            <div class="niche-container">
+                <a href="#">
+                    <button type="submit" id="options-btn">All Niches</button>
+                </a>
+                <a href="#">
+                    <button type="submit" id="options-btn">Arts & Designs</button>
+                </a>
+                <a href="#">
+                    <button type="submit" id="options-btn">Marketing</button>
+                </a>
+                <a href="#">
+                    <button type="submit" id="options-btn">Photography</button>
+                </a>
+                <a href="#">
+                    <button type="submit" id="options-btn">Entertainment</button>
+                </a>
+                <a href="#">
+                    <button type="submit" id="options-btn">Tech</button>
+                </a>
+                <a href="#">
+                    <button type="submit" id="options-btn">Education</button>
+                </a>
+                <a href="#">
+                    <button type="submit" id="options-btn">Travel</button>
+                </a>
+                <a href="#">
+                    <button type="submit" id="options-btn">Fashion</button>
+                </a>
+                <a href="#">
+                    <button type="submit" id="options-btn">Real Estate and Properties</button>
+                </a>
+                <a href="#">
+                    <button type="submit" id="options-btn">Home & Decor</button>
+                </a>
+                <a href="#">
+                    <button type="submit" id="options-btn">Weddings</button>
+                </a>
+                <a href="#">
+                    <button type="submit" id="options-btn">Nature & Animals</button>
+                </a>
+                <a href="#">
+                    <button type="submit" id="options-btn">Health & Beauty</button>
+                </a>
+                <a href="#">
+                    <button type="submit" id="options-btn">Community and Non-profit</button>
+                </a>
+                <a href="#">
+                    <button type="submit" id="options-btn">Personal & CV</button>
+                </a>
+                <a href="#">
+                    <button type="submit" id="options-btn">Gaming</button>
+                </a>
+                <a href="#">
+                    <button type="submit" id="options-btn">Politics</button>
+                </a>
+                <a href="#">
+                    <button type="submit" id="options-btn">Fitness</button>
+                </a>
+                <a href="#">
+                    <button type="submit" id="options-btn">Jewelry</button>
+                </a>
+                <a href="#">
+                    <button type="submit" id="options-btn">Event</button>
+                </a>
+                <a href="#">
+                    <button type="submit" id="options-btn">Consulting</button>
+                </a>
+                <a href="#">
+                    <button type="submit" id="options-btn">Restaurant</button>
+                </a>
+                <a href="#">
+                    <button type="submit" id="options-btn">Magazine</button>
+                </a>
+                <a href="#">
+                    <button type="submit" id="options-btn">Music</button>
+                </a>
+                <a href="#">
+                    <button type="submit" id="options-btn">Media and Podcast</button>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main section -->
+        <main>
+            <h3>Pick a template to start!</h3>
+            <p>This templates will help you setup your blog in no time</p>
+
+            <!-- Container for all templates containers -->
+            <div class="container">
+                <!-- Row 1 -->
+                <div class="row">
+                    <!-- Template1 -->
+                    <div class="col" id="col1">
+                        <div class="mydivouter" id="template1">
+                            <div class="mybuttonoverlap btn btn-info">
+                                <a href="#">
+                                    <button type="submit" id="view-btn">View</button>
+                                </a>
+                                <a href="#">
+                                    <button type="submit" id="customize-btn">Customize</button>
+                                </a>
+                            </div>	
+                        </div>
+                    </div>
+                    <!-- Template2 -->
+                    <div class="col" id="col2">
+                        <div class="mydivouter" id="template2">
+                            <div class="mybuttonoverlap btn btn-info">
+                                <a href="#">
+                                    <button type="submit" id="view-btn">View</button>
+                                </a>
+                                <a href="#">
+                                    <button type="submit" id="customize-btn">Customize</button>
+                                </a>
+                            </div>	
+                        </div>
+                    </div>
+                </div>
+                <!-- Row 2 -->
+                <div class="row">
+                    <!-- Template3 -->
+                    <div class="col" id="col3">
+                        <div class="mydivouter" id="template3">
+                            <div class="mybuttonoverlap btn btn-info">
+                                <a href="#">
+                                    <button type="submit" id="view-btn">View</button>
+                                </a>
+                                <a href="#">
+                                    <button type="submit" id="customize-btn">Customize</button>
+                                </a>
+                            </div>	
+                        </div>
+                    </div>
+                    <!-- Template4 -->
+                    <div class="col" id="col4">
+                        <div class="mydivouter" id="template4">
+                            <div class="mybuttonoverlap btn btn-info">
+                                <a href="#">
+                                    <button type="submit" id="view-btn">View</button>
+                                </a>
+                                <a href="#">
+                                    <button type="submit" id="customize-btn">Customize</button>
+                                </a>
+                            </div>	
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of template containers  -->
+            
+            <!-- Load more button -->
+            <a href="#">
+                <button type="submit" id="load-btn">Load more</button>
+            </a>
+        </main>
+    </div>
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+           
+    </body>
+    </html>

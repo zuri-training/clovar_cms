@@ -1,0 +1,225 @@
+:root{
+    --milk: #fffbf5;
+    --montserrat: "Montserrat", "sans-serif";
+    --background: "#fff";
+    --accent-gold: #cc8d33;
+    --accent-purple: #50409a;
+    --button-hover: #6a55cc;
+    --button-active: #352A66;
+}
+
+html{
+     background: var(--milk);
+     font-family: var(--montserrat);
+     width: 1300px;
+     height: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  margin-left: 3rem;
+  margin-top: 2rem;
+  width: 150px;
+  height: auto;
+}
+
+.mainbreadcrumb {
+  position: absolute;
+  width: 600px;
+  height: 41px;
+  top: 5rem;
+  left: 25%;
+  display: flex;
+  flex-direction: row;
+}
+
+.breadcumb {
+  border-radius: 50%;
+  width: 42px;
+  height: 41px;
+  background-color: #fffbf5;
+  border: 2px solid #50409a;
+}
+
+#first {
+  border-radius: 50%;
+  width: 42px;
+  height: 41px;
+  border: 2px solid #50409a;
+}
+#third{
+     background-color: #50409a;
+}
+
+.line {
+  width: 150px;
+  height: 2px;
+  background-color: #50409a;
+  margin-top: 19px;
+}
+
+form{
+    background-color: var(--background);
+    margin-top: 150px;
+    width: 35rem;
+    height: 20rem;
+    margin-left: 350px;
+   outline: #000;
+   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .5);
+}
+label{
+    margin-left: 15px;
+    font-weight: bold;
+}
+form > input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    height: 40px;
+    width: 90%;
+    margin-left: 15px;
+    padding-top: 20px;
+}
+::-webkit-input-placeholder{
+    color: var(--accent-gold);
+    float: right;
+    font-size: 1rem;
+}
+h2{
+    padding-top: 30px;
+    margin-left: 15px;
+}
+p{
+    padding-top: 20px;
+    margin-left: 15px;
+    
+}
+.text{
+    font-size: smaller;
+    color: var(--accent-gold);
+
+}
+.buttons{
+    position: absolute;
+    bottom: 50px;
+    right: 40px;
+}
+button{
+    padding: 6px 30px;
+    border-radius: 5px;
+    border: #50409a 1px solid;
+    background: var(--milk);
+    cursor: pointer;
+}
+button:hover{
+    color: #fff;
+    background-color: var(--button-hover);
+       transition: transform 150ms;
+    transform: scale(1.03);
+}
+#next{
+    background-color: var(--button-active);
+    color: #fff;
+}
+#next:hover{
+        color: #fff;
+    background-color: var(--button-hover);
+}
+#next a{
+    text-decoration: none;
+    color: #fff;
+}
+#Back{
+    color: #000;
+    text-decoration: none;
+}
+#skip{
+    position: absolute;
+    bottom: 50px;
+    margin-left: 3rem;
+    text-decoration: none;
+    color: #000;
+}
+#skip:hover{
+    color: var(--button-active);
+}
+@media screen and (max-width: 1110px){
+    form{
+        margin: 150px 0px 0 280px;
+    }
+
+}
+@media screen and (max-width:1360px) {
+    form{
+        margin: 150px 0 0 350px;
+    }
+}
+@media screen and (max-width:1250px) {
+    form{
+        margin: 150px 0 0 300px;
+    }
+    
+}
+@media screen and (max-width: 980px) {
+    form{
+        margin: 150px 0 0 270px;
+    }
+    
+}
+@media screen and (max-width: 945px) {
+    form{
+        margin: 150px 0 0 250px;
+    }
+    
+}
+@media screen and (max-width: 900px){
+    form{
+        margin: 150px 0 0 220px;
+    }
+}
+@media screen and (max-width: 870px) {
+    form{
+        margin: 150px 0 0 190px;
+        width: 30rem;
+    }
+    .mainbreadcrumb{
+        width: 30rem;
+    }
+}
+@media screen and (max-width: 705px) {
+    form{
+        margin: 150px 0 0 100px;
+        width: 30rem;
+    }
+    .mainbreadcrumb{
+        left:15%
+    }
+
+    
+}
+@media screen and (max-width: 620px) {
+    form{
+        margin: 150px 0 0 80px;
+        width: 25rem;
+    }
+    .mainbreadcrumb{
+        width: 25rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    form{
+        margin: 150px 0 0 50px;
+        width: 20rem;
+        height: 8rem;
+    }
+    .mainbreadcrumb{
+        width: 20rem;
+    }
+ 
+}

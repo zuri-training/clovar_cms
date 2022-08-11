@@ -1,60 +1,104 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <!--Mobile metas-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Clovar</title>
     <!--Site CSS-->
-    <link rel="stylesheet" href="{% static 'assets/css/login.css' %}" type="text/css" media="all" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
-
-</head>
-<body>
-
-
-
+    <link
+      rel="stylesheet"
+      href="{% static 'assets/css/login.css' %}"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!--Main-->
     <div class="container">
-        <div id="intro">
-            <br />
-            <img id="logo" src="https://i.ibb.co/vdBWPRw/logo.png" alt="" />
-            <h1>Build your <span id="span"><b>Blogsites</b></span> from scratch <span id="span"><b>CODEFREE!</b></span></h1>
-        </div>
+      <div id="intro">
+        <br />
+        <img id="logo" src="https://i.ibb.co/vdBWPRw/logo.png" alt="" />
+        <h1>
+          Build your <span id="span"><b>Blogsites</b></span> from scratch
+          <span id="span"><b>CODEFREE!</b></span>
+        </h1>
+      </div>
 
+      <div id="sign-up">
+        <button id="cancel" type="submit">
+          <a href="{% url 'home' %}">X</a>
+        </button>
+        <br />
+        <h1>Welcome Back</h1>
+        <h2>Login,your details</h2>
+        <form
+          action="{% url 'account_login' %}"
+          method="post"
+          accept-charset="utf-8"
+        >
+          {% if form.errors %} {% for field in form %} {% for error in
+          field.errors %}
+          <div class="alert alert-error">
+            <strong>{{ error|escape }}</strong>
+          </div>
+          {% endfor %} {% endfor %} {% for error in form.non_field_errors %}
+          <div class="alert alert-error">
+            <strong>{{ error|escape }}</strong>
+          </div>
+          {% endfor %} {% endif %} {% csrf_token %}
+          <label>Username *</label>
+          <input
+            type="text"
+            name="login"
+            id=""
+            value=""
+            placeholder="jeremy"
+            required
+          />
 
-        <div id="sign-up">
-            <button id="cancel" type="submit"><a href="{% url 'home' %}">X</a></button>
-            <br />
-            <h1>Welcome Back</h1>
-            <h2>Login,your details</h2>
-            <form action="{% url 'account_login' %}" method="post" accept-charset="utf-8">
-                {% csrf_token %}
-                <label>Username *</label>
-                <input type="text" name="login" id="" value="" placeholder="jeremy" required />
+          <div class="input-container">
+            <label>Password *</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              value=""
+              placeholder="must be at least 9 characters"
+              required
+            />
+            <i class="fa fa-eye-slash"></i>
+          </div>
+          {% if redirect_field_value %}
+          <input
+            type="hidden"
+            name="{{ redirect_field_name }}"
+            value="{{ redirect_field_value }}"
+          />
+          {% endif %}
 
-
-                <div class="input-container">
-
-                    <label>Password *</label>
-                    <input type="password" name="password" id="password" value="" placeholder="must be at least 9 characters" required />  <i class="fa fa-eye-slash"></i>
-                </div>
-                {% if redirect_field_value %}
-                    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-                {% endif %}
-
-                <button id="sign-up-btn" type="submit">Login</button>
-                <button id="google-btn" type="submit"><a href=""><i class="fa fa-google"></i>&nbsp;Sign in with Google</a></button>
-                <p class="login">
-                    Don't have an account? <a href="{% url 'account_signup' %}"><b>Sign Up</b></a>
-                </p>
-            </form>
-        </div>
-
+          <button id="sign-up-btn" type="submit">Login</button>
+          <button id="google-btn" type="submit">
+            <a href=""><i class="fa fa-google"></i>&nbsp;Sign in with Google</a>
+          </button>
+          <p class="login">
+            Don't have an account?
+            <a href="{% url 'account_signup' %}"><b>Sign Up</b></a>
+          </p>
+          <a href="#">Forgot Password</a>
+        </form>
+      </div>
     </div>
-</body>
+  </body>
 </html>
