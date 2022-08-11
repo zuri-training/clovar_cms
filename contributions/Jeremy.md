@@ -9,7 +9,7 @@
 - Landing page - <https://github.com/zuri-training/team-15_my-cms/issues/69#issuecomment-1207919166>
 - Templates - <https://github.com/zuri-training/team-15_my-cms/issues/121>
 - README.md - <https://github.com/zuri-training/team-15_my-cms/blob/main/README.md>
-- CONTRIBUTING.md - https://github.com/zuri-training/team-15_my-cms/blob/main/CONTRIBUTING.md
+- CONTRIBUTING.md - <https://github.com/zuri-training/team-15_my-cms/blob/main/CONTRIBUTING.md>
 - Google sheet for first presentation - <https://docs.google.com/spreadsheets/d/1Qo3FA5IPrpXJpp4b1SNeKv78Ote4-91-Bx-mtft9wtI/edit?usp=sharing>
 - Update `confirm-sign-out.html` - <https://github.com/zuri-training/team-15_my-cms/issues/141>
 - Review | Merge Pull Requests - <https://github.com/zuri-training/team-15_my-cms/commits?author=jeremiey&since=2022-08-10&until=2022-08-11>
