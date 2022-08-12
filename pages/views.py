@@ -1,3 +1,5 @@
+from django.conf import settings
+from django.shortcuts import redirect
 from django.shortcuts import render
 from django.views.generic import TemplateView
 
@@ -14,3 +16,11 @@ class DashboardView(TemplateView):
 
 class SelectTemplateView(TemplateView):
     template_name = "select_template.html"
+
+
+def error_404(request, exception):
+    return render(request, "404.html")
+
+
+def error_500(request):
+    return render(request, "404.html")

@@ -1,7 +1,8 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Verify Email | Clovar</title>
+    <title>404 | Clovar</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,37 +13,31 @@
     <!-- Favicon -->
     <link
       rel="shortcut icon"
-      href="./assets/images/favicon.ico"
+      href="{% static 'assets/images/favicon.ico' %}"
       type="image/x-icon"
     />
     <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/verify-email.css" />
+    <link rel="stylesheet" href="{% static 'assets/css/404.css' %}">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <header>
       <nav>
-        <img src="./assets/images/logo.png" alt="Clovar Logo" />
+        <a href="{% url 'home' %}"><img src="{% static 'assets/images/logo.png' %}" alt="Clovar Logo"></a>
       </nav>
     </header>
     <main>
       <div class="container">
         <div class="content">
-          <h1>Verify your email address</h1>
-          <p class="description">
-            Click the button below to confirm that onelegtea@gmail.com belongs
-            to you.
-          </p>
-          <button>Verify</button>
-          <p class="issue">
-            Have an issue? <a href="#!">Contact us</a>
-          </p>
+          <img src="{% static 'assets/images/404-icon.png' %}" alt="404 icon">
+          <h1>Oops!</h1>
+          <p>Page not found...</p>
         </div>
       </div>
     </main>
