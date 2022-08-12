@@ -425,3 +425,13 @@ button:active {
   color: white;
   background-color: #352a66 !important;
 }
+
+#options-btn:hover {
+  border: 1px solid #e7a644 !important;
+  background-color: #e7a644 !important;
+}
+
+#options-btn:active {
+  border: 1px solid #cc8d33 !important;
+  background-color: #cc8d33 !important;
+}
