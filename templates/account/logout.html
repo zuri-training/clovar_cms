@@ -1,39 +1,59 @@
 {% load static %}
 {% load i18n %}
+<!--second temp-->
 <!DOCTYPE html>
-<html>
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <!--Mobile metas-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Clovar</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{% static 'assets/css/logout.css' %}" type="text/css" media="all" />
-
-   
-</head>
-<body>
-    <br />
-
-    <img id="logo" src="https://i.ibb.co/vdBWPRw/logo.png" alt="" />
-
-    <div class="container">
-        <label for=""><i class="fa fa-exclamation-triangle"></i></label>
-
-        <h4 id="">Are you leaving?</h4>
-        <p>
-            {{user.username}},are you sure you want to sign out?
-        </p>
-        <br/>
-        <button id="cancel" type="submit"><a href="{{request.META.HTTP_REFERER}}">Cancel</a></button>
-        <form method="post" action="{% url 'account_logout' %}">
-            {% csrf_token %}
-            {% if redirect_field_value %}
-            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
-            {% endif %}
-        <button id="yes" type="submit">Yes</button>
-        </form>
-
-    </div>
-</body>
+<html lang="en">
+  <head>
+    <title>Confirm Sign Out | Clovar</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:image"
+      content="https://avatars.githubusercontent.com/t/6383931?s=280&v=4"
+    />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="{% static 'assets/images/favicon.ico' %}"
+      type="image/x-icon"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/logout.css' %}">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="{% static 'assets/images/logo.png' %}" alt="Clovar Logo">
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="content">
+          <img src="{% static 'assets/images/caution.png' %}" alt="Caution icon">
+          <h1>Are you leaving?</h1>
+          <p>{{user.username}}, are you sure you want to sign out?</p>
+          <div class="buttons">
+            <button class="cancel"><a href="{{request.META.HTTP_REFERER}}">Cancel</a></button>
+            <div class="buttons">
+              <form method='post' action="{% url 'account_logout' %}">
+                {% csrf_token %}
+                {% if redirect_field_value %}
+                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+                {% endif %}
+                <button class="sign-out">Sign Out</button>
+              </form>
+            </div>        
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

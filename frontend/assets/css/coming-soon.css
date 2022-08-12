@@ -41,7 +41,7 @@ nav img {
   transform: translate(-50%, -50%);
   width: 100%;
   padding: 4rem;
-  height: 350px;
+  height: 400px;
   max-width: 550px;
   color: var(--light-black);
   background-color: var(--pure-white);
@@ -49,8 +49,16 @@ nav img {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
 .content img {
-  width: 50px;
+  width: 100px;
   height: auto;
   padding-bottom: 1rem;
 }
@@ -65,45 +73,4 @@ nav img {
   font-weight: 600;
   font-size: 1.25rem;
   padding-bottom: 3rem;
-}
-
-button {
-  padding: 0.7rem 1rem;
-  width: 8.75rem;
-  font-family: var(--montserrat);
-  font-size: 1rem;
-  font-weight: 500;
-  border-radius: var(--border-radius);
-  transition: all 0.2s ease-in-out;
-}
-
-.buttons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.buttons .cancel {
-  background-color: var(--pure-white);
-  border: 1px solid var(--accent-gold);
-  color: var(--accent-gold);
-}
-
-.buttons .sign-out {
-  background-color: var(--accent-gold);
-  border: 1px solid var(--accent-gold);
-  color: var(--milk);
-  margin-left: 1rem;
-}
-
-button:hover {
-  background-color: #e7a644 !important;
-  color: var(--milk) !important;
-  border-color: #e7a644 !important;
-}
-
-button:active {
-  background-color: #cc8d33 !important;
-  color: var(--milk);
-  border-color: #e7a644 !important;
 }

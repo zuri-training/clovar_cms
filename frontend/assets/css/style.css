@@ -55,8 +55,9 @@ main .boundary-hr {
 }
 
 /* buttons */
-button:not(.navbar-toggler),
-input[type='submit'] {
+.navbar-buttons button,
+.hero-section button,
+.auth-buttons button {
   width: 200px !important;
   padding: 0.5rem 1rem;
   border-radius: var(--border-radius) !important;
@@ -78,23 +79,39 @@ input[type='submit']:active {
 }
 
 /* top navbar */
-.navbar-buttons .login {
+.login {
   background-color: transparent;
   color: var(--black-text);
   border: 1px solid var(--accent-purple);
   margin-right: 1rem;
 }
 
-.navbar-buttons .get-started {
+.get-started {
   background-color: var(--accent-purple);
   color: var(--milk);
   border: 1px solid var(--accent-purple);
   margin-left: 1rem;
 }
 
+@media screen and (max-width: 1200px) {
+  nav {
+    padding-inline: 1rem !important;
+  }
+
+  .navbar-buttons button {
+    width: 150px !important;
+  }
+}
+
 .nav-link {
   font-weight: 400;
   font-size: 0.88rem !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-link {
+    font-size: 0.8rem !important;
+  }
 }
 
 .navbar-toggler {
@@ -237,6 +254,27 @@ input[type='submit']:active {
   border-right-style: none;
 }
 
+@media screen and (max-width: 1080px) {
+  .hero-section form input {
+    padding-bottom: 0.55rem;
+    padding-top: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero-section form input {
+    padding-bottom: 0.58rem;
+    padding-top: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section form input {
+    padding-bottom: 0.75rem !important;
+    padding-top: 0.8rem !important;
+  }
+}
+
 .hero-section form input:focus {
   outline: none;
   border-color: var(--accent-gold);
@@ -260,10 +298,10 @@ input[type='submit']:active {
     width: 60%;
     margin-right: -15px;
     padding-inline: 1rem;
-    padding-bottom: 0.8rem;
-    padding-top: 0.8rem;
+    padding-bottom: 0.8rem !important;
+    padding-top: 0.813rem !important;
   }
-  
+
   .hero-section form button {
     font-size: 0.9rem !important;
     padding: 0.75rem 0.5rem !important;
@@ -271,13 +309,40 @@ input[type='submit']:active {
   }
 }
 
-/* Checkmarks section */
+/* make input and button on each other on very small screens */
+@media screen and (max-width: 480px) {
+  .hero-section form {
+    display: grid;
+  }
+  .hero-section form input {
+    width: 100%;
+    margin-right: 0;
+    padding-inline: 1rem;
+    padding-block: 0.8rem;
+    border: 2px solid var(--light-black);
+    border-radius: var(--border-radius) !important;
+  }
+
+  .hero-section form button {
+    font-size: 0.9rem !important;
+    padding: 0.75rem 0.5rem !important;
+    width: 50% !important;
+    margin-top: 1rem;
+  }
+}
+
+/* Features section | login/get-started buttons */
+.features-section {
+  padding-block: 7rem;
+  background-color: var(--milk);
+  text-align: center;
+}
+
 .checkmarks-section {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--milk);
-  padding-block: 7rem;
 }
 
 .checkmarks-section p {
@@ -290,37 +355,140 @@ input[type='submit']:active {
   padding-top: 0.25rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
+  .features-section {
+    padding-block: 3rem;
+    text-align: left;
+  }
+
   .checkmarks-section {
-    display: block;
-    padding-block: 5rem !important;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 1rem !important;
     padding-inline: 2rem;
+  }
+
+  .checkmarks-section p {
+    font-size: 0.8rem;
+  }
+}
+
+.auth-buttons {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .auth-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .auth-buttons button {
+    width: 50% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .auth-buttons {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+  }
+
+  .auth-buttons button {
+    margin: 0 auto 1rem;
+    width: 100% !important;
   }
 }
 
 /* Blog Tips Section */
-.blog-tips {
+.blog-tips,
+.blog-tips-mobile {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 0 7rem;
   max-width: 100%;
 }
 
-.blog-tips .blog-tip p,
-.blog-tips .blog-tip h5 {
+.blog-tips {
+  padding-inline: 5rem;
+}
+
+.blog-tips .blog-tip .first {
+  width: 50%;
+}
+
+.blog-tips-mobile {
+  padding-inline: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .blog-tips {
+    padding: 1rem;
+  }
+
+  .blog-tips .blog-tip {
+    padding-inline: 1rem !important;
+  }
+}
+
+.blog-tips-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .blog-tips {
+    display: none;
+  }
+
+  .blog-tips-mobile {
+    display: block;
+    text-align: center;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .blog-tips-mobile {
+    height: 300px;
+  }
+}
+
+.carousel .carousel-indicators {
+  position: relative;
+}
+
+.carousel .carousel-indicators button {
+  width: 10px !important;
+  height: 10px;
+  border-radius: 100% !important;
+}
+
+.carousel .carousel-indicators .active {
+  background-color: var(--accent-purple) !important;
+}
+
+.blog-tips-mobile .blog-tip p {
+  max-width: 400px;
+  margin-inline: auto;
+}
+
+.blog-tip p,
+.blog-tip h5 {
   font-weight: 400 !important;
   font-size: 1rem;
 }
 
-.blog-tips .blog-tip p {
+.blog-tip p {
   font-size: small;
 }
 
-.blog-tips .blog-tip h5 {
-  text-transform: capitalize;
+.blog-tip h5 {
+  text-transform: uppercase;
+  font-weight: 600 !important;
 }
 
 /* Company Images Section */
@@ -338,6 +506,10 @@ input[type='submit']:active {
   .company-images {
     display: none;
   }
+
+  .hr1 {
+    display: none;
+  }
 }
 
 .company-images img {
@@ -351,32 +523,58 @@ input[type='submit']:active {
   padding-top: 6rem;
 }
 
-.faq-section .faq-container {
+.faq-container {
   width: 70%;
   margin: 0 auto;
 }
 
-.faq-section .faq-container h5 {
+@media screen and (max-width: 992px) {
+  .faq-container {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .faq-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .faq-container {
+    width: 100%;
+  }
+}
+
+.faq-container h5 {
   font-weight: 500;
 }
 
-.faq-section .faq-container .faq p {
+.faq-container .faq p {
   margin: 0 !important;
   position: relative;
-  font-weight: 600;
+  font-weight: 400;
 }
 
-.faq-section .faq-container .faq hr {
+.faq-container hr {
   border-top: 1.5px solid var(--accent-gold) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  margin-block: 0 !important;
+  margin: 0 auto !important;
 }
 
-.faq-section .faq-container .faq p .plus-icon {
+.faq-container .faq p .plus-icon {
   color: var(--accent-gold) !important;
   position: absolute;
   right: 16px;
+}
+
+.faq-question {
+  padding-bottom: 0.75rem;
+}
+
+@media screen and (max-width: 600px) {
+  .faq-container .faq p {
+    font-size: 0.8rem;
+  }
 }
 
 /* Footer */
@@ -388,6 +586,21 @@ footer {
 footer .footer-logo {
   width: 100px;
   height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+
+  footer .footer-logo {
+    display: none !important;
+  }
+
+  footer .nav {
+    padding-bottom: 1.5rem;
+  }
 }
 
 footer .nav-link .facebook-icon {

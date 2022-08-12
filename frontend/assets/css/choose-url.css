@@ -1,18 +1,18 @@
-:root{
-    --milk: #fffbf5;
-    --montserrat: "Montserrat", "sans-serif";
-    --background: "#fff";
-    --accent-gold: #cc8d33;
-    --accent-purple: #50409a;
-    --button-hover: #6a55cc;
-    --button-active: #352A66;
+:root {
+  --milk: #fffbf5;
+  --montserrat: 'Montserrat', 'sans-serif';
+  --background: '#fff';
+  --accent-gold: #cc8d33;
+  --accent-purple: #50409a;
+  --button-hover: #6a55cc;
+  --button-active: #352a66;
 }
 
-html{
-     background: var(--milk);
-     font-family: var(--montserrat);
-     width: 1300px;
-     height: auto;
+html {
+  background: var(--milk);
+  font-family: var(--montserrat);
+  width: 1300px;
+  height: auto;
 }
 
 * {
@@ -52,8 +52,8 @@ html{
   height: 41px;
   border: 2px solid #50409a;
 }
-#third{
-     background-color: #50409a;
+#third {
+  background-color: #50409a;
 }
 
 .line {
@@ -63,163 +63,172 @@ html{
   margin-top: 19px;
 }
 
-form{
-    background-color: var(--background);
-    margin-top: 150px;
-    width: 35rem;
-    height: 20rem;
-    margin-left: 350px;
-   outline: #000;
-   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .5);
+form {
+  padding: 2.5rem;
+  background-color: var(--background);
+  margin-top: 150px;
+  width: 35rem;
+  height: 20rem;
+  margin-left: 350px;
+  outline: #545454;
+  border: 1px solid #545454;
+  box-shadow: rgba(149, 157, 165, 0.6) 0px 8px 24px;
 }
-label{
-    margin-left: 15px;
-    font-weight: bold;
+label {
+  font-weight: bold;
+  color: #545454;
 }
-form > input{
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid #000;
-    outline: none;
-    height: 40px;
-    width: 90%;
-    margin-left: 15px;
-    padding-top: 20px;
+form > input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #545454;
+  outline: none;
+  height: 40px;
+  width: 90%;
+  padding-top: 20px;
+  font-family: var(--montserrat);
 }
-::-webkit-input-placeholder{
-    color: var(--accent-gold);
-    float: right;
-    font-size: 1rem;
+::-webkit-input-placeholder {
+  color: var(--accent-gold);
+  float: right;
+  font-size: 1rem;
 }
-h2{
-    padding-top: 30px;
-    margin-left: 15px;
+h2 {
+  color: #222222;
 }
-p{
-    padding-top: 20px;
-    margin-left: 15px;
-    
-}
-.text{
-    font-size: smaller;
-    color: var(--accent-gold);
+p {
+  padding-top: 20px;
 
+  color: #545454;
 }
-.buttons{
-    position: absolute;
-    bottom: 50px;
-    right: 40px;
+.text {
+  font-size: smaller;
+  color: var(--accent-gold);
 }
-button{
-    padding: 6px 30px;
-    border-radius: 5px;
-    border: #50409a 1px solid;
-    background: var(--milk);
-    cursor: pointer;
+.buttons {
+  position: absolute;
+  bottom: 10px;
+  right: 40px;
 }
-button:hover{
-    color: #fff;
-    background-color: var(--button-hover);
-       transition: transform 150ms;
-    transform: scale(1.03);
+button {
+  padding: 0.7rem 1rem;
+  width: 10rem;
+  border-radius: 8px;
+  border: #50409a 1px solid;
+  background: var(--milk);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-family: var(--montserrat);
+  font-weight: 500;
 }
-#next{
-    background-color: var(--button-active);
-    color: #fff;
+button:hover {
+  color: var(--milk) !important;
+  background-color: var(--button-hover);
 }
-#next:hover{
-        color: #fff;
-    background-color: var(--button-hover);
+button:active {
+  color: var(--milk) !important;
+  background-color: var(--button-active);
 }
-#next a{
-    text-decoration: none;
-    color: #fff;
+#next {
+  background-color: var(--accent-purple);
+  color: var(--milk);
 }
-#Back{
-    color: #000;
-    text-decoration: none;
+#next:hover {
+  color: var(--milk);
+  background-color: var(--button-hover);
 }
-#skip{
-    position: absolute;
-    bottom: 50px;
-    margin-left: 3rem;
-    text-decoration: none;
-    color: #000;
+#next:active {
+  color: var(--milk) !important;
+  background-color: var(--button-active);
 }
-#skip:hover{
-    color: var(--button-active);
+#next a {
+  text-decoration: none;
+  color: var(--milk);
 }
-@media screen and (max-width: 1110px){
-    form{
-        margin: 150px 0px 0 280px;
-    }
-
+#Back {
+  color: #545454;
+  text-decoration: none;
 }
-@media screen and (max-width:1360px) {
-    form{
-        margin: 150px 0 0 350px;
-    }
+#Back:hover {
+  color: var(--milk);
 }
-@media screen and (max-width:1250px) {
-    form{
-        margin: 150px 0 0 300px;
-    }
-    
+#Back:active {
+  color: var(--milk);
+}
+#skip {
+  position: absolute;
+  bottom: 10px;
+  margin-left: 3rem;
+  text-decoration: none;
+  color: #545454;
+}
+#skip:hover {
+  color: var(--button-active);
+}
+@media screen and (max-width: 1110px) {
+  form {
+    margin: 150px 0px 0 280px;
+  }
+}
+@media screen and (max-width: 1360px) {
+  form {
+    margin: 150px 0 0 350px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  form {
+    margin: 150px 0 0 300px;
+  }
 }
 @media screen and (max-width: 980px) {
-    form{
-        margin: 150px 0 0 270px;
-    }
-    
+  form {
+    margin: 150px 0 0 270px;
+  }
 }
 @media screen and (max-width: 945px) {
-    form{
-        margin: 150px 0 0 250px;
-    }
-    
+  form {
+    margin: 150px 0 0 250px;
+  }
 }
-@media screen and (max-width: 900px){
-    form{
-        margin: 150px 0 0 220px;
-    }
+@media screen and (max-width: 900px) {
+  form {
+    margin: 150px 0 0 220px;
+  }
 }
 @media screen and (max-width: 870px) {
-    form{
-        margin: 150px 0 0 190px;
-        width: 30rem;
-    }
-    .mainbreadcrumb{
-        width: 30rem;
-    }
+  form {
+    margin: 150px 0 0 190px;
+    width: 30rem;
+  }
+  .mainbreadcrumb {
+    width: 30rem;
+  }
 }
 @media screen and (max-width: 705px) {
-    form{
-        margin: 150px 0 0 100px;
-        width: 30rem;
-    }
-    .mainbreadcrumb{
-        left:15%
-    }
-
-    
+  form {
+    margin: 150px 0 0 100px;
+    width: 30rem;
+  }
+  .mainbreadcrumb {
+    left: 15%;
+  }
 }
 @media screen and (max-width: 620px) {
-    form{
-        margin: 150px 0 0 80px;
-        width: 25rem;
-    }
-    .mainbreadcrumb{
-        width: 25rem;
-    }
+  form {
+    margin: 150px 0 0 80px;
+    width: 25rem;
+  }
+  .mainbreadcrumb {
+    width: 25rem;
+  }
 }
 @media screen and (max-width: 450px) {
-    form{
-        margin: 150px 0 0 50px;
-        width: 20rem;
-        height: 8rem;
-    }
-    .mainbreadcrumb{
-        width: 20rem;
-    }
- 
+  form {
+    margin: 150px 0 0 50px;
+    width: 20rem;
+    height: 8rem;
+  }
+  .mainbreadcrumb {
+    width: 20rem;
+  }
 }

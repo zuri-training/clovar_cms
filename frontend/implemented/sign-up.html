@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,13 +12,13 @@
     <!-- Favicon -->
     <link
       rel="shortcut icon"
-      href="{% static 'assets/images/favicon.ico' %}"
+      href="./assets/images/favicon.ico"
       type="image/x-icon"
     />
     <!--Site CSS-->
     <link
       rel="stylesheet"
-      href="{% static 'assets/css/sign-up.css' %}"
+      href="./assets/css/sign-up.css"
       type="text/css"
       media="all"
     />
@@ -40,7 +39,7 @@
     <div class="container">
       <div id="intro">
         <br />
-        <img id="logo" src="{% static 'assets/images/logo.png' %}" alt="" />
+        <img id="logo" src="./assets/images/logo.png" alt="" />
         <h1>
           Build your <span id="span"><b>Blogsites</b></span> from scratch
           <span id="span"><b>CODEFREE!</b></span>
@@ -48,39 +47,24 @@
       </div>
 
       <div id="sign-up">
-        <button id="cancel" type="submit"><a href="{% url 'home' %}">X</a></button>
+        <button id="cancel" type="submit">X</button>
         <br />
         <h1>Create Account</h1>
         <h2>Welcome! Let's get you started.</h2>
-        <form action="{% url 'account_signup' %}" method="post" accept-charset="utf-8">
-            {% if form.errors %}
-                {% for field in form %}
-                    {% for error in field.errors %}
-                        <div class="alert alert-error">
-                            <strong>{{ error|escape }}</strong>
-                        </div>
-                    {% endfor %}
-                {% endfor %}
-                {% for error in form.non_field_errors %}
-                    <div class="alert alert-error">
-                        <strong>{{ error|escape }}</strong>
-                    </div>
-                {% endfor %}
-                {% endif %}
-            {% csrf_token %}
+        <form action="" method="get" accept-charset="utf-8">
           <label>Username *</label>
           <input
             type="text"
-            name="username"
+            name=""
             id=""
             value=""
-            placeholder="username"
+            placeholder="your name"
             required
           />
           <label>Email Address *</label>
           <input
             type="email"
-            name="email"
+            name=""
             id=""
             value=""
             placeholder="zuri@gmail.com"
@@ -91,10 +75,10 @@
             <label>Password *</label>
             <input
               type="password"
-              name="password1"
+              name=""
               id="password"
               value=""
-              placeholder="must be at least 9 characters"
+              placeholder="must be at least 6 characters"
               required
             />
             <i class="fa fa-eye-slash"></i>
@@ -103,24 +87,19 @@
             <label>Confirm Password *</label>
             <input
               type="password"
-              name="password2"
+              name=""
               id="password"
               value=""
               placeholder="passwords must match"
               required
             /><i class="fa fa-eye-slash"></i>
           </div>
-          <div>
-            {% if redirect_field_value %}
-                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-            {% endif %}
-        </div>
           <button id="sign-up-btn" type="submit">Create Account</button>
           <button id="google-btn" type="submit">
             <i class="fa fa-google"></i> Sign up with Google
           </button>
           <p class="login">
-            Already have an account? <a href="{% url 'account_login' %}"><b>Log In</b></a>
+            Already have an account? <a href="#"><b>Log In</b></a>
           </p>
         </form>
       </div>
