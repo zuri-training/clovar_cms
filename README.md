@@ -58,7 +58,14 @@ SECRET_KEY=<your-secret-key>
 
 *Generate a secret key from <https://djecrety.ir/>.*
 
-Runserver
+Run the migrations
+
+```python
+python manage.py migrate
+```
+
+Run the server
+
 ```python
 python manage.py runserver
 ```
@@ -100,18 +107,16 @@ python manage.py runserver
 
 - [@jeremiey](https://www.github.com/jeremiey)
 - [@chidiarua](https://www.github.com/chidiarua)
-- [@magnificientStudios](https://www.github.com/magnificientStudios)
+- [@steph-ayo](https://www.github.com/steph-ayo)
 - [@optimistictech](https://www.github.com/optimistictech)
 - [@alvanokey](https://www.github.com/alvanokey)
-- [@musoye](https://www.github.com/musoye)
+- [@magnificientStudios](https://www.github.com/magnificientStudios)
+- [@BioMeindinyo](https://www.github.com/BioMeindinyo)
 - [@yusufadegbite](https://www.github.com/yusufadegbite)
 - [@Noble101](https://www.github.com/Noble101)
-- [@jonathanwambua](https://www.github.com/jonathanwambua)
-- [@steph-ayo](https://www.github.com/steph-ayo)
-- [@BioMeindinyo](https://www.github.com/BioMeindinyo)
+- [@musoye](https://www.github.com/musoye)
 - [@Chelsofia](https://www.github.com/Chelsofia)
 - [@Ismat27](https://www.github.com/Ismat27)
-- [@emmyrald](https://www.github.com/emmyrald)
 - [@Prideland-okoi](https://github.com/Prideland-okoi)
 
 </details>
