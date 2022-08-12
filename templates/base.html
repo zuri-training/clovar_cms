@@ -99,6 +99,7 @@
             {% if user.is_authenticated %}
             <div class="d-flex navbar-buttons d-none d-lg-block">
               <button class="login me-3" type="button">Hi, {{user.username}}</button>
+              <button class="get-started ms-3" type="button"><a href="{% url 'dashboard' %}">Dashboard</a></button>
               <button class="get-started ms-3" type="button"><a href="{% url 'account_logout' %}">Logout</a></button>
             </div>
             {% else %}
