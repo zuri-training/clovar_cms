@@ -2,10 +2,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <!--Mobile metas-->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Clovar</title>
+    <title>Log In | Clovar</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:image"
+      content="https://avatars.githubusercontent.com/t/6383931?s=280&v=4"
+    />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="{% static 'assets/images/favicon.ico' %}"
+      type="image/x-icon"
+    />
     <!--Site CSS-->
     <link
       rel="stylesheet"
@@ -17,10 +27,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -28,54 +39,52 @@
     <!--Main-->
     <div class="container">
       <div id="intro">
-        <br />
-        <img id="logo" src="https://i.ibb.co/vdBWPRw/logo.png" alt="" />
-        <h1>
+        <img id="logo" src="{% static 'assets/images/logo.png' %}" alt="" />
+        <h1 class="phead">
           Build your <span id="span"><b>Blogsites</b></span> from scratch
           <span id="span"><b>CODEFREE!</b></span>
         </h1>
       </div>
 
       <div id="sign-up">
-        <button id="cancel" type="submit">
-          <a href="{% url 'home' %}">X</a>
-        </button>
+        <button id="cancel" type="submit"><a href="{% url 'home' %}">X</a></button>
         <br />
         <h1>Welcome Back</h1>
-        <h2>Login,your details</h2>
-        <form
-          action="{% url 'account_login' %}"
-          method="post"
-          accept-charset="utf-8"
-        >
-          {% if form.errors %} {% for field in form %} {% for error in
-          field.errors %}
+        <h2>Login, your details</h2>
+        <form action="{% url 'account_login' %}" method="post" accept-charset="utf-8">
+        {% if form.errors %} 
+          {% for field in form %} 
+          {% for error in field.errors %}
           <div class="alert alert-error">
             <strong>{{ error|escape }}</strong>
           </div>
-          {% endfor %} {% endfor %} {% for error in form.non_field_errors %}
+          {% endfor %} 
+          {% endfor %} 
+          {% for error in form.non_field_errors %}
           <div class="alert alert-error">
             <strong>{{ error|escape }}</strong>
           </div>
-          {% endfor %} {% endif %} {% csrf_token %}
-          <label>Username *</label>
+          {% endfor %} 
+        {% endif %} 
+          {% csrf_token %}
+          <label>Username*</label>
           <input
             type="text"
             name="login"
             id=""
             value=""
-            placeholder="jeremy"
+            placeholder="username"
             required
           />
 
           <div class="input-container">
-            <label>Password *</label>
+            <label>Password*</label>
             <input
               type="password"
               name="password"
               id="password"
               value=""
-              placeholder="must be at least 9 characters"
+              placeholder="password"
               required
             />
             <i class="fa fa-eye-slash"></i>
@@ -87,16 +96,14 @@
             value="{{ redirect_field_value }}"
           />
           {% endif %}
-
-          <button id="sign-up-btn" type="submit">Login</button>
+          <small><a href="#!">Forgot Password?</a></small>
+          <button id="sign-up-btn" type="submit">Log in</button>
           <button id="google-btn" type="submit">
-            <a href=""><i class="fa fa-google"></i>&nbsp;Sign in with Google</a>
+            <i class="fa fa-google"></i> Sign in with Google
           </button>
           <p class="login">
-            Don't have an account?
-            <a href="{% url 'account_signup' %}"><b>Sign Up</b></a>
+            Don't have an account? <a href="{% url 'account_signup' %}"><b>Sign Up</b></a>
           </p>
-          <a href="#">Forgot Password</a>
         </form>
       </div>
     </div>
