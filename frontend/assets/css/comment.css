@@ -1,0 +1,106 @@
+:root {
+  --black: #222222;
+  --background: #fff;
+  --milk: #fffbf5;
+  --montserrat: "Montserrat", "sans-serif";
+  --accent-gold: #cc8d33;
+  --accent-purple: #50409a;
+  --button-hover: #6a55cc;
+  --button-active: #352a66;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+html {
+  background: var(--milk);
+  font-family: var(--montserrat);
+}
+.container {
+  display: flex;
+  background-color: red;
+  height: 50rem;
+  width: 100%;
+}
+.comp {
+  flex: 1;
+  background-color: #222222;
+  color: #fff;
+}
+.comp2 {
+  flex: 2;
+  background-color: var(--milk);
+}
+.home {
+  height: 2.2rem;
+  width: 96%;
+  /* border: 1px solid black; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 8px;
+}
+.home:hover {
+  background-color: #50409a;
+  cursor: pointer;
+  transition: transform 150ms;
+  transform: scale(1.03);
+}
+.exit {
+  height: 7rem;
+  margin-left: 20px;
+  padding-top: 70px;
+}
+#pac {
+  padding-top: 0;
+}
+#pac,
+#pap {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+#come {
+  padding-top: 90px;
+  text-align: center;
+}
+#view {
+  text-align: center;
+}
+.learn {
+  color: var(--accent-gold);
+}
+.line {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  padding: 12px 24px;
+  margin-top: 90px;
+  width: 85%;
+  height: 51px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 3px solid #50409a;
+}
+.man {
+  padding-top: 90px;
+}
+.person {
+  margin-left: 300px;
+  height: 25rem;
+}
+i {
+  color: #50409a;
+}
+span {
+  color: var(--accent-gold);
+}
+span i {
+  color: #50409a;
+}
+h3 {
+  text-align: center;
+  padding-top: 45px;
+}
