@@ -34,7 +34,7 @@ body {
 }
 
 header {
-  background: linear-gradient(to right, #fbf2e4, #fff) !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .purple-text {
@@ -83,34 +83,33 @@ input[type='submit']:active {
   background-color: transparent;
   color: var(--black-text);
   border: 1px solid var(--accent-purple);
-  margin-right: 1rem;
 }
 
 .get-started {
   background-color: var(--accent-purple);
   color: var(--milk);
   border: 1px solid var(--accent-purple);
-  margin-left: 1rem;
 }
 
 @media screen and (max-width: 1200px) {
   nav {
-    padding-inline: 1rem !important;
+    padding-inline: 0 !important;
   }
 
   .navbar-buttons button {
-    width: 150px !important;
+    width: 130px !important;
+    font-size: small;
   }
 }
 
 .nav-link {
   font-weight: 400;
-  font-size: 0.88rem !important;
+  font-size: 0.85rem !important;
 }
 
 @media screen and (max-width: 1200px) {
   .nav-link {
-    font-size: 0.8rem !important;
+    font-size: 0.75rem !important;
   }
 }
 
@@ -119,10 +118,11 @@ input[type='submit']:active {
 }
 
 .navbar-brand img {
-  width: 150px;
+  width: 100px;
+  margin-bottom: 0.75rem;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .navbar-nav {
     padding-top: 2rem;
     text-align: center;
@@ -248,8 +248,8 @@ input[type='submit']:active {
   margin-right: -10px;
   /* padding */
   padding-inline: 1.5rem;
-  padding-bottom: 0.6rem;
-  padding-top: 0.65rem;
+  padding-bottom: 0.55rem;
+  padding-top: 0.7rem;
   /* border */
   border: 2px solid var(--light-black);
   border-top-left-radius: var(--border-radius);
@@ -312,7 +312,6 @@ input[type='submit']:active {
   }
 }
 
-/* make input and button on each other on very small screens */
 @media screen and (max-width: 480px) {
   .hero-section form {
     display: grid;
@@ -414,11 +413,14 @@ input[type='submit']:active {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: 100%;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;;
 }
 
 .blog-tips {
   padding-inline: 5rem;
+  
 }
 
 .blog-tips .blog-tip .first {
@@ -502,7 +504,8 @@ input[type='submit']:active {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: 100%;
+  width: 100%;
+  max-width: 1440px;
   padding-inline: 10rem;
 }
 

@@ -60,7 +60,7 @@
   <body>
     <header>
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg mx-xl-3 pt-sm-4">
+      <nav class="navbar navbar-expand-lg mx-xl-3">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="{% static 'assets/images/logo.png' %}" alt="Clovar logo"/>
@@ -98,14 +98,14 @@
             </ul>
             {% if user.is_authenticated %}
             <div class="d-flex navbar-buttons d-none d-lg-block">
-              <button class="login me-3" type="button">Hi, {{user.username}}</button>
-              <button class="get-started ms-3" type="button"><a href="{% url 'dashboard' %}">Dashboard</a></button>
-              <button class="get-started ms-3" type="button"><a href="{% url 'account_logout' %}">Logout</a></button>
+              <button class="login me-xl-3" type="button">Hi, {{user.username}}</button>
+              <button class="get-started" type="button"><a href="{% url 'dashboard' %}">Dashboard</a></button>
+              <button class="get-started ms-xl-3" type="button"><a href="{% url 'account_logout' %}">Logout</a></button>
             </div>
             {% else %}
             <div class="d-flex navbar-buttons d-none d-lg-block">
-              <button class="login me-3" type="button"><a href="{% url 'account_login' %}">Login</a></button>
-              <button class="get-started ms-3" type="button"><a href="{% url 'account_signup' %}">Get Started</a></button>
+              <button class="login me-xl-3" type="button"><a href="{% url 'account_login' %}">Login</a></button>
+              <button class="get-started ms-xl-3" type="button"><a href="{% url 'account_signup' %}">Get Started</a></button>
             </div>
             {% endif %}
           </div>
