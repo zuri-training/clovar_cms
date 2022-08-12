@@ -11,6 +11,7 @@ class HomePageView(TemplateView):
 class DashboardView(TemplateView):
     template_name = "dashboard.html"
 
+<<<<<<< HEAD
 #class choicepick(TemplateView):
     #template_name = "choose-url.html"
 #def choicepick(request):
@@ -27,3 +28,8 @@ class DashboardView(TemplateView):
 	#return render(request=request, template_name='frontend/signup-up.html')
 #def verify_email(request):
 	#return render(request=request, template_name='frontend/verify-email.html')
+=======
+
+class SelectTemplateView(TemplateView):
+    template_name = "select_template.html"
+>>>>>>> c21584273cec5dd633cf06d05650086e231280e7
