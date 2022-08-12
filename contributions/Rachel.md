@@ -8,4 +8,4 @@ Contributions
 
 - Dashboard: Comments page [#124](https://github.com/zuri-training/team-15_my-cms/issues/124)
 
-- Verification email sent page #122
+- Verification email sent page [#122](https://github.com/zuri-training/team-15_my-cms/issues/122)
