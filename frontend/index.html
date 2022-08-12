@@ -20,11 +20,11 @@
     />
     <link
       rel="shortcut icon"
-      href="./assets/images/favicon.ico"
+      href="{% static 'assets/images/favicon.ico' %}"
       type="image/x-icon"
     />
     <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/d778668bce.js"
@@ -53,7 +53,7 @@
     <!-- Typed.js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
     <!-- JavaScript -->
-    <script src="./assets/js/script.js" defer></script>
+    <script src="{% static 'assets/js/script.js' %}" defer></script>
   </head>
 
   <body>
@@ -62,7 +62,7 @@
       <nav class="navbar navbar-expand-lg mx-xl-3 pt-sm-4">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="./assets/images/logo.png" alt="Clovar logo" />
+            <img src="{% static 'assets/images/logo.png' %}" alt="Clovar logo" />
           </a>
 
           <button
@@ -300,10 +300,10 @@
 
       <!-- Company Images Section -->
       <section class="company-images py-5 my-4">
-        <img src="./assets/images/fliqpay.png" alt="boom logo" />
-        <img src="./assets/images/flutterwave.png" alt="boom logo" />
-        <img src="./assets/images/boom.png" alt="boom logo" />
-        <img src="./assets/images/amazon.png" alt="boom logo" />
+        <img src="{% static 'assets/images/fliqpay.png' %}" alt="boom logo" />
+        <img src="{% static 'assets/images/flutterwave.png' %}" alt="boom logo" />
+        <img src="{% static 'assets/images/boom.png' %}" alt="boom logo" />
+        <img src="{% static 'assets/images/amazon.png' %}" alt="boom logo" />
       </section>
       <hr class="boundary-hr" />
 
@@ -365,7 +365,7 @@
     >
       <p class="col-md-4 mb-0 text-muted">
         <img
-          src="./assets/images/logo.png"
+          src="{% static 'assets/images/logo.png' %}"
           alt="clovar logo"
           class="footer-logo"
         />
@@ -382,7 +382,7 @@
         <li class="nav-item">
           <a href="https://facebook.com" class="nav-link px-2 text-muted"
             ><img
-              src="./assets/images/facebook-icon.png"
+              src="{% static 'assets/images/facebook-icon.png' %}"
               alt="Facebook Icon"
               class="me-1 facebook-icon"
           /></a>
@@ -390,7 +390,7 @@
         <li class="nav-item">
           <a href="https://instagram.com" class="nav-link px-2 text-muted"
             ><img
-              src="./assets/images/instagram-icon.png"
+              src="{% static 'assets/images/instagram-icon.png' %}"
               alt="Instagram icon"
               class="instagram-icon"
           /></a>

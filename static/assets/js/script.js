@@ -1,0 +1,1 @@
+var typed = new Typed(".auto-type", { strings: ["Contents", "Concepts", "Passion"], typeSpeed: 125, backSpeed: 150, loop: !0, cursorChar: "" }), typed1 = new Typed(".auto-type1", { strings: ["Contents", "Concepts", "Passion"], typeSpeed: 125, backSpeed: 150, loop: !0, cursorChar: "" });
