@@ -64,3 +64,8 @@ h1 {
 i {
   color: green;
 }
+
+p a {
+  color: var(--accent-gold);
+  text-decoration: none;
+}
