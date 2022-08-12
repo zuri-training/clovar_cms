@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+  background: #fffbf5;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+#logout-icon {
+  width: 50px;
+  height: auto;
+  margin-left: 15px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 20%;
+  max-width: 50%;
+  background: black;
+  color: white;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: all 0.5s ease;
+}
+
+.sidebar ul {
+  display: block;
+}
+
+.sidebar ul li {
+  list-style: none;
+  text-align: left;
+  padding-left: 15px;
+  padding-top: 8px;
+  line-height: 45px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.sidebar ul li:hover {
+  background: #50409a;
+}
+
+.sidebar ul li a:hover {
+  background: #50409a;
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 80%;
+  height: 920px;
+  margin: 20px;
+  border: 1px solid #50409a;
+  border-bottom: 0;
+}
+
+#top {
+  height: 65px;
+  width: 100%;
+  border-bottom: 1px solid #50409a;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 200;
+  padding: 15px;
+}
+
+#inputs {
+  padding: 25px;
+  height: auto;
+  position: relative;
+}
+
+#inputs label {
+  margin-bottom: 25px;
+}
+
+#inputs #username {
+  width: 95%;
+  height: 100px;
+  border: 1px solid #50409a;
+  background: #fffbf5;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+#inputs p {
+  text-align: left;
+  padding-top: 8px;
+}
+
+#inputs #custom {
+  width: 95%;
+  height: 150px;
+  border: 1px solid #50409a;
+  background: #fffbf5;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+#inputs #radio {
+  width: 22px;
+  height: 22px;
+  margin-top: 8px;
+}
+
+.radio-btn {
+  font-size: 18px;
+  display: inline-block;
+  line-height: 17px;
+}
+
+.radio-btn span {
+  font-size: 12px;
+  font-weight: 250;
+}
+
+#inputs button {
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #ffce47;
+  background: #fffbf5;
+  border: 1px solid #50409a;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
