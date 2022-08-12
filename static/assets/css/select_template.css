@@ -147,22 +147,22 @@ main p {
   height: 416px;
 }
 #col1 {
-  background-image: url(/frontend/assets/images/template1.png);
+  background-image: url(/static/assets/images/template1.png);
   background-repeat: no-repeat;
   background-size: 100% 416px;
 }
 #col2 {
-  background-image: url(/frontend/assets/images/template2.png);
+  background-image: url(/static/assets/images/template2.png);
   background-repeat: no-repeat;
   background-size: 100% 416px;
 }
 #col3 {
-  background-image: url(/frontend/assets/images/template3.png);
+  background-image: url(/static/assets/images/template3.png);
   background-repeat: no-repeat;
   background-size: 100% 416px;
 }
 #col4 {
-  background-image: url(/frontend/assets/images/template4.png);
+  background-image: url(/static/assets/images/template4.png);
   background-repeat: no-repeat;
   background-size: 100% 416px;
 }
