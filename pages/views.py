@@ -10,3 +10,7 @@ class HomePageView(TemplateView):
 
 class DashboardView(TemplateView):
     template_name = "dashboard.html"
+
+
+class SelectTemplateView(TemplateView):
+    template_name = "select_template.html"
