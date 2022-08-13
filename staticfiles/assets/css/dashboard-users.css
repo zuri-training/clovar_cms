@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body h3 {
+  font-size: 20px;
+}
+button {
+  cursor: pointer;
+}
+.main-container {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  height: 100vh;
+}
+.main-container li {
+  list-style: none;
+  padding-block: 5px;
+  padding-left: 1rem;
+}
+
+li img {
+  width: 15px;
+  height: auto;
+}
+
+.left-container {
+  background-color: #222222;
+  color: #fffbf5;
+  width: 440px;
+}
+.left-container h3 {
+  padding-left: 7rem;
+  padding-bottom: 0.5rem;
+}
+
+.left-container p {
+  padding-left: 4rem;
+  padding-bottom: 2rem;
+}
+.left-container a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.backlogo {
+  padding-left: 29px;
+  padding-top: 78px;
+  padding-bottom: 16px;
+}
+.backlogo img {
+  width: 35px;
+  height: auto;
+}
+.navcontent-top {
+  margin-bottom: 3rem;
+}
+
+.navcontent-bottom {
+  margin-bottom: 3rem;
+}
+
+#user {
+  background-color: #50409a;
+  margin-left: 0;
+}
+
+.right-container {
+  background-color: #fffbf5;
+  width: 100%;
+  padding-left: 5rem;
+  padding-top: 3rem;
+}
+
+.right-container a {
+  color: #222222;
+  text-decoration: none;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.user-nav {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #50409a;
+  display: flex;
+  width: 780px;
+  height: 44px;
+  padding-left: 11px;
+  padding-right: 28px;
+  padding-top: 13px;
+}
+
+.usernav-li ul {
+  display: flex;
+}
+.usernav-li ul li {
+  padding-right: 24px;
+}
+
+.team-members {
+  margin-top: 24px;
+  width: 780px;
+  height: 225px;
+  border: 1px solid #50409a;
+}
+
+.teammem-top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #50409a;
+  padding: 16px 27px 22px 27px;
+}
+#team {
+  border-bottom: 1px solid #222222;
+}
+.teammem-top button {
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  height: 28px;
+  width: 80px;
+  background-color: #fffbf5;
+}
+
+.teammem-buttom {
+  display: flex;
+  padding-left: 27px;
+  padding-top: 43px;
+}
+.teammem-buttom img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.buttom-left {
+  margin-left: 16px;
+}
+
+.buttom-left button {
+  background-color: #50409a;
+  border-radius: 8px;
+  border: none;
+  color: #fffbf5;
+  padding: 10px 15px;
+  margin-top: 10px;
+  width: 71px;
+  height: 35px;
+}
