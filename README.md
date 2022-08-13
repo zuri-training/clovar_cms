@@ -14,8 +14,6 @@ It is a platform that allows users to spin up a basic website and allows as many
 
 ## Contributing
 
-Contributions are always welcome!
-
 See [`CONTRIBUTING.md`](https://github.com/zuri-training/my_cms-pjt-15/blob/main/CONTRIBUTING.md) if you want to make contributions to this project.
 
 Please ensure you follow the steps in the [`CONTRIBUTING.md`](https://github.com/zuri-training/my_cms-pjt-15/blob/main/CONTRIBUTING.md). If you don't, your contribution will be rejected.
@@ -69,6 +67,8 @@ Run the server
 ```python
 python manage.py runserver
 ```
+
+> Architecture Used: Monolith (Django Templating)
 
 ## Features
 
