@@ -199,8 +199,9 @@ header button {
 }
 
 .first-section__left {
-  width: 65%;
+  width: 100%;
   padding-left: 50px;
+  padding-right: 2rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -239,7 +240,8 @@ header button {
 }
 
 .first-section__right img {
-  width: 85%;
+  width: 95%;
+  padding-left: 3rem;
 }
 
 .second-section__left,
