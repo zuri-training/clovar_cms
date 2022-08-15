@@ -235,9 +235,12 @@
             <div class="col" id="col1">
               <div class="mydivouter" id="template1">
                 <div class="mybuttonoverlap btn btn-info">
-                  <a href="#">
+                  {% for i in temp_name %}
+                    <a href="{% url 'viewTemplate' i.id %}">
                     <button type="submit" id="view-btn">View</button>
-                  </a>
+                    </a>
+                  {%endfor%}
+                  
                   <a href="#">
                     <button type="submit" id="customize-btn">Customize</button>
                   </a>

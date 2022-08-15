@@ -1,0 +1,153 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template | Clovar</title>
+    <link rel="stylesheet" href="{% static '/assets/css/template1.css' %}" />
+    <link
+      rel="shortcut icon"
+      href="{% static '/assets/images/favicon.ico' %}"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-top">
+        <img src="{% static '/assets/images/logo.png' %}" alt="clovar-logo" />
+        <button>Try It Free</button>
+      </div>
+
+      <section class="first-section">
+        <div class="first-section__left">
+          <h1>
+            Build The Community Your Fans Will Love
+          </h1>
+          <p>
+            Clovar re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <button class="get-started">Get Started For Free</button>
+        </div>
+        <div class="first-section__right">
+          <img
+            src="{% static '/assets/images/illustration-mockups.svg' %}"
+            alt="illustration-mockups"
+          />
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="second-section">
+        <div class="second-section__left">
+          <h2>Grow Together</h2>
+          <p>
+            Generate meaningful discussions with your audience and build a
+            strong, loyal community. Think of the insightful conversations you
+            miss out on with a feedback forum.
+          </p>
+        </div>
+        <div class="second-section__right">
+          <img
+            src="{% static '/assets/images/illustration-grow-together.svg'%}"
+            alt="illustration-grow-together"
+          />
+        </div>
+      </section>
+
+      <section class="third-section">
+        <div class="third-section__left">
+          <img
+            src="{% static '/assets/images/illustration-flowing-conversation.svg'%}"
+            alt="illustration-engage-community"
+          />
+        </div>
+        <div class="third-section__right">
+          <h2>Flowing Conversations</h2>
+          <p>
+            You wouldn't paginate a conversation in real life, so why do it
+            online? Our threads just-in-time loading for a more natural flow.
+          </p>
+        </div>
+      </section>
+
+      <section class="fourth-section">
+        <div class="fourth-section__left">
+          <h2>Your Users</h2>
+          <p>
+            It takes no time at all to integrate Clovar with your app's
+            authentication solution. This means, once signed in to your app,
+            your users can start chatting immediately.
+          </p>
+        </div>
+        <div class="fourth-section__right">
+          <img
+            src="{% static '/assets/images/illustration-your-users.svg'%}"
+            alt="illustration-get-started"
+          />
+        </div>
+      </section>
+
+      <section class="ready">
+        <h2>Ready To Build Your Community?</h2>
+        <button>Get Started For Free</button>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-contents">
+        <div class="footer__left">
+          <img src="{% static '/assets/images/logo.png'%}" alt="clovar-logo" class="clovar-logo" />
+          <div class="location">
+            <div>
+              <img src="{% static '/assets/images/icon-location.svg' %}" alt="location-icon" />
+            </div>
+            <div>
+              Lorem ipsum dolor sit amet, consectetur<br />adipiscing elit, sed
+              do eiusmod tempor<br />incididunt ut labore et dolore magna aliqua
+            </div>
+          </div>
+          <div class="call">
+            <div><img src="{% static '/assets/images/icon-phone.svg'%}" alt="call-icon" /></div>
+            <div>+234-123-456-7890</div>
+          </div>
+          <div class="email">
+            <div><img src="{% static '/assets/images/icon-email.svg' %}" alt="email-icon" /></div>
+            <div>aworetanjeremiah@gmail.com</div>
+          </div>
+        </div>
+        <div class="details-list">
+          <ul>
+            <li><a href="https://github.com/jeremiey">About Us</a></li>
+            <li><a href="https://github.com/jeremiey">What We Do</a></li>
+            <li><a href="https://example.com">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="details-list">
+          <ul>
+            <li><a href="https://example.com">Career</a></li>
+            <li><a href="https://example.com">Blog</a></li>
+            <li><a href="https://github.com/jeremiey">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="social-media">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; Copyright 2022 Clovar. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
