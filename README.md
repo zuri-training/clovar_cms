@@ -101,6 +101,9 @@ python manage.py runserver
 
 - [Designs from the Product Design Team](https://github.com/zuri-training/my_cms-pjt-15/blob/main/DESIGNS.md)
 
+-  [Documentation](https://jeremiey.github.io/clovar-documentation).
+
+
 ## Contributors
 
 <details><summary>Developers</summary>
@@ -132,4 +135,7 @@ python manage.py runserver
 - [@Joshua-Ogunwoolu](https://github.com/Joshua-Ogunwoolu)
 - [@Emmanuel-Etukudo](https://www.github.com/Emmanuel-Etukudo)
 
+
+
 </details>
+
