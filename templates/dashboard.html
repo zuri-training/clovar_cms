@@ -58,11 +58,12 @@
   </head>
   <body>
     <nav>
-      <img src="{% static 'assets/images/logout-icon.png' %}" alt="" id="EE" /> <br />
+      <a href="{% url 'account_logout' %}"><img src="{% static 'assets/images/logout-icon.png' %}" alt="" id="EE" /></a> 
+      <br />
       <br />
       <br />
       <h3>PACCI</h3>
-      <h6>Pnaija.mycms.com</h6>
+      <h6>example.mycms.com</h6>
       <br />
       <br />
       <br />
@@ -95,7 +96,7 @@
       <a href="">Tools</a> <br />
       <br />
       <img src="{% static 'assets/images/users.png' %}" alt="" width="25px" height="25x" />
-      <a href="">Users</a> <br />
+      <a href="{% url 'users' %}">Users</a> <br />
       <br />
       <img src="{% static 'assets/images/settings.png' %}" alt="" width="25px" height="25x" />
       <a href="">Settings</a> <br />
@@ -134,7 +135,7 @@
             <p>Domain</p>
             <br />
             <div class="rb">
-              <p>www.Pnaija.blog</p>
+              <p>www.example.blog</p>
               <button>See more options</button>
             </div>
           </div>

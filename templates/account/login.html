@@ -96,7 +96,7 @@
             value="{{ redirect_field_value }}"
           />
           {% endif %}
-          <small><a href="#!">Forgot Password?</a></small>
+          <small><a href="{% url 'account_reset_password' %}">Forgot Password?</a></small>
           <button id="sign-up-btn" type="submit">Log in</button>
           <button id="google-btn" type="submit">
             <i class="fa fa-google"></i> Sign in with Google

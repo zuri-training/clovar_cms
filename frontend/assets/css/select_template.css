@@ -147,7 +147,7 @@ main p {
   height: 416px;
 }
 #col1 {
-  background-image: url(/frontend/assets/images/template1.png);
+  background-image: url('/frontend/assets/images/huddle-template.png');
   background-repeat: no-repeat;
   background-size: 100% 416px;
 }
@@ -424,4 +424,14 @@ button:hover {
 button:active {
   color: white;
   background-color: #352a66 !important;
+}
+
+#options-btn:hover {
+  border: 1px solid #e7a644 !important;
+  background-color: #e7a644 !important;
+}
+
+#options-btn:active {
+  border: 1px solid #cc8d33 !important;
+  background-color: #cc8d33 !important;
 }

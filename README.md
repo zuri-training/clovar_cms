@@ -14,8 +14,6 @@ It is a platform that allows users to spin up a basic website and allows as many
 
 ## Contributing
 
-Contributions are always welcome!
-
 See [`CONTRIBUTING.md`](https://github.com/zuri-training/my_cms-pjt-15/blob/main/CONTRIBUTING.md) if you want to make contributions to this project.
 
 Please ensure you follow the steps in the [`CONTRIBUTING.md`](https://github.com/zuri-training/my_cms-pjt-15/blob/main/CONTRIBUTING.md). If you don't, your contribution will be rejected.
@@ -58,10 +56,19 @@ SECRET_KEY=<your-secret-key>
 
 *Generate a secret key from <https://djecrety.ir/>.*
 
-Runserver
+Run the migrations
+
+```python
+python manage.py migrate
+```
+
+Run the server
+
 ```python
 python manage.py runserver
 ```
+
+> Architecture Used: Monolith (Django Templating)
 
 ## Features
 
@@ -94,24 +101,25 @@ python manage.py runserver
 
 - [Designs from the Product Design Team](https://github.com/zuri-training/my_cms-pjt-15/blob/main/DESIGNS.md)
 
+-  [Documentation](https://jeremiey.github.io/clovar-documentation).
+
+
 ## Contributors
 
 <details><summary>Developers</summary>
 
 - [@jeremiey](https://www.github.com/jeremiey)
 - [@chidiarua](https://www.github.com/chidiarua)
-- [@magnificientStudios](https://www.github.com/magnificientStudios)
+- [@steph-ayo](https://www.github.com/steph-ayo)
 - [@optimistictech](https://www.github.com/optimistictech)
 - [@alvanokey](https://www.github.com/alvanokey)
-- [@musoye](https://www.github.com/musoye)
+- [@magnificientStudios](https://www.github.com/magnificientStudios)
+- [@BioMeindinyo](https://www.github.com/BioMeindinyo)
 - [@yusufadegbite](https://www.github.com/yusufadegbite)
 - [@Noble101](https://www.github.com/Noble101)
-- [@jonathanwambua](https://www.github.com/jonathanwambua)
-- [@steph-ayo](https://www.github.com/steph-ayo)
-- [@BioMeindinyo](https://www.github.com/BioMeindinyo)
+- [@musoye](https://www.github.com/musoye)
 - [@Chelsofia](https://www.github.com/Chelsofia)
 - [@Ismat27](https://www.github.com/Ismat27)
-- [@emmyrald](https://www.github.com/emmyrald)
 - [@Prideland-okoi](https://github.com/Prideland-okoi)
 
 </details>
@@ -127,4 +135,7 @@ python manage.py runserver
 - [@Joshua-Ogunwoolu](https://github.com/Joshua-Ogunwoolu)
 - [@Emmanuel-Etukudo](https://www.github.com/Emmanuel-Etukudo)
 
+
+
 </details>
+

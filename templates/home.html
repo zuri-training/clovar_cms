@@ -65,8 +65,10 @@
           </div>
         </div>
         <div class="auth-buttons pt-4 px-5">
-          <button class="login pb-2" type="button">Login</button>
-          <button class="get-started" type="button">Get Started</button>
+          {% if user.is_authenticated %}
+          {% else %}
+          <button class="login pb-2" type="button"><a href="{% url 'account_signup' %}">Get Started</a></button>
+          {% endif %}
         </div>
       </section>
 
