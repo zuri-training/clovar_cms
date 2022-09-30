@@ -15,7 +15,7 @@
 - Update `login` page - <https://github.com/zuri-training/team-15_my-cms/issues/143#issuecomment-1212249892>
 - Coming soon and 404 page - <https://github.com/zuri-training/team-15_my-cms/issues/148>
 - Some authentication pages - <https://github.com/zuri-training/team-15_my-cms/issues/150#issuecomment-1212889502>
-- Review | Merge Pull Requests - <https://github.com/zuri-training/team-15_my-cms/commits?author=jeremiey>
+- Review | Merge Pull Requests - <https://github.com/zuri-training/team-15_my-cms/commits?author=jeremy0x>
 
 - Setup everything needed on GitHub for the Project
   - [Github Teams](https://github.com/orgs/zuri-training/teams/team-15_my-cms)

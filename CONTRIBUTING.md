@@ -41,7 +41,7 @@ SECRET_KEY=<your-secret-key>
 
 </details>
 
-*If you'll just be working on the front-end, the *running locally* section is optional. All your `HTML`, `CSS`, and `JavaScript` files should go into the [`frontend`](https://github.com/zuri-training/team-15_my-cms/tree/main/frontend) directory.*
+*If you'll just be working on the front-end, the*running locally*section is optional. All your `HTML`, `CSS`, and `JavaScript` files should go into the [`frontend`](https://github.com/zuri-training/team-15_my-cms/tree/main/frontend) directory.*
 
 ---
 
@@ -58,6 +58,7 @@ git checkout <your-github-username_feature>
 ```
   
 Set Upstream branch
+
 ```bash
 git push --set-upstream origin <your-github-username_feature>
 ```
@@ -74,7 +75,7 @@ Commit and push your changes to your branch.
 
 **Create a pull request** on the [GitHub Repository](https://github.com/zuri-training/team-15_my-cms). [Learn How](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
 
-**Request a review for your pull request** from [@jeremiey](https://www.github.com/jeremiey) and [@chidiarua](https://www.github.com/chidiarua).
+**Request a review for your pull request** from [@jeremy0x](https://www.github.com/jeremy0x) and [@chidiarua](https://www.github.com/chidiarua).
 
 Your changes will be merged into the `main` branch when they are approved by the reviewers.
 

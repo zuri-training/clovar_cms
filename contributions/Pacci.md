@@ -6,7 +6,7 @@
 
 - Contributed in Brainstorming session - <https://github.com/zuri-training/team-15_my-cms/issues/97>
 
-- Made Presentation Video with [@jeremiey](https://github.com/jeremiey) - <https://github.com/zuri-training/team-15_my-cms/issues/42>
+- Made Presentation Video with [@jeremy0x](https://github.com/jeremy0x) - <https://github.com/zuri-training/team-15_my-cms/issues/42>
 
 - Style guide - <https://github.com/zuri-training/team-15_my-cms/issues/103#issuecomment-1209036770>
 
