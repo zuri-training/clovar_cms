@@ -93,22 +93,15 @@ python manage.py runserver
   - Unique address.
   - Ability to add social media links.
 
-## Tech Stack
+## Tools Used
 
-**Client**: HTML • CSS • JavaScript
-
-**Server**: Python • Django
-
-**Design**: Figma
+HTML • CSS • JavaScript • Python • Django • Figma
 
 ## Useful Resources
 
+- [Documentation](https://zuri-training.github.io/clovar-documentation).
 - [Database Schema](https://drawsql.app/optimistic/diagrams/team-15-my-cms)
-
-- [Designs from the Product Design Team](https://github.com/zuri-training/my_cms-pjt-15/blob/main/DESIGNS.md)
-
--  [Documentation](https://zuri-training.github.io/clovar-documentation).
-
+- [Figma Board](https://www.figma.com/file/lKANaLq3ZTbx80EsqDymdn/Team-15_My-cms-(Copy)?node-id=755%3A669)
 
 ## Contributors
 
