@@ -1,16 +1,22 @@
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/87664239/183072505-f90dfcf1-8347-4fba-bb0a-e022f0fdee33.png">
+<p align="left">
+  <img src="https://user-images.githubusercontent.com/87664239/183072505-f90dfcf1-8347-4fba-bb0a-e022f0fdee33.png" width=350>
   <br>
   <br>
    <img src="https://img.shields.io/badge/license-MIT-brightgreen" alt="contributors" href="https://github.com/zuri-training/team-15_my-cms/blob/main/LICENSE">
    <img src="https://img.shields.io/pypi/pyversions/django" alt="python-versions" href="https://www.python.org/downloads/">
    <img src="https://img.shields.io/pypi/v/pipenv" alt="pypi" href="https://python.org/pypi/pipenv">
-   <img src="https://img.shields.io/badge/code%20style-black%20%7C%20prettier-blueviolet" alt="code style" href="#badge">
    <img src="https://img.shields.io/github/contributors/zuri-training/team-15_my-cms" alt="contributors" href="https://github.com/zuri-training/team-15_my-cms/graphs/contributors">
 </p>
+   
+Clovar is a Content Management System that allows users to spin up a basic website and allows as many customizations as possible.
+### Site Preview
 
-Clovar is a Content Management System.
-It is a platform that allows users to spin up a basic website and allows as many customizations as possible.
+<kbd>
+  <a href="https://sentfi.netlify.app" target="_blank">
+    <img src="https://user-images.githubusercontent.com/87664239/194041901-c9dd5f94-9329-4824-8b4b-09452eeec379.gif">
+  </a>
+</kbd>
+
 
 ## Contributing
 
