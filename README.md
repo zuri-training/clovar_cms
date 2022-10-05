@@ -107,14 +107,14 @@ python manage.py runserver
 
 - [Designs from the Product Design Team](https://github.com/zuri-training/my_cms-pjt-15/blob/main/DESIGNS.md)
 
--  [Documentation](https://jeremiey.github.io/clovar-documentation).
+-  [Documentation](https://zuri-training.github.io/clovar-documentation).
 
 
 ## Contributors
 
 <details><summary>Developers</summary>
 
-- [@jeremiey](https://www.github.com/jeremiey)
+- [@jeremy0x](https://www.github.com/jeremy0x)
 - [@chidiarua](https://www.github.com/chidiarua)
 - [@steph-ayo](https://www.github.com/steph-ayo)
 - [@optimistictech](https://www.github.com/optimistictech)
@@ -141,7 +141,4 @@ python manage.py runserver
 - [@Joshua-Ogunwoolu](https://github.com/Joshua-Ogunwoolu)
 - [@Emmanuel-Etukudo](https://www.github.com/Emmanuel-Etukudo)
 
-
-
 </details>
-
