@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,6 +24,36 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
+<<<<<<< HEAD
+      href="{% static './assets/css/confirm-sign-out.css' %}"
+      type="text/css"
+      media="all"
+    />
+  </head>
+  <body>
+    <br />
+
+<<<<<<< HEAD
+    <img
+      id="logo"
+      src="{% static './assets/images/logo.png' %}"
+      alt="Clovar Logo"
+    />
+=======
+    <img id="logo" src="./assets/images/logo.png" alt="Clovar Logo" />
+>>>>>>> 6c48b4aee873a5c091431021250716970583fc29
+
+    <div class="container">
+      <label for=""><i class="fa fa-exclamation-triangle"></i></label>
+
+      <h4 id="">Are you leaving?</h4>
+      <p><i>Chidi</i>, are you sure you want to sign out.</p>
+      <br />
+
+      <div>
+        <button id="cancel" type="submit">Cancel</button>
+        <button id="yes" type="submit">Yes</button>
+=======
     />
   </head>
   <body>
@@ -42,6 +73,7 @@
             <form action=""><button class="sign-out">Sign Out</button></form>
           </div>
         </div>
+>>>>>>> 74696b89a0244a05d251eecd59fe533dea5a7287
       </div>
     </main>
   </body>

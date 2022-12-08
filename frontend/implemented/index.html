@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,11 +21,19 @@
     />
     <link
       rel="shortcut icon"
+<<<<<<< HEAD
+      href="{% static './assets/images/favicon.ico' %}"
+      type="image/x-icon"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static './assets/css/style.css' %}" />
+=======
       href="{% static 'assets/images/favicon.ico' %}"
       type="image/x-icon"
     />
     <!-- CSS -->
     <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
+>>>>>>> 74696b89a0244a05d251eecd59fe533dea5a7287
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/d778668bce.js"
@@ -62,7 +71,14 @@
       <nav class="navbar navbar-expand-lg mx-xl-3 pt-sm-4">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
+<<<<<<< HEAD
+            <img
+              src="{% static './assets/images/logo.png' %}"
+              alt="Clovar logo"
+            />
+=======
             <img src="{% static 'assets/images/logo.png' %}" alt="Clovar logo" />
+>>>>>>> 74696b89a0244a05d251eecd59fe533dea5a7287
           </a>
 
           <button
@@ -80,7 +96,11 @@
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a
+<<<<<<< HEAD
+                  class="nav-link active text-uppercase me-md-4"
+=======
                   class="nav-link active text-uppercase me-lg-2"
+>>>>>>> 74696b89a0244a05d251eecd59fe533dea5a7287
                   aria-current="page"
                   href="#"
                   >Documentation <i class="fa-2xs fa-solid fa-chevron-down"></i
@@ -134,6 +154,37 @@
       </section>
     </header>
     <main>
+<<<<<<< HEAD
+      <!-- Checkmarks section -->
+      <section class="checkmarks-section">
+        <div class="left-side pe-md-5">
+          <p>
+            <i class="fa-solid fa-check px-2"></i>
+            <span>Get found on Google</span>
+          </p>
+          <p>
+            <i class="fa-solid fa-check px-2"></i>
+            <span>Publish blog posts on the go</span>
+          </p>
+          <p>
+            <i class="fa-solid fa-check px-2"></i>
+            <span> Add existing blog posts easily </span>
+          </p>
+        </div>
+        <div class="right-side">
+          <p>
+            <i class="fa-solid fa-check px-2"></i>
+            <span> Check your website's stat in realtime </span>
+          </p>
+          <p>
+            <i class="fa-solid fa-check px-2"></i>
+            <span> Stay Updated with your blog user's engagement </span>
+          </p>
+          <p>
+            <i class="fa-solid fa-check px-2"></i>
+            <span>Run multiple blog accounts</span>
+          </p>
+=======
       <!-- Checkmarks section | Mobile Login and Get Started -->
       <section class="features-section">
         <div class="checkmarks-section">
@@ -169,6 +220,7 @@
         <div class="auth-buttons pt-4 px-5">
           <button class="login pb-2" type="button">Login</button>
           <button class="get-started" type="button">Get Started</button>
+>>>>>>> 74696b89a0244a05d251eecd59fe533dea5a7287
         </div>
       </section>
 
@@ -300,10 +352,20 @@
 
       <!-- Company Images Section -->
       <section class="company-images py-5 my-4">
+<<<<<<< HEAD
+        <img src="{% static './assets/images/fliqpay.png' %}" alt="boom logo" />
+        <img
+          src="{% static './assets/images/flutterwave.png' %}"
+          alt="boom logo"
+        />
+        <img src="{% static './assets/images/boom.png' %}" alt="boom logo" />
+        <img src="{% static './assets/images/amazon.png' %}" alt="boom logo" />
+=======
         <img src="{% static 'assets/images/fliqpay.png' %}" alt="boom logo" />
         <img src="{% static 'assets/images/flutterwave.png' %}" alt="boom logo" />
         <img src="{% static 'assets/images/boom.png' %}" alt="boom logo" />
         <img src="{% static 'assets/images/amazon.png' %}" alt="boom logo" />
+>>>>>>> 74696b89a0244a05d251eecd59fe533dea5a7287
       </section>
       <hr class="boundary-hr" />
 
@@ -365,7 +427,11 @@
     >
       <p class="col-md-4 mb-0 text-muted">
         <img
+<<<<<<< HEAD
+          src="{% static './assets/images/logo.png' %}"
+=======
           src="{% static 'assets/images/logo.png' %}"
+>>>>>>> 74696b89a0244a05d251eecd59fe533dea5a7287
           alt="clovar logo"
           class="footer-logo"
         />
@@ -382,7 +448,11 @@
         <li class="nav-item">
           <a href="https://facebook.com" class="nav-link px-2 text-muted"
             ><img
+<<<<<<< HEAD
+              src="{% static './assets/images/facebook-icon.png' %}"
+=======
               src="{% static 'assets/images/facebook-icon.png' %}"
+>>>>>>> 74696b89a0244a05d251eecd59fe533dea5a7287
               alt="Facebook Icon"
               class="me-1 facebook-icon"
           /></a>
@@ -390,12 +460,39 @@
         <li class="nav-item">
           <a href="https://instagram.com" class="nav-link px-2 text-muted"
             ><img
+<<<<<<< HEAD
+              src="{% static './assets/images/instagram-icon.png' %}"
+=======
               src="{% static 'assets/images/instagram-icon.png' %}"
+>>>>>>> 74696b89a0244a05d251eecd59fe533dea5a7287
               alt="Instagram icon"
               class="instagram-icon"
           /></a>
         </li>
       </ul>
     </footer>
+<<<<<<< HEAD
+
+    <!-- Typing Animation -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: ["Contents", "Concepts", "Passion"],
+        typeSpeed: 125,
+        backSpeed: 150,
+        loop: true,
+        cursorChar: "",
+      });
+
+      var typed1 = new Typed(".auto-type1", {
+        strings: ["Contents", "Concepts", "Passion"],
+        typeSpeed: 125,
+        backSpeed: 150,
+        loop: true,
+        cursorChar: "",
+      });
+    </script>
+=======
+>>>>>>> 74696b89a0244a05d251eecd59fe533dea5a7287
   </body>
 </html>
